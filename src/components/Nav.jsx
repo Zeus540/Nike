@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import {Link} from "react-scroll";
 
 const Navbar = styled.div`
-
 border: none;
 border-radius: 0px;
 background: #1f1f1fd6;
@@ -18,7 +17,7 @@ display:inline-block;
 
 const List = styled.ul`
 display: flex;
-flex-direction:column
+flex-direction:row;
 justify-content:center;
 margin: 0px;
 padding:0px;

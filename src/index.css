@@ -9,19 +9,25 @@ body,html {
   font-family: sans-serif;
 height:100vh;
 width: 100vw;
-
+overflow-y: hidden;
+background-image: url(./images/samurai3840x1080.jpg);
+background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+background-size: 100% 100%;
 }
 body ,h1 {
   font-family: 'Righteous', arial;
  }
  p{
-  line-height: 25px;
+  line-height: unset;
  }
 @media(max-width:425px){
  body {
   margin: 0;
   font-size:14px;
-
+  background: black;
+  overflow-y: scroll;
  }
  li {
   margin: 0;

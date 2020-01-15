@@ -1,28 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.d6de487a.chunk.css",
-    "main.js": "/static/js/main.fb5e6383.chunk.js",
-    "main.js.map": "/static/js/main.fb5e6383.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.0d7a82ac.js",
-    "runtime-main.js.map": "/static/js/runtime-main.0d7a82ac.js.map",
-    "static/js/2.90907b4d.chunk.js": "/static/js/2.90907b4d.chunk.js",
-    "static/js/2.90907b4d.chunk.js.map": "/static/js/2.90907b4d.chunk.js.map",
+    "main.css": "/static/css/main.132f6893.chunk.css",
+    "main.js": "/static/js/main.5717e0c2.chunk.js",
+    "main.js.map": "/static/js/main.5717e0c2.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.1add1218.js",
+    "runtime-main.js.map": "/static/js/runtime-main.1add1218.js.map",
+    "static/js/2.32c82439.chunk.js": "/static/js/2.32c82439.chunk.js",
+    "static/js/2.32c82439.chunk.js.map": "/static/js/2.32c82439.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.f3a4a1fb09af629f1e76796d46c34e13.js": "/precache-manifest.f3a4a1fb09af629f1e76796d46c34e13.js",
+    "precache-manifest.fa8fec9b28d1833e5d738414fae96c1b.js": "/precache-manifest.fa8fec9b28d1833e5d738414fae96c1b.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.d6de487a.chunk.css.map": "/static/css/main.d6de487a.chunk.css.map",
-    "static/media/dark.png": "/static/media/dark.069d8429.png",
-    "static/media/jake.jpg": "/static/media/jake.b44c9ab9.jpg",
-    "static/media/mailchimp.png": "/static/media/mailchimp.fa5ac744.png",
-    "static/media/test.webp": "/static/media/test.3cffbf4e.webp",
-    "static/media/test2.webp": "/static/media/test2.84ee42ea.webp",
-    "static/media/un.jpg": "/static/media/un.eca455fe.jpg",
-    "static/media/wolf.png": "/static/media/wolf.e52dd778.png"
+    "static/css/main.132f6893.chunk.css.map": "/static/css/main.132f6893.chunk.css.map",
+    "static/media/Nike-x-Carhartt-WIP-Air-Force-1-Low-_57.jpg": "/static/media/Nike-x-Carhartt-WIP-Air-Force-1-Low-_57.c07c2d02.jpg",
+    "static/media/maksim-larin-Ai356rggKvw-unsplash.jpg": "/static/media/maksim-larin-Ai356rggKvw-unsplash.3d4154dc.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.0d7a82ac.js",
-    "static/js/2.90907b4d.chunk.js",
-    "static/css/main.d6de487a.chunk.css",
-    "static/js/main.fb5e6383.chunk.js"
+    "static/js/runtime-main.1add1218.js",
+    "static/js/2.32c82439.chunk.js",
+    "static/css/main.132f6893.chunk.css",
+    "static/js/main.5717e0c2.chunk.js"
   ]
 }
