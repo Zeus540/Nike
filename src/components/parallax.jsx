@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import styled from 'styled-components';
-import af1 from '../images/maksim-larin-Ai356rggKvw-unsplash.jpg';
+
 
 const Container = styled.div`
 min-width: 100vw;

@@ -130,9 +130,23 @@ display:none;
   display:block;
 }
 `
+
+const Heading2 = styled.h1`
+padding:0px 20px 0px 20px;
+margin:0px;
+color:${props=> props.Hcolor};
+font-size:25px;
+display:none;
+@media (max-width: 480px) {
+  padding:0px 0px 0px 0px;
+  text-align:center;
+  display:block;
+}
+`
+
 const Floating = styled.div`
 position:absolute;
-padding:0px 20px 0px 20px;
+padding:0px 20px 0px 17%;
 color:white;
 @media (max-width: 480px){
 position:unset;
@@ -178,6 +192,7 @@ render() {
 
           <TextContainer>
             <Heading Hcolor={this.props.Hcolor}>{this.props.heading}</Heading>
+            <Heading2 Hcolor={this.props.Hcolor}>{this.props.heading2}</Heading2>
           <Text Tcolor={this.props.Tcolor}>{this.props.paragraph1}</Text>
           </TextContainer>
 
