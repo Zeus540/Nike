@@ -20,7 +20,7 @@ class Parallax extends Component {
 render() { 
     return (
       <Container>
-        
+         <Img src={this.props.img}></Img>
       </Container>
   );
   }

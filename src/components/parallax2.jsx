@@ -5,8 +5,8 @@ import styled from 'styled-components';
 const Container = styled.div`
   min-width: 100vw;
   min-height:100vh;
-  background: #1f1f1f;
-
+  background: ${props=> props.color};
+  position:relative;
 `
 
 const LeftContainer = styled.div`
@@ -15,7 +15,6 @@ const LeftContainer = styled.div`
   display: flex;
   flex-direction: column;
   float:left;
-  background:#8b5729;
   @media (max-width: 480px) {
     max-height: unset;
   }
@@ -54,6 +53,7 @@ const Imgtop = styled.img`
   height:50vh;
   @media (max-width: 480px) {
     width:100vw;
+    height:100vh;
   }
   @media (min-width: 768px) and (max-width: 1024px) and (orientation:portrait) {
     width: 50vw;
@@ -61,6 +61,7 @@ const Imgtop = styled.img`
 `
 const TextContainer =styled.div`
 width:30vw;
+
   @media (max-width: 480px) {
     width:100vw;
     height:unset;
@@ -68,7 +69,7 @@ width:30vw;
 `
 
 const Text = styled.p`
-  
+  color:${props=> props.Tcolor};
   padding:0px 20px 0px 20px;
   @media (max-width: 480px) {
     width:98vw;
@@ -117,14 +118,58 @@ const Text = styled.p`
   }
 
 `
+const Heading = styled.h1`
+padding:0px 20px 0px 20px;
+margin:0px;
+color:${props=> props.Hcolor};
+font-size:25px;
+display:none;
+@media (max-width: 480px) {
+  padding:0px 0px 0px 0px;
+  text-align:center;
+  display:block;
+}
+`
+const Floating = styled.div`
+position:absolute;
+padding:0px 20px 0px 20px;
+color:white;
+@media (max-width: 480px){
+position:unset;
+text-align:center;
+padding:0px 0px 0px 0px;
+display:none;
+}
+`
 
+const Text1 = styled.h1`
+color:${props=> props.T1};
+margin:5% 0px 0px 0px;
+
+`
+
+const Text2 = styled.h1`
+margin:0px;
+color:${props=> props.T2};
+@media (min-width: 731px){
+  font-size:9vw;
+  }
+
+`
 
 class Parallax2 extends Component {
 
 render() {
 
+
     return (
-      <Container>
+      <Container color={this.props.color}>
+
+        <Floating>
+          <Text1 T1={this.props.T1}>{this.props.text1}</Text1>
+          <Text2 T2={this.props.T2}>{this.props.text2}</Text2>
+        </Floating>
+
         <LeftContainer>
 
           <Topbox>
@@ -132,8 +177,8 @@ render() {
           </Topbox>
 
           <TextContainer>
-            <h1>{this.props.heading}</h1>
-          <Text>{this.props.paragraph1}</Text>
+            <Heading Hcolor={this.props.Hcolor}>{this.props.heading}</Heading>
+          <Text Tcolor={this.props.Tcolor}>{this.props.paragraph1}</Text>
           </TextContainer>
 
         </LeftContainer>

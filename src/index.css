@@ -15,6 +15,12 @@ background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
 background-size: 100% 100%;
+
+}
+@media(max-width:480px){
+body,html{
+  overflow-y: scroll;
+}
 }
 body ,h1 {
   font-family: 'Righteous', arial;
