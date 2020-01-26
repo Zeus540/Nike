@@ -7,6 +7,7 @@ const Container = styled.div`
   min-height:100vh;
   background: ${props=> props.color};
   position:relative;
+
 `
 
 const LeftContainer = styled.div`
@@ -30,8 +31,11 @@ const Topbox = styled.div`
 
 const RightContainer = styled.div`
   min-width: 70vw;
-  min-height: 100vh;
+  height: 100vh;
   float:right;
+  @media (max-width: 480px) {
+    height:50vh;
+  }
   @media (min-width: 768px) and (max-width: 1024px) and (orientation:portrait) {
     min-width: 50vw;
   }
@@ -43,6 +47,7 @@ const Img = styled.img`
   height:100vh;
   @media (max-width: 480px) {
     width:100vw;
+    height:50vh;
   }
   @media (min-width: 768px) and (max-width: 1024px) and (orientation:portrait) {
     width: 50vw;
@@ -53,7 +58,7 @@ const Imgtop = styled.img`
   height:50vh;
   @media (max-width: 480px) {
     width:100vw;
-    height:100vh;
+    height:50vh;
   }
   @media (min-width: 768px) and (max-width: 1024px) and (orientation:portrait) {
     width: 50vw;
@@ -72,9 +77,7 @@ const Text = styled.p`
   color:${props=> props.Tcolor};
   padding:0px 20px 0px 20px;
   @media (max-width: 480px) {
-    width:98vw;
     height:unset;
-    padding:0px 0px 0px 0px;
     text-align:center;
   }
   @media (min-width: 480px) and (max-width: 320px) and (orientation:landscape) {
@@ -151,7 +154,6 @@ color:white;
 @media (max-width: 480px){
 position:unset;
 text-align:center;
-padding:0px 0px 0px 0px;
 display:none;
 }
 `
@@ -168,7 +170,9 @@ color:${props=> props.T2};
 @media (min-width: 731px){
   font-size:9vw;
   }
-
+  @media (min-width: 1440px){
+    font-size:7vw;
+    }
 `
 
 class Parallax2 extends Component {

@@ -7,7 +7,12 @@ min-width: 100vw;
 background-image:url(${af1});
 background-size:100% 100%;
 background-attachment:fixed;
-min-height:100vh;
+height:100vh;
+@media (max-width: 480px) {
+  height:45vh;
+  background-attachment:unset;
+  background-size:100% 100%;
+}
 `
 
 class Landingpage extends Component {

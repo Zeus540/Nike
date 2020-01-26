@@ -2,12 +2,11 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 
 const Container = styled.div`
-background-color:#6b222d;
+background-color:#710b13;
 display:inline-block;
 width:100vw;
-position:absolute;
 bottom:0px;
-@media(max-width:425px){
+@media(max-width:480px){
     display:flex;
     flex-direction:column;
     text-align:center;
@@ -17,20 +16,22 @@ bottom:0px;
 
 const Copyright = styled.p`
 color:white;
-padding:0px 20px;
+padding:0px 0px;
 display: flex;
-margin: 20px;
+writing-mode: vertical-lr;
 justify-content: center;
-    @media(max-width:425px){
+    @media(max-width:480px){
         text-align: center;
-   
+        margin: 5%;
+        margin-top: 0px;
+        writing-mode: unset;
 }
 `
 
 const Social = styled.div`
 color:white;
 float:right;
-    @media(max-width:425px){
+    @media(max-width:480px){
         color: white;
         justify-content: center;
         display:flex;
@@ -43,8 +44,9 @@ float:right;
 const List = styled.ul`
 float:right;
 margin: 0px;
-    @media(max-width:425px){
-        padding:0px;
+padding:0px;
+    @media(max-width:480px){
+        
 }
 `
 
@@ -55,7 +57,7 @@ font-weight:bolder;
 display:inline-block;
 padding:0px 0px;
    
-    @media(max-width:425px){
+    @media(max-width:480px){
         display:inline-flex;
         flex-direction:row;
         text-align:center;
@@ -84,11 +86,11 @@ class Footer extends Component {
                         <Social>
                             <List>
                                 <ListItem><Anchor href=""><Image src={this.props.link1} alt=""/></Anchor></ListItem>
-                                <ListItem><Anchor href=""><Image src={this.props.link2} alt=""/></Anchor></ListItem>
+                                <ListItem><Anchor href="https://github.com/Zeus540/React" target="_blank"><Image src={this.props.link2} alt=""/></Anchor></ListItem>
                             </List>
                         </Social>
                         <Legal>
-                <Copyright>All Right Reserved Copyright &copy; 2019</Copyright>
+                <Copyright>All Right Reserved Copyright &copy; 2020</Copyright>
                 </Legal>
             </Container>
            

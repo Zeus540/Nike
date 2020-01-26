@@ -1,23 +1,29 @@
 {
   "files": {
-    "main.css": "/static/css/main.132f6893.chunk.css",
-    "main.js": "/static/js/main.5717e0c2.chunk.js",
-    "main.js.map": "/static/js/main.5717e0c2.chunk.js.map",
+    "main.css": "/static/css/main.17d50aa7.chunk.css",
+    "main.js": "/static/js/main.51b1ad24.chunk.js",
+    "main.js.map": "/static/js/main.51b1ad24.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.1add1218.js",
     "runtime-main.js.map": "/static/js/runtime-main.1add1218.js.map",
-    "static/js/2.32c82439.chunk.js": "/static/js/2.32c82439.chunk.js",
-    "static/js/2.32c82439.chunk.js.map": "/static/js/2.32c82439.chunk.js.map",
+    "static/js/2.fb5f4ca0.chunk.js": "/static/js/2.fb5f4ca0.chunk.js",
+    "static/js/2.fb5f4ca0.chunk.js.map": "/static/js/2.fb5f4ca0.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.fa8fec9b28d1833e5d738414fae96c1b.js": "/precache-manifest.fa8fec9b28d1833e5d738414fae96c1b.js",
+    "precache-manifest.16eeeb79b9ad31abb8a0d7d65a998474.js": "/precache-manifest.16eeeb79b9ad31abb8a0d7d65a998474.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.132f6893.chunk.css.map": "/static/css/main.132f6893.chunk.css.map",
-    "static/media/Nike-x-Carhartt-WIP-Air-Force-1-Low-_57.jpg": "/static/media/Nike-x-Carhartt-WIP-Air-Force-1-Low-_57.c07c2d02.jpg",
-    "static/media/maksim-larin-Ai356rggKvw-unsplash.jpg": "/static/media/maksim-larin-Ai356rggKvw-unsplash.3d4154dc.jpg"
+    "static/css/main.17d50aa7.chunk.css.map": "/static/css/main.17d50aa7.chunk.css.map",
+    "static/media/A5AEDE33-E71E-4BC1-B417-A83A46EFA2FB.jpg": "/static/media/A5AEDE33-E71E-4BC1-B417-A83A46EFA2FB.c068ad19.jpg",
+    "static/media/FEAROFGODBRANDING_joeperez3.jpg": "/static/media/FEAROFGODBRANDING_joeperez3.5ba0ba66.jpg",
+    "static/media/acw1.jpg": "/static/media/acw1.532af331.jpg",
+    "static/media/acw2.jpg": "/static/media/acw2.6340685b.jpg",
+    "static/media/e5c5a58103d2d993135ae505abfb08d7.jpg": "/static/media/e5c5a58103d2d993135ae505abfb08d7.b723c63b.jpg",
+    "static/media/nike-air-fear-of-god-1-release-date-2.jpg": "/static/media/nike-air-fear-of-god-1-release-date-2.fa1d31d6.jpg",
+    "static/media/off.jpg": "/static/media/off.46a091cf.jpg",
+    "static/media/react.jpg": "/static/media/react.2a06e9c2.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.1add1218.js",
-    "static/js/2.32c82439.chunk.js",
-    "static/css/main.132f6893.chunk.css",
-    "static/js/main.5717e0c2.chunk.js"
+    "static/js/2.fb5f4ca0.chunk.js",
+    "static/css/main.17d50aa7.chunk.css",
+    "static/js/main.51b1ad24.chunk.js"
   ]
 }

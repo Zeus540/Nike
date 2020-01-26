@@ -1,4 +1,3 @@
-
 body,html {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -10,7 +9,6 @@ body,html {
 height:100vh;
 width: 100vw;
 overflow-y: hidden;
-background-image: url(./images/freddy-do-6fIL-DqVNiU-unsplash_01.jpg);
 background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
