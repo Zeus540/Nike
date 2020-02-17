@@ -29,7 +29,9 @@ const Textarea =styled.textarea`
 background:#000000;
 color:#ffffff;
 min-width:90%;
-margin-top:5%;
+max-width:90%;
+min-height:50vh;
+max-height:50vh;
 @media(max-width:480px) and (orientation:portrait){
     height:150px
 
@@ -53,9 +55,9 @@ class Forms extends Component {
             <Form>
 
                 <Input type="text" placeholder="Name"/>
-                <Input type="text" placeholder="Email"/>
-                <Input type="text" placeholder="Subject"/>            
+                <Input type="text" placeholder="Email"/>     
                 <Textarea />
+                 <Input type="text" placeholder="Subject"/>       
                 <Btn>Submit</Btn>
 
             </Form>

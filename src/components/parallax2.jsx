@@ -26,6 +26,8 @@ const LeftContainer = styled.div`
 const Topbox = styled.div`
   min-width: 30vw;
   min-height: 50vh;
+  width:30vw;
+  height:50vh;
   padding:0px 0px 0px 0px;
 `
 
@@ -44,7 +46,8 @@ const RightContainer = styled.div`
 
 const Img = styled.img`
   width:70vw;
-  height:100vh;
+  height:100%;
+  border:none;
   @media (max-width: 480px) {
     width:100vw;
     height:50vh;
@@ -54,8 +57,9 @@ const Img = styled.img`
   }
 `
 const Imgtop = styled.img`
-  width:30vw;
-  height:50vh;
+  width:100%;
+  height:100%;
+  border:none;
   @media (max-width: 480px) {
     width:100vw;
     height:50vh;
@@ -189,9 +193,9 @@ render() {
         </Floating>
 
         <LeftContainer>
-
+      
           <Topbox>
-          <Imgtop src={this.props.img}></Imgtop>
+          <Imgtop src={this.props.img} frameborder="0"></Imgtop>
           </Topbox>
 
           <TextContainer>

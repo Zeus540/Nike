@@ -63,29 +63,28 @@ function App() {
 
   return (
     <div className="App" >
-            <Landingpage/>
-
+            
             {State3.map((data, index) => (
             <Parallax2
              key={index} 
-             color="#8c9790" 
-             Hcolor="#ffffff" 
-             Tcolor="#f4f8ff" 
+             color="#202020" 
+             Hcolor="coral"
+             Tcolor="aliceblue" 
+             T1="aliceblue" 
+             T2="coral" 
              img={data.img} 
              img1={data.img1} 
              text1={data.text1} 
-             T1="#f4f8ff" 
              text2={data.text2} 
-             T2="#f4f8ff" 
              heading={data.heading}
              heading2={data.heading2}  
              paragraph1={data.paragraph1}
               />))}
 
-               {State1.map((data, index) => (
+            {State1.map((data, index) => (
             <Parallax2
              key={index} 
-             color="#762320" 
+             color="#202020" 
              Hcolor="#ffffff"
              Tcolor="#ffffff"
              img={data.img} 
@@ -99,24 +98,50 @@ function App() {
              paragraph1={data.paragraph1}
               />))}
 
-            {State6.map((data, index) => (
-            <Parallax
-            key={index} 
-            img={data.img}
-            />))}
+            {State3.map((data, index) => (
+            <Parallax2
+             key={index} 
+             color="#202020" 
+             Hcolor="coral"
+             Tcolor="aliceblue" 
+             T1="aliceblue" 
+             T2="coral" 
+             img={data.img} 
+             img1={data.img1} 
+             text1={data.text1} 
+             text2={data.text2} 
+             heading={data.heading}
+             heading2={data.heading2}  
+             paragraph1={data.paragraph1}
+              />))}
 
-        <ContactMe/>
+               {State1.map((data, index) => (
+            <Parallax2
+             key={index} 
+             color="#202020" 
+             Hcolor="#ffffff"
+             Tcolor="#ffffff"
+             img={data.img} 
+             img1={data.img1} 
+             text1={data.text1} 
+             T1="#ffffff" 
+             text2={data.text2} 
+             T2="#ffffff" 
+             heading={data.heading}
+             heading2={data.heading2}  
+             paragraph1={data.paragraph1}
+              />))}
 
       {State5.map((data, index) => (
             <Parallax2 
             key={index} 
-            color="#bfbdae" 
+            color="#202020" 
             Hcolor="#ffffff" 
             Tcolor="#f4f8ff" 
             img={data.img} 
             img1={data.img1} 
             text1={data.text1} 
-            T1="#4d6a88" 
+            T1="aliceblue" 
             text2={data.text2} 
             T2="#4d6a88" 
             heading={data.heading}
@@ -124,7 +149,7 @@ function App() {
             paragraph1={data.paragraph1} 
             />))}
      
-
+     <ContactMe/>
 
 
 <Footer link1={linkedin} link2={github}/>

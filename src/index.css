@@ -25,6 +25,8 @@ body ,h1 {
  }
  p{
   line-height: unset;
+  letter-spacing: 1px;
+  
  }
 @media(max-width:425px){
  body {
