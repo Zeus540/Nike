@@ -70,7 +70,7 @@ const Imgtop = styled.img`
 `
 const TextContainer =styled.div`
 width:30vw;
-
+overflow:scroll;
   @media (max-width: 480px) {
     width:100vw;
     height:unset;
@@ -79,50 +79,9 @@ width:30vw;
 
 const Text = styled.p`
   color:${props=> props.Tcolor};
-  padding:0px 20px 0px 20px;
-  @media (max-width: 480px) {
-    height:unset;
-    text-align:center;
-  }
-  @media (min-width: 480px) and (max-width: 320px) and (orientation:landscape) {
-  font-size:8px
-  
-  }
+  padding:0px 5px 0px 5px;
 
-  @media (min-width: 360px) and (max-width: 640px) and (orientation:landscape) {
-    font-size:8px
-    
-  }
-  @media (min-width: 411px) and (max-width: 731px) and (orientation:landscape) {
-    font-size:8px
-    
-  }
-  @media (min-width: 411px) and (max-width: 823px) and (orientation:landscape) {
-    font-size:8px
-    
-  }
-  @media (min-width: 768px) and (max-width: 1024px) and (orientation:portrait) {
-    width: 50vw;
-    
-  }
-  @media (min-width: 768px) and (max-width: 1024px) and (orientation:landscape) {
-    font-size:9px
-    
-  }
   
-  @media (min-width: 823px) and (max-height: 411px) and (orientation:landscape) {
-    font-size:9px
-    
-  }
-  
-  @media (min-width: 1024px) and (max-width: 1366px) and (orientation:portrait) {
-    font-size:18px
-    
-  }
-  @media (min-width: 560px) and (min-height: 320px) and (max-height: 320px) and (orientation:landscape) {
-    font-size:7px
-    
-  }
 
 `
 const Heading = styled.h1`

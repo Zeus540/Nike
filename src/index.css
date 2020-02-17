@@ -15,19 +15,19 @@ background-repeat: no-repeat;
 background-size: 100% 100%;
 
 }
-@media(max-width:480px){
-body,html{
-  overflow-y: scroll;
-}
-}
-body ,h1 {
-  font-family: 'Righteous', arial;
- }
- p{
-  line-height: unset;
+p{
+  text-align: center;
+  line-height: 22px;
   letter-spacing: 1px;
-  
- }
+}
+
+@media(min-width:200px) and (max-width:768px) and (orientation:landscape) {
+  p{
+    font-size: 9px;
+    text-align: center;
+   }
+}
+
 @media(max-width:425px){
  body {
   margin: 0;
@@ -42,3 +42,18 @@ body ,h1 {
  }
  
 }
+
+@media(max-width:480px){
+  body,html{
+    overflow-y: scroll;
+  }
+  }
+  body ,h1 {
+    font-family: 'Righteous', arial;
+   }
+
+   @media(min-width:480px){
+   p{
+     font-size:12px;
+   }
+  }
