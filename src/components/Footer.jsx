@@ -16,12 +16,16 @@ bottom:0px;
 
 const Copyright = styled.p`
 color:white;
+
 margin: 0px;
+
 display: flex;
 writing-mode: vertical-lr;
 justify-content: center;
+padding:10px 5px!important;
     @media(max-width:480px){
         text-align: center;
+
         writing-mode: unset;
 }
 }
@@ -70,6 +74,8 @@ const Legal = styled.div`
 display: inline-block;
 padding: 15px 10px;
 `
+
+
 
 class Footer extends Component {
     render() { 

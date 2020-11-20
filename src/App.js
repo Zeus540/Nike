@@ -90,6 +90,7 @@ function App() {
              heading2={data.heading2}  
              paragraph1={data.paragraph1}
               />))}
+              
 
             {State3.map((data, index) => (
             <Parallax2

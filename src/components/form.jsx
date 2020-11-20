@@ -48,17 +48,20 @@ border-bottom:2px solid black;
 color:black;
 `
 class Forms extends Component {
-  
     render() { 
         return (
         <Container>
-            <Form>
+            <Form method="post" action="/contact.php" name="contactform">
 
                 <Input type="text" placeholder="Name"/>
                 <Input type="text" placeholder="Email"/>     
                 <Textarea />
+
                  <Input type="text" placeholder="Subject"/>       
                 <Btn>Submit</Btn>
+
+               
+
 
             </Form>
         </Container>
