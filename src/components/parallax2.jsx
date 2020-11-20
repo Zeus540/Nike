@@ -26,6 +26,8 @@ const LeftContainer = styled.div`
 const Topbox = styled.div`
   min-width: 30vw;
   min-height: 50vh;
+  width:30vw;
+  height:50vh;
   padding:0px 0px 0px 0px;
 `
 
@@ -44,7 +46,8 @@ const RightContainer = styled.div`
 
 const Img = styled.img`
   width:70vw;
-  height:100vh;
+  height:100%;
+  border:none;
   @media (max-width: 480px) {
     width:100vw;
     height:50vh;
@@ -54,8 +57,9 @@ const Img = styled.img`
   }
 `
 const Imgtop = styled.img`
-  width:30vw;
-  height:50vh;
+  width:100%;
+  height:100%;
+  border:none;
   @media (max-width: 480px) {
     width:100vw;
     height:50vh;
@@ -70,55 +74,15 @@ width:30vw;
   @media (max-width: 480px) {
     width:100vw;
     height:unset;
+    overflow-y: scroll;
   }
 `
 
 const Text = styled.p`
   color:${props=> props.Tcolor};
-  padding:0px 20px 0px 20px;
-  @media (max-width: 480px) {
-    height:unset;
-    text-align:center;
-  }
-  @media (min-width: 480px) and (max-width: 320px) and (orientation:landscape) {
-  font-size:8px
-  
-  }
+  padding:0px 5px 0px 5px;
 
-  @media (min-width: 360px) and (max-width: 640px) and (orientation:landscape) {
-    font-size:8px
-    
-  }
-  @media (min-width: 411px) and (max-width: 731px) and (orientation:landscape) {
-    font-size:8px
-    
-  }
-  @media (min-width: 411px) and (max-width: 823px) and (orientation:landscape) {
-    font-size:8px
-    
-  }
-  @media (min-width: 768px) and (max-width: 1024px) and (orientation:portrait) {
-    width: 50vw;
-    
-  }
-  @media (min-width: 768px) and (max-width: 1024px) and (orientation:landscape) {
-    font-size:9px
-    
-  }
   
-  @media (min-width: 823px) and (max-height: 411px) and (orientation:landscape) {
-    font-size:9px
-    
-  }
-  
-  @media (min-width: 1024px) and (max-width: 1366px) and (orientation:portrait) {
-    font-size:18px
-    
-  }
-  @media (min-width: 560px) and (min-height: 320px) and (max-height: 320px) and (orientation:landscape) {
-    font-size:7px
-    
-  }
 
 `
 const Heading = styled.h1`
@@ -189,9 +153,9 @@ render() {
         </Floating>
 
         <LeftContainer>
-
+      
           <Topbox>
-          <Imgtop src={this.props.img}></Imgtop>
+          <Imgtop src={this.props.img} frameborder="0"></Imgtop>
           </Topbox>
 
           <TextContainer>

@@ -3,16 +3,16 @@ import sytled from "styled-components";
 import Form from "./form.jsx";
 
 const Container=sytled.div`
-    background-color: white;
+    background-color: #202020;
     padding-bottom: 10px;
     min-width: 100vw;
     margin: 0px 0px;
-    max-height:100vh;
+    
 `
 
 const Heading=sytled.h1`
     text-align:center;
-    color:black;
+    color:aliceblue;
 `
 
 const FormContainer=sytled.div`
@@ -33,7 +33,7 @@ render() {
        
            <Container id="ContactMe">
                <Heading>Get In Touch </Heading>
-             
+                
                <FormContainer >
                     <Form/>
                </FormContainer>
