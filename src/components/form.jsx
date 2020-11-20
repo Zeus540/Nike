@@ -60,7 +60,7 @@ class Forms extends Component {
                  <Input type="text" placeholder="Subject"/>       
                 <Btn>Submit</Btn>
 
-                <input type="submit" class="submit btn outline" id="submit" value="Send message" />
+               
 
 
             </Form>

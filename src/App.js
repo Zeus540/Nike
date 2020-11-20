@@ -8,7 +8,6 @@ import acw1 from './images/acw1.jpg'
 import acw2 from './images/acw2.jpg';
 import Fog from './images/e5c5a58103d2d993135ae505abfb08d7.jpg'
 import Fog2 from './images/nike-air-fear-of-god-1-release-date-2.jpg'
-import FogLogo from '../src/images/FEAROFGODBRANDING_joeperez3.jpg'
 import github from '../src/images/github.png'
 import linkedin from '../src/images/linkedin.png'
 import ContactMe from './components/ContactMe.jsx';
@@ -53,11 +52,7 @@ function App() {
 
 }
   ]);
-  const [State6] = useState([
-    {key:"",
-    img:FogLogo,
-}
-  ]);
+  
 
   return (
     <div className="App" >
