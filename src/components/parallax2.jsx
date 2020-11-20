@@ -70,10 +70,11 @@ const Imgtop = styled.img`
 `
 const TextContainer =styled.div`
 width:30vw;
-overflow:scroll;
+
   @media (max-width: 480px) {
     width:100vw;
     height:unset;
+    overflow-y: scroll;
   }
 `
 

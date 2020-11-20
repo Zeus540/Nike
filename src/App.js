@@ -1,7 +1,5 @@
 import React ,{useState} from 'react';
 import './App.css';
-import Landingpage from './components/landingpage.jsx'
-import Parallax from './components/parallax.jsx'
 import Parallax2 from './components/parallax2.jsx'
 import Footer from './components/Footer.jsx'
 import af1 from './images/react.jpg'
