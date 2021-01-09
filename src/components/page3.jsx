@@ -5,7 +5,7 @@ import Vid2 from '../images/production2.mp4'
 import Vid3 from '../images/production3.mp4'
 import Vid4 from '../images/production4.mp4'
 import Vid5 from '../images/production5.mp4'
-
+import Gif from '../images/giphy.mp4'
 const Container = styled.div`
 min-width: 100vw;
 height: 100%;
@@ -109,6 +109,10 @@ width: 100%;
 
 `
 
+const Figureframe = styled.iframe`
+width: 100%;
+
+`
 const Para = styled.p`
 color: white;
 font: italic smaller sans-serif;
@@ -144,11 +148,11 @@ render() {
           <TopBox>
 
           <Figure>
-          <Figurevideo autoplay="autoplay" muted loop id="myVideo3">
-            <source src={Vid5} type="video/mp4"/>
-          </Figurevideo>
-          
-   
+         
+         
+          <Figurevideo autoplay="autoplay" muted loop id="myVideo2">
+            <source src ={Gif} type="video/mp4"/>
+            </Figurevideo>
           </Figure>
           </TopBox>
 
@@ -156,7 +160,7 @@ render() {
           <Figure>
           <Heading>Heading</Heading>
           <Figurevideo autoplay="autoplay" muted loop id="myVideo4">
-            <source src={Vid2} type="video/mp4"/>
+            <source src={Gif} type="video/mp4"/>
           </Figurevideo>
          
           </Figure>
@@ -168,7 +172,7 @@ render() {
           <Figure>
           <Heading>Heading</Heading>
           <Figurevideo autoplay="autoplay" muted loop id="myVideo6">
-            <source src={Vid3} type="video/mp4"/>
+            <source src={Gif} type="video/mp4"/>
           </Figurevideo>
           
           </Figure>
@@ -181,14 +185,14 @@ render() {
         <RightContainer>
         
           <Figurevideo autoplay="autoplay" muted loop id="myVideo1">
-            <source src={Vid1} type="video/mp4"/>
+            <source src={Gif} type="video/mp4"/>
           </Figurevideo>
           <Heading2>The Shoot</Heading2>
       <Para>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi, non. Deserunt, a aut explicabo dicta consectetur nesciunt commodi praesentium reiciendis deleniti. Praesentium consectetur fugiat facere ut quidem ipsa itaque recusandae provident, impedit numquam quam dicta, voluptate totam rem ad magni est, tenetur quod nisi doloremque odit? Officiis eaque eius asperiores velit animi quas, nostrum neque, ex sed nisi commodi, sequi adipisci laborum accusamus nobis natus recusandae deserunt architecto explicabo consectetur </Para>
       
         
       <Figurevideo autoplay="autoplay" muted loop id="myVideo2">
-            <source src={Vid1} type="video/mp4"/>
+            <source src={Gif} type="video/mp4"/>
           </Figurevideo>
 
        <Heading2>Heading Here</Heading2>
@@ -203,7 +207,7 @@ render() {
 <Figure>
 <Heading>Heading</Heading>
 <Figurevideo autoplay="autoplay" muted loop id="myVideo5">
-            <source src={Vid4} type="video/mp4"/>
+            <source src={Gif} type="video/mp4"/>
           </Figurevideo>
           <Para>11Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi, non. Deserunt, a aut explicabo dicta consectetur nesciunt commodi praesentium reiciendis deleniti. Praesentium consectetur fugiat facere ut quidem ipsa itaque recusandae provident, impedit numquam quam dicta, voluptate totam rem ad magni est, tenetur quod nisi doloremque odit? Officiis </Para>
             
