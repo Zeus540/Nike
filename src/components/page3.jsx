@@ -1,11 +1,7 @@
 import React, {Component} from 'react';
 import styled from 'styled-components';
-import Vid1 from '../images/production.mp4'
-import Vid2 from '../images/production2.mp4'
-import Vid3 from '../images/production3.mp4'
-import Vid4 from '../images/production4.mp4'
-import Vid5 from '../images/production5.mp4'
 import Gif from '../images/giphy.mp4'
+
 const Container = styled.div`
 min-width: 100vw;
 height: 100%;
@@ -109,10 +105,7 @@ width: 100%;
 
 `
 
-const Figureframe = styled.iframe`
-width: 100%;
 
-`
 const Para = styled.p`
 color: white;
 font: italic smaller sans-serif;
