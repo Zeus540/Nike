@@ -54,20 +54,6 @@ margin: 0;
  }
 `
 
-const RightContainer = styled.div`
-  width: 70%;
-  height: 100vh;
-  float:right;
-  position:relative;
-@media  (min-width: 1px) and (max-width: 426px) {
-  width: 100vw;
-}
-@media (min-width: 426px) and (max-width: 768px) {
-  width: 100%;
- }
-
-`
-
 const Figure = styled.figure`
 width: auto;
     height: 100%;
@@ -85,17 +71,7 @@ bottom: 0px;
 width: auto;
 padding: 20px;
 `
-const RightContainerFigureCaption = styled.figcaption`
-background-color: #1f1f1f;
-font: italic smaller sans-serif;
-color: #fff;
-padding: 3px;
-text-align: left;
-position: absolute;
-top: 0px;
-width: 17%;
-padding: 20px;
-`
+
 const FigureImg = styled.img`
 width: 100%;
 height: 100%;

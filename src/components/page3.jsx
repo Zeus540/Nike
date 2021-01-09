@@ -1,7 +1,5 @@
 import React, {Component} from 'react';
 import styled from 'styled-components';
-import zafs from '../images/zafs.jpg'
-import yellow1 from '../images/yellow1.jpg'
 import Vid1 from '../images/production.mp4'
 import Vid2 from '../images/production2.mp4'
 import Vid3 from '../images/production3.mp4'
@@ -54,20 +52,6 @@ background-size:100% 100%;
 }
 `
 
-const BottomBoxText = styled.p`
-color:#1f1f1f;
-overflow-wrap: break-word;
-font: italic smaller sans-serif;
-
-line-height:22px;
-margin: 0;
-@media  (min-width: 1px) and (max-width: 426px) {
- 
-}
-@media (min-width: 426px) and (max-width: 768px) {
-
- }
-`
 
 const RightContainer = styled.div`
   width: 70%;
@@ -94,17 +78,7 @@ width: auto;
     position: relative;
     margin:0px;
 `
-const FigureCaption = styled.figcaption`
-background-color: #1f1f1f;
-font: italic smaller sans-serif;
-color: #fff;
-padding: 3px;
-text-align: center;
-position: absolute;
-bottom: 0px;
-width: auto;
-padding: 20px;
-`
+
 const MiddleContainer = styled.div`
 width: 33%;
 display:flex;
@@ -127,22 +101,8 @@ height: 50vh;
   width: 100vw;
 }
 `
-const MiddleContainerBottomBox = styled.div`
-width:100%;
-height: 50vh;
-margin-top: 20px;
-margin-bottom: 20px;
-@media  (min-width: 1px) and (max-width: 426px) {
-  width: 100vw;
-}
-`
 
 
-const FigureImg = styled.img`
-width: 100%;
-height: 100%;
-
-`
 
 const Figurevideo = styled.video`
 width: 100%;
