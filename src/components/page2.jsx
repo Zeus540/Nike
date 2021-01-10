@@ -25,7 +25,7 @@ display:flex;
 margin: 20px 0px;
 margin-bottom: 0px;
 padding-bottom: 0px;
-overflow-y:auto;
+overflow-y:scroll;
 flex-direction:column
 @media (min-width: 1px) and (max-width: 426px) {
  width:100%;
@@ -118,10 +118,7 @@ padding: 20px;
 const FigureImg = styled.img`
 width: 100%;
 height: 100%;
-&:hover {
-  transform: rotate(45deg);
-  
-  }
+
 `
 class Page2 extends Component {
 
@@ -129,10 +126,10 @@ render() {
  
     return (
       
-      <Container color={this.props.color}>
+      <Container color={this.props.color} class="dragscroll">
  
         
-        <LeftContainer>
+        <LeftContainer >
 
         <LeftContainerTopBox>
           <LeftFigure>

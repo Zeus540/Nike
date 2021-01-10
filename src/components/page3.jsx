@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import styled from 'styled-components';
 import Gif from '../images/giphy.mp4'
+import Vid1 from '../images/production1.mp4'
 
 const Container = styled.div`
 min-width: 100vw;
@@ -113,6 +114,14 @@ font: italic smaller sans-serif;
     padding:0px;
     line-height:22px;
 `
+
+const MiddlePara = styled.p`
+color: #1f1f1f;
+font: italic smaller sans-serif;
+    margin-top:0px;
+    padding:0px;
+    line-height:22px;
+`
 const Heading = styled.h1`
 
 font: italic
@@ -136,14 +145,14 @@ render() {
       <Container color={this.props.color}>
  
         
-        <LeftContainer>
+        <LeftContainer >
 
           <TopBox>
 
           <Figure>
          
          
-          <Figurevideo autoplay="autoplay" muted loop id="myVideo2">
+          <Figurevideo autoplay="autoplay" muted loop id="myVideo1">
             <source src ={Gif} type="video/mp4"/>
             </Figurevideo>
           </Figure>
@@ -152,8 +161,8 @@ render() {
           <BottomBox>
           <Figure>
           <Heading>Heading</Heading>
-          <Figurevideo autoplay="autoplay" muted loop id="myVideo4">
-            <source src={Gif} type="video/mp4"/>
+          <Figurevideo autoplay="autoplay" muted loop id="myVideo2">
+            <source src={Vid1} type="video/mp4"/>
           </Figurevideo>
          
           </Figure>
@@ -164,7 +173,7 @@ render() {
           <BottomBox>
           <Figure>
           <Heading>Heading</Heading>
-          <Figurevideo autoplay="autoplay" muted loop id="myVideo6">
+          <Figurevideo autoplay="autoplay" muted loop id="myVideo3">
             <source src={Gif} type="video/mp4"/>
           </Figurevideo>
           
@@ -177,14 +186,14 @@ render() {
 
         <RightContainer>
         
-          <Figurevideo autoplay="autoplay" muted loop id="myVideo1">
+          <Figurevideo autoplay="autoplay" muted loop id="myVideo4">
             <source src={Gif} type="video/mp4"/>
           </Figurevideo>
           <Heading2>The Shoot</Heading2>
       <Para>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi, non. Deserunt, a aut explicabo dicta consectetur nesciunt commodi praesentium reiciendis deleniti. Praesentium consectetur fugiat facere ut quidem ipsa itaque recusandae provident, impedit numquam quam dicta, voluptate totam rem ad magni est, tenetur quod nisi doloremque odit? Officiis eaque eius asperiores velit animi quas, nostrum neque, ex sed nisi commodi, sequi adipisci laborum accusamus nobis natus recusandae deserunt architecto explicabo consectetur </Para>
       
         
-      <Figurevideo autoplay="autoplay" muted loop id="myVideo2">
+      <Figurevideo autoplay="autoplay" muted loop id="myVideo5">
             <source src={Gif} type="video/mp4"/>
           </Figurevideo>
 
@@ -199,12 +208,12 @@ render() {
 <MiddleContainerTopBox>
 <Figure>
 <Heading>Heading</Heading>
-<Figurevideo autoplay="autoplay" muted loop id="myVideo5">
+<Figurevideo autoplay="autoplay" muted loop id="myVideo6">
             <source src={Gif} type="video/mp4"/>
           </Figurevideo>
-          <Para>11Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi, non. Deserunt, a aut explicabo dicta consectetur nesciunt commodi praesentium reiciendis deleniti. Praesentium consectetur fugiat facere ut quidem ipsa itaque recusandae provident, impedit numquam quam dicta, voluptate totam rem ad magni est, tenetur quod nisi doloremque odit? Officiis </Para>
+          <MiddlePara>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi, non. Deserunt, a aut explicabo dicta consectetur nesciunt commodi praesentium reiciendis deleniti. Praesentium consectetur fugiat facere ut quidem ipsa itaque recusandae provident, impedit numquam quam dicta, voluptate totam rem ad magni est, tenetur quod nisi doloremque odit? Officiis </MiddlePara>
             
-            <Para>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi, non. Deserunt, a aut explicabo dicta consectetur nesciunt commodi praesentium reiciendis deleniti. Praesentium consectetur fugiat facere ut quidem ipsa itaque recusandae provident, impedit numquam quam dicta, voluptate totam rem ad magni est, tenetur quod nisi doloremque odit? Officiis eaque eius asperiores velit animi quas, nostrum neque, ex sed nisi commodi, sequi adipisci laborum accusamus nobis natus recusandae deserunt architecto explicabo consectetur </Para>
+            <MiddlePara>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi, non. Deserunt, a aut explicabo dicta consectetur nesciunt commodi praesentium reiciendis deleniti. Praesentium consectetur fugiat facere ut quidem ipsa itaque recusandae provident, impedit numquam quam dicta, voluptate totam rem ad magni est, tenetur quod nisi doloremque odit? Officiis eaque eius asperiores velit animi quas, nostrum neque, ex sed nisi commodi, sequi adipisci laborum accusamus nobis natus recusandae deserunt architecto explicabo consectetur </MiddlePara>
   </Figure>
 </MiddleContainerTopBox>
 

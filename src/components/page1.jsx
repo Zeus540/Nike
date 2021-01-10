@@ -33,7 +33,7 @@ const BottomBox = styled.div`
 width:100%;
 height: 50vh;
 background-size:100% 100%;
-overflow-y: auto;
+
 background:#1f1f1f;
 @media  (min-width: 1px) and (max-width: 426px) {
   width: 100vw;
