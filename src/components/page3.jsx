@@ -151,16 +151,17 @@ render() {
 
           <Figure>
          
-         
+          <Heading>Heading</Heading>
           <Figurevideo autoplay="autoplay" muted loop id="myVideo1">
             <source src ={Gif} type="video/mp4"/>
             </Figurevideo>
+            <MiddlePara>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi, non. Deserunt, a aut explicabo dicta consectetur nesciunt commodi praesentium reiciendis deleniti. Praesentium consectetur fugiat facere ut quidem ipsa itaque recusandae provident, impedit numquam quam dicta, voluptate totam rem ad magni est, tenetur quod nisi doloremque odit? Officiis eaque eius asperiores velit animi quas, nostrum neque, ex sed nisi commodi, sequi adipisci laborum accusamus nobis natus recusandae deserunt architecto explicabo consectetur </MiddlePara>
           </Figure>
           </TopBox>
 
           <BottomBox>
           <Figure>
-          <Heading>Heading</Heading>
+      
           <Figurevideo autoplay="autoplay" muted loop id="myVideo2">
             <source src={Vid1} type="video/mp4"/>
           </Figurevideo>
@@ -176,7 +177,7 @@ render() {
           <Figurevideo autoplay="autoplay" muted loop id="myVideo3">
             <source src={Gif} type="video/mp4"/>
           </Figurevideo>
-          
+          <MiddlePara>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi, non. Deserunt, a aut explicabo dicta consectetur nesciunt commodi praesentium reiciendis deleniti. Praesentium consectetur fugiat facere ut quidem ipsa itaque recusandae provident, impedit numquam quam dicta, voluptate totam rem ad magni est, tenetur quod nisi doloremque odit? Officiis eaque eius asperiores velit animi quas, nostrum neque, ex sed nisi commodi, sequi adipisci laborum accusamus nobis natus recusandae deserunt architecto explicabo consectetur </MiddlePara>
           </Figure>
           </BottomBox>
 
@@ -186,14 +187,14 @@ render() {
 
         <RightContainer>
         
-          <Figurevideo autoplay="autoplay" muted loop id="myVideo4">
+          <Figurevideo autoplay="autoplay" muted loop >
             <source src={Gif} type="video/mp4"/>
           </Figurevideo>
           <Heading2>The Shoot</Heading2>
       <Para>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi, non. Deserunt, a aut explicabo dicta consectetur nesciunt commodi praesentium reiciendis deleniti. Praesentium consectetur fugiat facere ut quidem ipsa itaque recusandae provident, impedit numquam quam dicta, voluptate totam rem ad magni est, tenetur quod nisi doloremque odit? Officiis eaque eius asperiores velit animi quas, nostrum neque, ex sed nisi commodi, sequi adipisci laborum accusamus nobis natus recusandae deserunt architecto explicabo consectetur </Para>
       
         
-      <Figurevideo autoplay="autoplay" muted loop id="myVideo5">
+      <Figurevideo autoplay="autoplay" muted loop >
             <source src={Gif} type="video/mp4"/>
           </Figurevideo>
 
@@ -208,7 +209,7 @@ render() {
 <MiddleContainerTopBox>
 <Figure>
 <Heading>Heading</Heading>
-<Figurevideo autoplay="autoplay" muted loop id="myVideo6">
+<Figurevideo autoplay="autoplay" muted loop id="myVideo4">
             <source src={Gif} type="video/mp4"/>
           </Figurevideo>
           <MiddlePara>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi, non. Deserunt, a aut explicabo dicta consectetur nesciunt commodi praesentium reiciendis deleniti. Praesentium consectetur fugiat facere ut quidem ipsa itaque recusandae provident, impedit numquam quam dicta, voluptate totam rem ad magni est, tenetur quod nisi doloremque odit? Officiis </MiddlePara>
