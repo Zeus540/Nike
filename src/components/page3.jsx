@@ -1,230 +1,126 @@
 import React, {Component} from 'react';
 import styled from 'styled-components';
-import Gif from '../images/giphy.mp4'
-import Vid1 from '../images/production1.mp4'
+import Port from '../images/Port.png'
+import Gallery from './Gallery.jsx'
+import Back from '../images/back.jpg'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import Typical from 'react-typical'
 
 const Container = styled.div`
-min-width: 100vw;
-height: 100%;
+padding-top:6vw;
+height:100%;
 display:flex;
-background-color:floralwhite;
-@media (min-width: 1px) and (max-width: 426px) {
- flex-direction:column
- height: unset;
-}
+background:#020202;
+position:relative;
+`
+
+const Holder = styled.div`
+color:antiquewhite;
+position:relative;
+`
+
+const HeadingAnimated =styled.h1`
+color:white;
+font-family:arial;
+margin:0px;
+font-size:2vw;
+font-weight:bolder;
+margin:10% 0% 5% 0%;
+`
+const Heading =styled.h1`
+color:white;
+font-family:arial;
+margin:0px;
+font-size:2vw;
+font-weight:bolder;
+`
+const HeadingBottom =styled.h1`
+color:white;
+font-family:arial;
+margin:0px;
+font-size:2vw;
+font-weight:bolder;
+position:absolute;
+bottom:0;
+right:2vw;
+`
+const Heading2 =styled.h1`
+font-size:6vw;
+color:white;
+font-family:arial;
+margin:4% 0%;
+font-weight:bolder;
+`
+
+const Heading3 =styled.h1`
+font-size:2vw;
+color:white;
+font-family:arial;
+margin:10% 0% 0% 0%;
+font-weight:bolder;
+`
+const Focus =styled.h1`
+font-size:7vw;
+color:white;
+margin:0px;
+font-family:arial;
 `
 
 const LeftContainer = styled.div`
-width: 30%;
-
-display:flex;
-flex-direction:column;
-position:relative;
-margin: 20px;
-overflow-y:auto;
-@media (min-width: 1px) and (max-width: 426px) {
-  margin: 0px;
-  width: 100%;
-  
-}
-@media (min-width: 426px) and (max-width: 768px) {
-  width: 50%;
- }
+height:100%;
+background:#020202;
 `
-
-const TopBox = styled.div`
-width:100%;
-
-@media (min-width: 1px) and (max-width: 426px) {
-  width: 100vw;
-}
-`
-
-const BottomBox = styled.div`
-width:100%;
-background-size:100% 100%;
-
-@media  (min-width: 1px) and (max-width: 426px) {
-  width: 100vw;
-}
-`
-
 
 const RightContainer = styled.div`
-  width: 70%;
-
-  float:right;
-  position:relative;
-  padding: 20px;
-background:#1f1f1f;
-overflow-y:auto;
-@media  (min-width: 1px) and (max-width: 426px) {
-  width: 100vw;
-  padding: 0px;
-  
-}
-@media (min-width: 426px) and (max-width: 768px) {
-  width: 100%;
- }
-
-`
-
-const Figure = styled.figure`
-width: auto;
-    height: 100%;
-    position: relative;
-    margin:0px;
-`
-
-const MiddleContainer = styled.div`
-width: 33%;
+margin-left:2vw;
 display:flex;
-margin: 20px;
-overflow-y:auto;
-flex-direction:column
-position: relative;
-@media (min-width: 1px) and (max-width: 426px) {
-  margin: 0px;
-  width: 100%;
-}
-@media (min-width: 426px) and (max-width: 768px) {
-  width: 50%;
- }
-`
-const MiddleContainerTopBox = styled.div`
-width:100%;
-height: 50vh;
-@media (min-width: 1px) and (max-width: 426px) {
-  width: 100vw;
-}
-`
-
-
-
-const Figurevideo = styled.video`
-width: 100%;
+background:#020202;
+position:relative;
 
 `
 
+const RightContainerImg = styled.img`
 
-const Para = styled.p`
-color: white;
-font: italic smaller sans-serif;
-    margin-top:0px;
-    padding:0px;
-    line-height:22px;
+height:50vw
 `
 
-const MiddlePara = styled.p`
-color: #1f1f1f;
-font: italic smaller sans-serif;
-    margin-top:0px;
-    padding:0px;
-    line-height:22px;
-`
-const Heading = styled.h1`
-
-font: italic
-font-family:arial;
-
-    padding:0px;
-`
-const Heading2 = styled.h1`
-color:floralwhite;
-font: italic
-font-family:arial;
-  
-    padding:0px;
-`
 class Page3 extends Component {
-
+  componentDidMount(){
+    AOS.init({
+      duration : 1000
+    })
+  }
 render() {
  
     return (
       
-      <Container color={this.props.color}>
- 
+      <Container id="Home">
         
-        <LeftContainer >
+     <LeftContainer>
+     <HeadingAnimated data-aos='slide-up'>
+        <Typical
+              steps={['Hello!', 1000,'Hola!',1000,'Bonjour!',1000,'Konnichiwa!',1000,'God dag!',1000,'Shalom!',1000]}
+              loop={Infinity}
+              wrapper={"h1"}
+            />
+             <Heading data-aos='slide-up'> my name is Zaheer.</Heading>
+        </HeadingAnimated>
+    
+    
+     <Heading3 data-aos='slide-up'> I am a</Heading3>
+        <Heading2 className="text-flicker-in-glow" >FRONT-END<br/><Focus>DEVELOPER</Focus></Heading2>
+     </LeftContainer>
 
-          <TopBox>
+    
 
-          <Figure>
-         
-          <Heading>Heading</Heading>
-          <Figurevideo autoplay="autoplay" muted loop id="myVideo1">
-            <source src ={Gif} type="video/mp4"/>
-            </Figurevideo>
-            <MiddlePara>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi, non. Deserunt, a aut explicabo dicta consectetur nesciunt commodi praesentium reiciendis deleniti. Praesentium consectetur fugiat facere ut quidem ipsa itaque recusandae provident, impedit numquam quam dicta, voluptate totam rem ad magni est, tenetur quod nisi doloremque odit? Officiis eaque eius asperiores velit animi quas, nostrum neque, ex sed nisi commodi, sequi adipisci laborum accusamus nobis natus recusandae deserunt architecto explicabo consectetur </MiddlePara>
-          </Figure>
-          </TopBox>
-
-          <BottomBox>
-          <Figure>
+      <RightContainer data-aos='slide-left'>
+        <Holder>
+          <HeadingBottom>BASED @ <br/><br/>-33,92528° N, 18,42389° E</HeadingBottom>
+        </Holder>
+      <RightContainerImg src={Port} alt=""/>
       
-          <Figurevideo autoplay="autoplay" muted loop id="myVideo2">
-            <source src={Vid1} type="video/mp4"/>
-          </Figurevideo>
-         
-          </Figure>
-          </BottomBox>
-
-       
-
-          <BottomBox>
-          <Figure>
-          <Heading>Heading</Heading>
-          <Figurevideo autoplay="autoplay" muted loop id="myVideo3">
-            <source src={Gif} type="video/mp4"/>
-          </Figurevideo>
-          <MiddlePara>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi, non. Deserunt, a aut explicabo dicta consectetur nesciunt commodi praesentium reiciendis deleniti. Praesentium consectetur fugiat facere ut quidem ipsa itaque recusandae provident, impedit numquam quam dicta, voluptate totam rem ad magni est, tenetur quod nisi doloremque odit? Officiis eaque eius asperiores velit animi quas, nostrum neque, ex sed nisi commodi, sequi adipisci laborum accusamus nobis natus recusandae deserunt architecto explicabo consectetur </MiddlePara>
-          </Figure>
-          </BottomBox>
-
-            
-        </LeftContainer>
-
-
-        <RightContainer>
-        
-          <Figurevideo autoplay="autoplay" muted loop >
-            <source src={Gif} type="video/mp4"/>
-          </Figurevideo>
-          <Heading2>The Shoot</Heading2>
-      <Para>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi, non. Deserunt, a aut explicabo dicta consectetur nesciunt commodi praesentium reiciendis deleniti. Praesentium consectetur fugiat facere ut quidem ipsa itaque recusandae provident, impedit numquam quam dicta, voluptate totam rem ad magni est, tenetur quod nisi doloremque odit? Officiis eaque eius asperiores velit animi quas, nostrum neque, ex sed nisi commodi, sequi adipisci laborum accusamus nobis natus recusandae deserunt architecto explicabo consectetur </Para>
-      
-        
-      <Figurevideo autoplay="autoplay" muted loop >
-            <source src={Gif} type="video/mp4"/>
-          </Figurevideo>
-
-       <Heading2>Heading Here</Heading2>
-      <Para>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi, non. Deserunt, a aut explicabo dicta consectetur nesciunt commodi praesentium reiciendis deleniti. Praesentium consectetur fugiat facere ut quidem ipsa itaque recusandae provident, impedit numquam quam dicta, voluptate totam rem ad magni est, tenetur quod nisi doloremque odit? Officiis eaque eius asperiores velit animi quas, nostrum neque, ex sed nisi commodi, sequi adipisci laborum accusamus nobis natus recusandae deserunt architecto explicabo consectetur </Para>
-      
-        </RightContainer>
-
-        
-        <MiddleContainer>
-
-<MiddleContainerTopBox>
-<Figure>
-<Heading>Heading</Heading>
-<Figurevideo autoplay="autoplay" muted loop id="myVideo4">
-            <source src={Gif} type="video/mp4"/>
-          </Figurevideo>
-          <MiddlePara>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi, non. Deserunt, a aut explicabo dicta consectetur nesciunt commodi praesentium reiciendis deleniti. Praesentium consectetur fugiat facere ut quidem ipsa itaque recusandae provident, impedit numquam quam dicta, voluptate totam rem ad magni est, tenetur quod nisi doloremque odit? Officiis </MiddlePara>
-            
-            <MiddlePara>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi, non. Deserunt, a aut explicabo dicta consectetur nesciunt commodi praesentium reiciendis deleniti. Praesentium consectetur fugiat facere ut quidem ipsa itaque recusandae provident, impedit numquam quam dicta, voluptate totam rem ad magni est, tenetur quod nisi doloremque odit? Officiis eaque eius asperiores velit animi quas, nostrum neque, ex sed nisi commodi, sequi adipisci laborum accusamus nobis natus recusandae deserunt architecto explicabo consectetur </MiddlePara>
-  </Figure>
-</MiddleContainerTopBox>
-
-
-
-
-
-
-</MiddleContainer>
-
+      </RightContainer>
       </Container>
   );
   }
