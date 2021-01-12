@@ -1,10 +1,8 @@
 import React, {Component} from 'react';
 import styled from 'styled-components';
-import Port from '../images/Port.png'
-import Gallery from './Gallery.jsx'
-import Back from '../images/back.jpg'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+
 const Container = styled.div`
 width: 100%;
 display:flex;

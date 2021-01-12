@@ -1,10 +1,6 @@
 import React, {Component} from 'react';
 import styled from 'styled-components';
-import Gallery from './Gallery.jsx'
-import Crud from '../images/Crud.png'
 import Kkwe from '../images/Kkwe.png'
-import Port from '../images/Port.png'
-import FunFox from '../images/FunFox.png'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
