@@ -55,16 +55,16 @@ render() {
       
       <Container id="Home">
 
-          <a href="https://github.com/Zeus540" target="_blank"><Holder  >
+          <a href="https://github.com/Zeus540" target="_blank" rel="noopener noreferrer"><Holder  >
           <Heading>GITHUB</Heading>
           </Holder>
           </a>
-          <a href="https://www.linkedin.com/in/zaheerroberts/" target="_blank">
+          <a href="https://www.linkedin.com/in/zaheerroberts/" target="_blank" rel="noopener noreferrer">
           <Holder >
           <Heading>LINKEDIN</Heading>
           </Holder>
           </a>
-          <a href="" target="_blank">
+          <a href="https://www.linkedin.com/in/zaheerroberts/" target="_blank" rel="noopener noreferrer">
           <Holder  >
           <Heading>LINKEDIN</Heading>
           </Holder>
