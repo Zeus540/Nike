@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import styled from 'styled-components';
-import Port from '../images/me2.png'
+import Port from '../images/me3.png'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Typical from 'react-typical'
@@ -24,7 +24,7 @@ margin:0px;
 `
 const TitleHolder = styled.div`
 
-overflow-y:hidden;
+
 @media (min-width: 1px) and (max-width: 426px) {
   width: 80vw; 
    }
@@ -55,7 +55,7 @@ font-weight:bolder;
 `
 
 const Heading2 =styled.h1`
-font-size:6vw;
+font-size:7vw;
 color:white;
 font-family:arial;
 margin:4% 0%;
@@ -91,7 +91,7 @@ margin:2vw 0% 0% 0%;
    }
 `
 const Focus =styled.span`
-font-size:7vw;
+font-size:9vw;
 color:white;
 margin:0px;
 font-family:arial;
@@ -122,23 +122,27 @@ right:0px
 
 const RightContainerImg = styled.img`
 height: 40vw;
-    width: 28vw;
-    margin-top: 25vw;
+    width: 25vw;
+    padding-top: 35vw;
 @media (min-width: 1px) and (max-width: 426px) {
   width: 49vw;
-  margin-top: 7vw;
+  padding-top: 7vw;
   height: 82vw;
   display:none;
  }
+ @media (min-width: 768px) and (max-width: 1024px)   {
+  width: 30vw;
+  padding-top: 25vw;
+  height: 44vw;
+
+ }
 `
 const RightContainerImgMobile = styled.img`
-height: 40vw;
-    width: 28vw;
-    margin-top: 25vw;
+height: 100%;
+width: 100%;
+padding-top: 2vw;
+margin-bottom: 2vw;
 @media (min-width: 426px)  {
-  width: 49vw;
-  margin-top: 7vw;
-  height: 82vw;
   display:none;
  }
 `
@@ -158,7 +162,7 @@ render() {
      <LeftContainer>
 
      <HeadingAnimated >
-        <Typical data-aos='slide-up'
+        <Typical
               steps={['Hello!', 1000,'Hola!',1000,'Bonjour!',1000,'Konnichiwa!',1000,'God dag!',1000,'Shalom!',1000]}
               loop={Infinity}
               wrapper={"h1"}
@@ -172,7 +176,7 @@ render() {
 
         <TitleHolder>
      <Heading3 data-aos='slide-up'> I am a</Heading3>
-        <Heading2  data-aos='slide-up'>FRONT-END<br/><Focus>DEVELOPER</Focus></Heading2>
+        <Heading2  data-aos='slide-up' className="text-flicker-in-glow">FRONT-END<br/><Focus>DEVELOPER</Focus></Heading2>
         </TitleHolder>
 
         <RightContainerImgMobile src={Port} alt="" data-aos='slide-right'/>

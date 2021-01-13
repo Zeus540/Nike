@@ -13,7 +13,7 @@ padding-bottom:2vw;
 `
 
 const Holder = styled.div`
-color:antiquewhite;
+color:white;
 font: italic
 font-family:arial;
 text-transform:uppercase;
@@ -21,7 +21,7 @@ letter-spacing:5px;
 `
 
 const Heading = styled.h1`
-color:antiquewhite;
+
 font: italic
 font-family:arial;
 text-transform:uppercase;
