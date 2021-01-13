@@ -52,7 +52,7 @@ color:white;
 margin:0px;
 font-family:arial;
 @media (min-width: 1px) and (max-width: 426px) {
- 
+  font-size:20vw;
   }
 
 `
@@ -70,9 +70,9 @@ render() {
       
       <Container  id="gallery">
         <TextHolder>
-          <Focus data-aos='slide-up' data-aos-duration="1200"> 0</Focus>
-          <Focus data-aos='slide-up' data-aos-duration="1400"> 2</Focus>
-  <Heading2  data-aos='slide-up' data-aos-duration="1000">PROJECTS</Heading2>
+          <Focus data-aos='slide-up' data-aos-duration="1200">0</Focus>
+          <Focus data-aos='slide-up' data-aos-duration="1400">2</Focus>
+  <Heading2  data-aos='slide-up' data-aos-duration="1600">PROJECTS</Heading2>
 
   </TextHolder>
 
