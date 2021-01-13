@@ -50,24 +50,17 @@ table {
 html{
     background:#020202;
     overflow-x:hidden;
+    height: 100%;
+    width: 100%;
 }
 
 body{
-    padding:5vw;
-    padding-top:4vw;
-    overflow:hidden;
-}
-body::-webkit-scrollbar {
-    width: .75rem;
-}
-*::-webkit-scrollbar-track {
-    background-color: #020202;
-}
-*::-webkit-scrollbar-thumb {
-    background-color: white;
-    border-radius: 9999px;
 
+    padding-top:4vw;
+    overflow: hidden;
+ 
 }
+
 .App{
     height: 100%;
     width: 100%;

@@ -4,10 +4,11 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 const Container = styled.div`
-width: 100%;
+
 display:flex;
 justify-content: space-between;
-
+padding:5vw;
+padding-top:0vw;
 `
 
 const Holder = styled.div`

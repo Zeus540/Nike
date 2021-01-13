@@ -11,6 +11,12 @@ height:100%;
 display:flex;
 background:#020202;
 position:relative;
+padding:5vw;
+@media (min-width: 1px) and (max-width: 426px) {
+  flex-direction:column
+  height: unset;
+  padding:5vw;
+ }
 `
 
 const Holder = styled.div`
@@ -42,6 +48,9 @@ font-weight:bolder;
 position:absolute;
 bottom:0;
 right:2vw;
+@media (min-width: 1px) and (max-width: 426px) {
+  position:unset;
+ }
 `
 const Heading2 =styled.h1`
 font-size:6vw;
@@ -49,6 +58,7 @@ color:white;
 font-family:arial;
 margin:4% 0%;
 font-weight:bolder;
+
 `
 
 const Heading3 =styled.h1`
@@ -75,12 +85,18 @@ margin-left:2vw;
 display:flex;
 background:#020202;
 position:relative;
-
+@media (min-width: 1px) and (max-width: 426px) {
+  margin:0vw;
+ }
 `
 
 const RightContainerImg = styled.img`
-
 height:50vw
+margin:0px;
+@media (min-width: 1px) and (max-width: 426px) {
+  width:100%
+  margin-top: 7vw;
+ }
 `
 
 class Page3 extends Component {
@@ -110,12 +126,12 @@ render() {
         <Heading2 className="text-flicker-in-glow" >FRONT-END<br/><Focus>DEVELOPER</Focus></Heading2>
      </LeftContainer>
 
-    
-
-      <RightContainer data-aos='slide-left'>
-        <Holder>
+     <Holder>
           <HeadingBottom>BASED @ <br/><br/>-33,92528° N, 18,42389° E</HeadingBottom>
         </Holder>
+
+      <RightContainer data-aos='slide-left'>
+        
       <RightContainerImg src={Port} alt=""/>
       
       </RightContainer>
