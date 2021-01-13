@@ -9,6 +9,10 @@ display:flex;
 justify-content: space-between;
 left:0px;
     position:absolute;
+    @media (min-width: 1px) and (max-width: 426px) {
+      flex-direction: column;
+      
+      }
 `
 
 const Holder = styled.div`
@@ -21,6 +25,10 @@ border:2px solid white;
 width: 33.3%;
     text-align: center;
     padding: 5vw;
+    @media (min-width: 1px) and (max-width: 426px) {
+      width: auto;
+      padding: 10vw;
+      }
 `
 
 const Heading = styled.h1`

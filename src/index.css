@@ -81,7 +81,7 @@ body{
 
 @media (min-width: 1px) and (max-width: 426px) {
     .App{
-        display: unset;
+      
         width: 100%;
         
     }

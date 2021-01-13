@@ -11,7 +11,7 @@ margin: 10vw 0% 0% 0%;
 @media (min-width: 1px) and (max-width: 426px) {
  flex-direction:column
  margin: 0px;
- height: unset;
+
 }
  @media (min-width: 427px) and (max-width: 768px) {
 

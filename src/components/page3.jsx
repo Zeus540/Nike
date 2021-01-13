@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import styled from 'styled-components';
-import Port from '../images/Port.png'
+import Port from '../images/me2.png'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Typical from 'react-typical'
@@ -11,11 +11,11 @@ height:100%;
 display:flex;
 background:#020202;
 position:relative;
-padding:5vw;
+
 @media (min-width: 1px) and (max-width: 426px) {
   flex-direction:column
-  height: unset;
-  padding:5vw;
+
+
  }
 `
 
@@ -45,11 +45,15 @@ font-family:arial;
 margin:0px;
 font-size:2vw;
 font-weight:bolder;
-position:absolute;
-bottom:0;
-right:2vw;
+position: absolute;
+bottom: -19vw;
+right: -11vw;
 @media (min-width: 1px) and (max-width: 426px) {
-  position:unset;
+  position:relative;
+  bottom: 0;
+right: 0;
+padding-left:5vw;
+font-size:3vw; 
  }
 `
 const Heading2 =styled.h1`
@@ -78,24 +82,29 @@ font-family:arial;
 const LeftContainer = styled.div`
 height:100%;
 background:#020202;
+padding-left:5vw;
 `
 
 const RightContainer = styled.div`
-margin-left:2vw;
+
 display:flex;
 background:#020202;
-position:relative;
+position:absolute;
+right:0px
 @media (min-width: 1px) and (max-width: 426px) {
   margin:0vw;
+  position:relative;
  }
 `
 
 const RightContainerImg = styled.img`
-height:50vw
-margin:0px;
+height:40vw
+width:40vw
+margin-top:10vw;
 @media (min-width: 1px) and (max-width: 426px) {
   width:100%
   margin-top: 7vw;
+  height:100vw
  }
 `
 
@@ -126,12 +135,12 @@ render() {
         <Heading2 className="text-flicker-in-glow" >FRONT-END<br/><Focus>DEVELOPER</Focus></Heading2>
      </LeftContainer>
 
+     
      <Holder>
           <HeadingBottom>BASED @ <br/><br/>-33,92528° N, 18,42389° E</HeadingBottom>
         </Holder>
-
       <RightContainer data-aos='slide-left'>
-        
+      
       <RightContainerImg src={Port} alt=""/>
       
       </RightContainer>
