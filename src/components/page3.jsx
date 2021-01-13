@@ -116,7 +116,7 @@ right:0px
   margin:0vw;
   position:relative;
   top: 0;
-  display: none;
+
  }
 `
 
@@ -137,7 +137,7 @@ const ContainerMobile = styled.div`
   
  }
  @media (min-width: 426px)  {
-  display:none;
+
  }
 `
 
