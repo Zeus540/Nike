@@ -35,7 +35,16 @@ font-weight:bolder;
 `
 
 
+const TextHolder =styled.div`
+display:flex;
 
+justify-content:center;
+@media (min-width: 1px) and (max-width: 426px) {
+ 
+ 
+
+  }
+`
 
 const Focus =styled.h1`
 font-size:10vw;
@@ -60,11 +69,12 @@ render() {
     return (
       
       <Container  id="gallery">
-        
-          <Focus > 0</Focus>
-          <Focus> 2</Focus>
-  <Heading2 >PROJECTS</Heading2>
+        <TextHolder>
+          <Focus data-aos='slide-up' data-aos-duration="1200"> 0</Focus>
+          <Focus data-aos='slide-up' data-aos-duration="1400"> 2</Focus>
+  <Heading2  data-aos='slide-up' data-aos-duration="1000">PROJECTS</Heading2>
 
+  </TextHolder>
 
 
       </Container>
