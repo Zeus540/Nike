@@ -11,7 +11,7 @@ const Container = styled.div`
 justify-content:center;
 align-items:center;
 margin:0 auto;
-height: initial;
+height: auto;
 position: relative;
 @media (min-width: 1px) and (max-width: 426px) {
 
@@ -21,7 +21,7 @@ position: relative;
 
 const  Holder = styled.div`
 display:flex;
-
+height: 76vw;
 margin: 0px auto;
 padding-bottom: 0px;
 flex-direction:row;
