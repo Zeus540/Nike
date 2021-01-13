@@ -21,8 +21,7 @@ font: italic
 font-family:arial;
 text-transform:uppercase;
 letter-spacing:5px;
-border:2px solid white;
-width: 33.3%;
+
     text-align: center;
     padding: 5vw;
     @media (min-width: 1px) and (max-width: 426px) {
@@ -42,6 +41,20 @@ font-size:1.5vw;
   font-size:2.5vw;
   }
 `
+const Anchor = styled.a`
+color:antiquewhite;
+font: italic
+font-family:arial;
+text-transform:uppercase;
+letter-spacing:5px;
+border:2px solid white;
+width: 33.3%;
+    text-align: center;
+    @media (min-width: 1px) and (max-width: 426px) {
+      width: auto;
+
+      }
+`
 
 class Social extends Component {
   componentDidMount(){
@@ -55,20 +68,20 @@ render() {
       
       <Container id="Home">
 
-          <a href="https://github.com/Zeus540" target="_blank" rel="noopener noreferrer"><Holder  >
+          <Anchor href="https://github.com/Zeus540" target="_blank" rel="noopener noreferrer"><Holder  >
           <Heading>GITHUB</Heading>
           </Holder>
-          </a>
-          <a href="https://www.linkedin.com/in/zaheerroberts/" target="_blank" rel="noopener noreferrer">
+          </Anchor>
+          <Anchor href="https://www.linkedin.com/in/zaheerroberts/" target="_blank" rel="noopener noreferrer">
           <Holder >
           <Heading>LINKEDIN</Heading>
           </Holder>
-          </a>
-          <a href="https://www.linkedin.com/in/zaheerroberts/" target="_blank" rel="noopener noreferrer">
+          </Anchor>
+          <Anchor href="https://www.linkedin.com/in/zaheerroberts/" target="_blank" rel="noopener noreferrer">
           <Holder  >
           <Heading>LINKEDIN</Heading>
           </Holder>
-</a>
+</Anchor>
       </Container>
   );
   }
