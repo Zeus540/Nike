@@ -7,7 +7,7 @@ import Typical from 'react-typical'
 
 const Container = styled.div`
 
-display:flex;
+padding-left: 5vw;
 background:#020202;
 position:relative;
 @media (min-width: 1px) and (max-width: 426px) {
@@ -34,8 +34,8 @@ position: relative;
   
    }
 `
-const TitleHolder = styled.div`
-
+const Flex = styled.div`
+display:flex;
 
 @media (min-width: 1px) and (max-width: 426px) {
   width: 80vw; 
@@ -70,7 +70,7 @@ const Heading2 =styled.h1`
 font-size:7vw;
 color:white;
 font-family:arial;
-margin:4% 0%;
+margin:2vw 0%;
 font-weight:bolder;
 @media (min-width: 1px) and (max-width: 426px) {
   font-size:10vw; 
@@ -81,7 +81,7 @@ const Heading3 =styled.h1`
 font-size:2vw;
 color:white;
 font-family:arial;
-margin:10% 0% 0% 0%;
+margin:5vw 0% 0% 0%;
 font-weight:bolder;
 @media (min-width: 1px) and (max-width: 426px) {
   font-size:7vw; 
@@ -115,7 +115,7 @@ font-family:arial;
 const LeftContainer = styled.div`
 height:100%;
 background:#020202;
-padding-left:5vw;
+
 `
 
 const RightContainer = styled.div`
@@ -132,16 +132,14 @@ right:0px
 const RightContainerImg = styled.img`
 height: 40vw;
     width: 25vw;
-    padding-top: 35vw;
 @media (min-width: 1px) and (max-width: 426px) {
   width: 49vw;
-  padding-top: 7vw;
+
   height: 82vw;
   display:none;
  }
  @media (min-width: 768px) and (max-width: 1024px)   {
   width: 30vw;
-  padding-top: 25vw;
   height: 44vw;
 
  }
@@ -156,7 +154,7 @@ margin-bottom: 2vw;
  }
 `
 
-class Page3 extends Component {
+class Page3New extends Component {
   componentDidMount(){
     AOS.init({
       duration : 1000
@@ -167,27 +165,20 @@ render() {
     return (
       
       <Container id="Home">
-        
-     <LeftContainer>
 
-     <HeadingAnimated >
+         <HeadingAnimated >
         <Typical
               steps={['Hello!', 1000,'Hola!',1000,'Bonjour!',1000,'Konnichiwa!',1000,'God dag!',1000,'Shalom!',1000]}
               loop={Infinity}
               wrapper={"h1"}
             />
              <Heading data-aos='slide-up'> my name is Zaheer.</Heading>
+             <Heading3 data-aos='slide-up'> I am a</Heading3>
+        <Heading2  data-aos='slide-up' className="text-flicker-in-glow">FRONT-END<br/><Focus>DEVELOPER</Focus></Heading2>
         </HeadingAnimated>
 
-        
-        
-        
-
-        <TitleHolder>
-     <Heading3 data-aos='slide-up'> I am a</Heading3>
-        <Heading2  data-aos='slide-up' className="text-flicker-in-glow">FRONT-END<br/><Focus>DEVELOPER</Focus></Heading2>
-        </TitleHolder>
-
+        <Flex>
+     <LeftContainer>
       <Holder2>
         <RightContainerImgMobile src={Port} alt="" data-aos='slide-right'/>
         </Holder2>
@@ -195,8 +186,6 @@ render() {
         <Holder>
           <Para data-aos='slide-up'>I have always had a passion for learning and trying new things. I consider myself a hardworking and reliable person. I like applying new methods and ideas to traditional problem solving. I Also enjoy working on new and exciting projects that allow me to express my creativity and opinions </Para>
 
-        </Holder>
-        <Holder>
 
           <Para data-aos='slide-up'>I am a professional who worked for a Cape Town based Media Agency called Digitas Liquorice where I worked on names such as purity Unilever and Ola to name a few.
 I am very skilled in my craft</Para>
@@ -210,9 +199,11 @@ I am very skilled in my craft</Para>
       <RightContainerImg src={Port} alt="" data-aos='slide-right'/>
       
       </RightContainer>
+      </Flex>
+
       </Container>
   );
   }
 }
 
-export default Page3;
+export default Page3New;
