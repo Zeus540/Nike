@@ -19,7 +19,7 @@ const Holder = styled.div`
 width: 33vw;
 overflow:hidden;
 margin:0px;
-
+position: relative;
 @media (min-width: 1px) and (max-width: 426px) {
   width: 84%;
    }
@@ -112,8 +112,8 @@ const RightContainer = styled.div`
 overflow:hidden
 display:flex;
 background:#020202;
-position: relative;
-right: 0vw;
+position:absolute;
+right:0px
 @media (min-width: 1px) and (max-width: 426px) {
   margin: 0vw;
   position: relative;
@@ -130,24 +130,16 @@ height: 40vw;
   width: 49vw;
   padding-top: 7vw;
   height: 82vw;
-  display:none;
+
  }
  @media (min-width: 768px) and (max-width: 1024px)   {
   width: 30vw;
   padding-top: 25vw;
   height: 44vw;
-
- }
-`
-const RightContainerImgMobile = styled.img`
-height: 100%;
-width: 100%;
-padding-top: 2vw;
-margin-bottom: 2vw;
-@media (min-width: 426px)  {
   display:none;
  }
 `
+
 
 class Page3 extends Component {
   componentDidMount(){
@@ -181,7 +173,7 @@ render() {
         <Heading2  data-aos='slide-up' className="text-flicker-in-glow">FRONT-END<br/><Focus>DEVELOPER</Focus></Heading2>
         </TitleHolder>
 
-        <RightContainerImgMobile src={Port} alt="" data-aos='slide-right'/>
+
 
         <Holder>
           <Para data-aos='slide-up'>I have always had a passion for learning and trying new things. I consider myself a hardworking and reliable person. I like applying new methods and ideas to traditional problem solving. I Also enjoy working on new and exciting projects that allow me to express my creativity and opinions </Para>
