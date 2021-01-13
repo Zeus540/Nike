@@ -27,23 +27,22 @@ const Heading2 =styled.h1`
 font-size:6vw;
 color:white;
 font-family:arial;
-margin: 10vw 0vw 10vw 0vw;
+
 font-weight:bolder;
 @media (min-width: 1px) and (max-width: 426px) {
-  margin: 10vw 0vw 10vw 4vw;
+
   }
 `
 
 
 const TextHolder =styled.div`
 display:flex;
-margin-top: 30vw;
+margin: 31vw;
 justify-content:center;
 @media (min-width: 1px) and (max-width: 426px) {
-  height: 60vh;
-  margin: 0vw;
-  position: relative;
-    top: 50vw;
+ 
+  margin: 55vw 0vw;
+
   }
 `
 
@@ -53,7 +52,7 @@ color:white;
 margin:0px;
 font-family:arial;
 @media (min-width: 1px) and (max-width: 426px) {
-  margin: -5vw 0vw 10vw 0vw;
+ 
   }
 
 `
