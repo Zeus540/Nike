@@ -2,12 +2,12 @@ import React, {Component} from 'react';
 import styled from 'styled-components';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import Gallery1 from './Gallery.jsx'
+
 
 
 const Container = styled.div`
 height:100%;
-margin: 10vw 0% 0% 0%;
+margin: 20vw 0% 10vw 0%;
 @media (min-width: 1px) and (max-width: 426px) {
  flex-direction:column
  margin: 0px;
@@ -26,15 +26,24 @@ const Heading2 =styled.h1`
 font-size:6vw;
 color:white;
 font-family:arial;
-margin: 20vw 0vw 0vw 0vw;
+margin: 10vw 0vw 10vw 0vw;
 font-weight:bolder;
+@media (min-width: 1px) and (max-width: 426px) {
+  margin: 10vw 0vw 10vw 4vw;
+  }
 `
 
 
 const TextHolder =styled.div`
 display:flex;
-right: 10vw;
-margin: 20vw;
+margin-top: 30vw;
+justify-content:center;
+@media (min-width: 1px) and (max-width: 426px) {
+  height: 60vh;
+  margin: 0vw;
+  position: relative;
+    top: 50vw;
+  }
 `
 
 const Focus =styled.h1`
@@ -42,6 +51,10 @@ font-size:10vw;
 color:white;
 margin:0px;
 font-family:arial;
+@media (min-width: 1px) and (max-width: 426px) {
+  margin: -5vw 0vw 10vw 0vw;
+  }
+
 `
 
 
@@ -59,16 +72,10 @@ render() {
         <TextHolder>
           <Focus data-aos='slide-up' data-aos-duration="1200"> 0</Focus>
           <Focus data-aos='slide-up' data-aos-duration="1400"> 2</Focus>
-  <Heading2  data-aos='slide-up' data-aos-duration="400">P</Heading2>
-  <Heading2  data-aos='slide-up' data-aos-duration="600">R</Heading2>
-  <Heading2  data-aos='slide-up' data-aos-duration="800">O</Heading2>
-  <Heading2  data-aos='slide-up' data-aos-duration="1000">J</Heading2>
-  <Heading2  data-aos='slide-up' data-aos-duration="1200">E</Heading2>
-  <Heading2  data-aos='slide-up' data-aos-duration="1400">C</Heading2>
-  <Heading2  data-aos='slide-up' data-aos-duration="1600">T</Heading2>
-  <Heading2  data-aos='slide-up' data-aos-duration="1800">S</Heading2>
+  <Heading2  data-aos='slide-up' data-aos-duration="1000">PROJECTS</Heading2>
+
   </TextHolder>
-<Gallery1/>
+
 
       </Container>
   );

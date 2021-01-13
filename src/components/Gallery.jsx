@@ -16,6 +16,10 @@ margin-bottom: 9vw;
   width: 80%;
   }
 `
+const Block =styled.div`
+display:flex;
+flex-direction:column;
+`
 const  Holder = styled.div`
 border-bottom:2px solid white;
 display:flex;
@@ -25,6 +29,8 @@ flex-direction:row;
 width:80vw;
 @media (min-width: 1px) and (max-width: 426px) {
  width:100%;
+ display: flex;
+ flex-direction: column;
  }
 `
 
@@ -35,7 +41,7 @@ padding-bottom: 0px;
 flex-direction:column;
 width:100%;
 @media (min-width: 1px) and (max-width: 426px) {
- width:100%;
+  margin: 8vw 0vw 0.5vw 0vw;
  }
 `
 
@@ -53,6 +59,10 @@ font-size:6vw;
 color:white;
 font-family:arial;
 font-weight:bolder;
+@media (min-width: 1px) and (max-width: 426px) {
+  font-size:9vw;
+  margin-bottom:2vw;
+ }
 `
 
 const Heading =styled.h1`
@@ -61,6 +71,9 @@ color:white;
 font-family:arial;
 margin: 0.5vw 0vw 0.5vw 0.5vw;
 font-weight:bolder;
+@media (min-width: 1px) and (max-width: 426px) {
+  font-size:3vw;
+ }
 `
 
 class Gallery1 extends Component {
@@ -76,7 +89,7 @@ class Gallery1 extends Component {
     return (
       
       <Container>
-          
+    <Block>
   <Holder data-aos='slide-up'> 
       <HolderInner data-aos='slide-up'>
       <ProjectHeading  >Kkwe</ProjectHeading>
@@ -88,19 +101,23 @@ class Gallery1 extends Component {
   <ProjectImg src={Kkwe} alt=""/>
   </ProjectImgHolder>
           </Holder>
+          </Block>
 
+          <Block>
           <Holder data-aos='slide-up'> 
       <HolderInner data-aos='slide-up'>
       <ProjectHeading  >Crud App</ProjectHeading>
   <Heading  >WEBSITE - CRUD APP</Heading>
-  <Heading  >REACT.JS - AOS </Heading>
+  <Heading  >REACT.JS - SASS </Heading>
   
   </HolderInner>
   <ProjectImgHolder data-aos='slide-up'>
   <ProjectImg src={Kkwe} alt=""/>
   </ProjectImgHolder>
           </Holder>
+          </Block>
 
+          <Block>
           <Holder data-aos='slide-up'> 
       <HolderInner data-aos='slide-up'>
       <ProjectHeading data-aos='slide-up' >Kkwe</ProjectHeading>
@@ -112,7 +129,7 @@ class Gallery1 extends Component {
   <ProjectImg src={Kkwe} alt=""/>
   </ProjectImgHolder>
           </Holder>
-
+          </Block>
       </Container>
     );
   }

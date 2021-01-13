@@ -79,7 +79,7 @@ render() {
           </Anchor>
           <Anchor href="https://www.linkedin.com/in/zaheerroberts/" target="_blank" rel="noopener noreferrer">
           <Holder  >
-          <Heading>LINKEDIN</Heading>
+          <Heading>RESUME</Heading>
           </Holder>
 </Anchor>
       </Container>

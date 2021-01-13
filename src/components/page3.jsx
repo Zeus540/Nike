@@ -6,7 +6,7 @@ import 'aos/dist/aos.css';
 import Typical from 'react-typical'
 
 const Container = styled.div`
-padding-top:6vw;
+
 height:100%;
 display:flex;
 background:#020202;
@@ -20,49 +20,54 @@ position:relative;
 `
 
 const Holder = styled.div`
-color:antiquewhite;
-position:relative;
+width: 33vw;
+overflow:hidden;
+margin:0px;
+@media (min-width: 1px) and (max-width: 426px) {
+  width: 60vw; 
+   }
+`
+const TitleHolder = styled.div`
+
+overflow-y:hidden;
+@media (min-width: 1px) and (max-width: 426px) {
+  width: 80vw; 
+   }
 `
 
-const HeadingAnimated =styled.h1`
+const HeadingAnimated =styled.div`
 color:white;
 font-family:arial;
 margin:0px;
 font-size:2vw;
 font-weight:bolder;
 margin:10% 0% 5% 0%;
+
+@media (min-width: 1px) and (max-width: 426px) {
+font-size:4vw; 
+ }
 `
+
 const Heading =styled.h1`
 color:white;
 font-family:arial;
 margin:0px;
 font-size:2vw;
 font-weight:bolder;
-`
-const HeadingBottom =styled.h1`
-color:white;
-font-family:arial;
-margin:0px;
-font-size:2vw;
-font-weight:bolder;
-position: absolute;
-bottom: -19vw;
-right: -11vw;
 @media (min-width: 1px) and (max-width: 426px) {
-  position:relative;
-  bottom: 0;
-right: 0;
-padding-left:5vw;
-font-size:3vw; 
- }
+  font-size:5vw; 
+   }
 `
+
 const Heading2 =styled.h1`
 font-size:6vw;
 color:white;
 font-family:arial;
 margin:4% 0%;
 font-weight:bolder;
-
+@media (min-width: 1px) and (max-width: 426px) {
+  font-size:9vw; 
+   }
 `
 
 const Heading3 =styled.h1`
@@ -71,12 +76,33 @@ color:white;
 font-family:arial;
 margin:10% 0% 0% 0%;
 font-weight:bolder;
+@media (min-width: 1px) and (max-width: 426px) {
+  font-size:7vw; 
+   }
 `
-const Focus =styled.h1`
+
+const Para =styled.p`
+font-size:1vw;
+color:white;
+letter-spacing:2px;
+line-height:1.7vw;
+font-family:arial;
+margin:2vw 0% 0% 0%;
+
+@media (min-width: 1px) and (max-width: 426px) {
+  font-size:2.5vw;
+  line-height:4vw;
+
+   }
+`
+const Focus =styled.span`
 font-size:7vw;
 color:white;
 margin:0px;
 font-family:arial;
+@media (min-width: 1px) and (max-width: 426px) {
+  font-size:10vw; 
+   }
 `
 
 const LeftContainer = styled.div`
@@ -86,7 +112,7 @@ padding-left:5vw;
 `
 
 const RightContainer = styled.div`
-
+overflow:hidden
 display:flex;
 background:#020202;
 position:absolute;
@@ -98,9 +124,9 @@ right:0px
 `
 
 const RightContainerImg = styled.img`
-height:40vw
-width:40vw
-margin-top:10vw;
+height: 43vw;
+width: 38vw;
+    margin-top: 25vw;
 @media (min-width: 1px) and (max-width: 426px) {
   width:100%
   margin-top: 7vw;
@@ -121,27 +147,41 @@ render() {
       <Container id="Home">
         
      <LeftContainer>
-     <HeadingAnimated data-aos='slide-up'>
-        <Typical
+
+     <HeadingAnimated >
+        <Typical data-aos='slide-up'
               steps={['Hello!', 1000,'Hola!',1000,'Bonjour!',1000,'Konnichiwa!',1000,'God dag!',1000,'Shalom!',1000]}
               loop={Infinity}
               wrapper={"h1"}
             />
              <Heading data-aos='slide-up'> my name is Zaheer.</Heading>
         </HeadingAnimated>
-    
-    
+
+        
+        
+        
+
+        <TitleHolder>
      <Heading3 data-aos='slide-up'> I am a</Heading3>
-        <Heading2 className="text-flicker-in-glow" >FRONT-END<br/><Focus>DEVELOPER</Focus></Heading2>
+        <Heading2  data-aos='slide-up'>FRONT-END<br/><Focus>DEVELOPER</Focus></Heading2>
+        </TitleHolder>
+
+        <Holder>
+          <Para data-aos='slide-up'>I have always had a passion for learning and trying new things. I consider myself a hardworking and reliable person. I like applying new methods and ideas to traditional problem solving. I Also enjoy working on new and exciting projects that allow me to express my creativity and opinions </Para>
+
+        </Holder>
+        <Holder>
+
+          <Para data-aos='slide-up'>I am a professional who worked for a Cape Town based Media Agency called Digitas Liquorice where I worked on names such as purity Unilever and Ola to name a few.
+I am very skilled in my craft</Para>
+        </Holder>
      </LeftContainer>
 
      
-     <Holder>
-          <HeadingBottom>BASED @ <br/><br/>-33,92528° N, 18,42389° E</HeadingBottom>
-        </Holder>
-      <RightContainer data-aos='slide-left'>
+     
+      <RightContainer >
       
-      <RightContainerImg src={Port} alt=""/>
+      <RightContainerImg src={Port} alt="" data-aos='slide-right'/>
       
       </RightContainer>
       </Container>

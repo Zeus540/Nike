@@ -9,6 +9,7 @@ display:flex;
 justify-content: space-between;
 padding:5vw;
 padding-top:0vw;
+padding-bottom:2vw;
 `
 
 const Holder = styled.div`
@@ -26,6 +27,9 @@ font-family:arial;
 text-transform:uppercase;
 letter-spacing:5px;
 font-size:1.5vw;
+@media (min-width: 1px) and (max-width: 426px) {
+  font-size:2vw;
+ }
 `
 
 class Nav extends Component {
@@ -48,8 +52,8 @@ render() {
           <Heading> </Heading>
           </Holder>
 
-          <Holder  data-aos='fade-down'>
-          <Heading>E-MAIL ME</Heading>
+          <Holder data-aos='fade-down'>
+          <Heading>Work with me</Heading>
           </Holder>
 
       </Container>
