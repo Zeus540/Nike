@@ -9,7 +9,7 @@ const Container = styled.div`
 
 display:flex;
 background:#020202;
-
+height:100%
 @media (min-width: 1px) and (max-width: 426px) {
   flex-direction:column
  }
