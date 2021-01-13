@@ -6,16 +6,11 @@ import 'aos/dist/aos.css';
 import Typical from 'react-typical'
 
 const Container = styled.div`
-
 height:100%;
 display:flex;
 background:#020202;
-position:relative;
-
 @media (min-width: 1px) and (max-width: 426px) {
   flex-direction:column
-
-
  }
 `
 
@@ -66,7 +61,7 @@ font-family:arial;
 margin:4% 0%;
 font-weight:bolder;
 @media (min-width: 1px) and (max-width: 426px) {
-  font-size:9vw; 
+  font-size:10vw; 
    }
 `
 
@@ -101,7 +96,7 @@ color:white;
 margin:0px;
 font-family:arial;
 @media (min-width: 1px) and (max-width: 426px) {
-  font-size:10vw; 
+  font-size:13vw; 
    }
 `
 
@@ -119,7 +114,8 @@ position:absolute;
 right:0px
 @media (min-width: 1px) and (max-width: 426px) {
   margin:0vw;
-  position:unset!important;
+  position:relative!important;
+  top: 0;
  }
 `
 
