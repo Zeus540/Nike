@@ -11,7 +11,7 @@ const Container = styled.div`
 justify-content:center;
 align-items:center;
 margin:0 auto;
-height: auto;
+height: initial;
 position: relative;
 @media (min-width: 1px) and (max-width: 426px) {
 
@@ -21,7 +21,7 @@ position: relative;
 
 const  Holder = styled.div`
 display:flex;
-height: 76vw;
+
 margin: 0px auto;
 padding-bottom: 0px;
 flex-direction:row;
@@ -94,38 +94,38 @@ class Gallery1 extends Component {
       
       <Container>
     
-  <Holder data-aos='slide-up'> 
+  <Holder> 
  
-      <HolderInner data-aos='slide-up'>
+      <HolderInner>
       <a href="https://kkwe.co.za/" target="_blank" rel="noopener noreferrer">
       <ProjectHeading  >Kkwe</ProjectHeading>
   <Heading  >Website - Events Planner</Heading>
   <Heading  >REACT.JS - AOS </Heading>
   </a>
   </HolderInner>
-  <ProjectImgHolder data-aos='slide-up'>
+  <ProjectImgHolder>
   <ProjectImg src={Kkwe} alt=""/>
   </ProjectImgHolder>
           </Holder>
          
 
-          <Holder data-aos='slide-up'> 
-      <HolderInner data-aos='slide-up'>
+          <Holder> 
+      <HolderInner>
         <a href="https://zeus540.github.io/react-firebase-crud-app/" target="_blank" rel="noopener noreferrer" >
       <ProjectHeading  >To do list</ProjectHeading>
   <Heading  >WEBSITE - CRUD APP</Heading>
   <Heading  >REACT.JS - SASS </Heading>
   </a>
   </HolderInner>
-  <ProjectImgHolder data-aos='slide-up'>
+  <ProjectImgHolder>
   <ProjectImg src={Crud} alt=""/>
   </ProjectImgHolder>
           </Holder>
         
-          <Holder data-aos='slide-up'> 
-      <HolderInner data-aos='slide-up'>
+          <Holder> 
+      <HolderInner>
       <a href="https://zaheer.netlify.com" target="_blank" rel="noopener noreferrer" >
-      <ProjectHeading data-aos='slide-up' >Portfolio</ProjectHeading>
+      <ProjectHeading >Portfolio</ProjectHeading>
   <Heading  >Website </Heading>
   <Heading  >REACT.JS </Heading>
   </a>
