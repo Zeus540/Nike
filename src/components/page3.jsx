@@ -9,7 +9,7 @@ const Container = styled.div`
 
 display:flex;
 background:#020202;
-height:100%
+height:100%;
 @media (min-width: 1px) and (max-width: 426px) {
   flex-direction:column
  }
@@ -19,7 +19,7 @@ const Holder = styled.div`
 width: 33vw;
 overflow:hidden;
 margin:0px;
-
+position: relative;
 @media (min-width: 1px) and (max-width: 426px) {
   width: 84%;
    }
@@ -29,7 +29,7 @@ const Holder2 = styled.div`
 height:100%
 
 margin:0px;
-
+position: relative;
 @media (min-width: 1px) and (max-width: 426px) {
   
    }
@@ -122,7 +122,7 @@ const RightContainer = styled.div`
 overflow:hidden
 display:flex;
 background:#020202;
-position:absolute;
+
 right:0px
 @media (min-width: 1px) and (max-width: 426px) {
 
@@ -132,16 +132,16 @@ right:0px
 const RightContainerImg = styled.img`
 height: 40vw;
     width: 25vw;
-    padding-top: 35vw;
+
 @media (min-width: 1px) and (max-width: 426px) {
   width: 49vw;
-  padding-top: 7vw;
+
   height: 82vw;
   display:none;
  }
  @media (min-width: 768px) and (max-width: 1024px)   {
   width: 30vw;
-  padding-top: 25vw;
+
   height: 44vw;
 
  }

@@ -75,7 +75,7 @@ body::-webkit-scrollbar {
     background-color: #020202;
 }
 *::-webkit-scrollbar-thumb {
-    background-color: #1f1f1f;
+    background-color: white;
     border-radius: 9999px;
 }
 a{
@@ -118,8 +118,6 @@ a:hover{
     }
    }
 
-.container-fluid{
-    height: 100%;
-}
+
 
 
