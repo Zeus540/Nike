@@ -8,8 +8,7 @@ const Container = styled.div`
 width: 100%;
 display:flex;
 justify-content: space-between;
-padding-bottom:10vw;
-position: relative;
+padding-bottom:10vw;;
     @media (min-width: 1px) and (max-width: 426px) {
       flex-direction: column;
       

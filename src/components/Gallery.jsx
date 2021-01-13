@@ -11,7 +11,7 @@ const Container = styled.div`
 justify-content:center;
 align-items:center;
 margin:0 auto;
-height: initial;
+
 position: relative;
 @media (min-width: 1px) and (max-width: 426px) {
 

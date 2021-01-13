@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css';
 import Page2 from './components/page2.jsx'
 
 import Nav from './components/Nav.jsx'
@@ -10,7 +9,7 @@ import Form from './components/Form.jsx'
 function App() {
 
   return (
-    <div className="App" >
+    <div >
         <Nav/>
        
         <Page2/>
