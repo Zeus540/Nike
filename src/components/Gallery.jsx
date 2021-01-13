@@ -12,6 +12,7 @@ justify-content:center;
 align-items:center;
 margin:0 auto;
 height:100%;
+position: relative;
 @media (min-width: 1px) and (max-width: 426px) {
   height: 100%;
   width: 80%;
