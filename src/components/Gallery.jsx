@@ -26,6 +26,7 @@ margin: 0px auto;
 padding-bottom: 0px;
 flex-direction:row;
 width:80vw;
+height: inherit;
 @media (min-width: 1px) and (max-width: 426px) {
  width:100%;
  display: flex;
@@ -49,8 +50,7 @@ width:100%;
 height:100%;
 `
 const ProjectImgHolder =styled.div`
-width:35vw;
-height:15vw;
+
 margin: 5vw 0vw 5vw 0vw;
 @media (min-width: 1px) and (max-width: 426px) {
   height: 100%;
