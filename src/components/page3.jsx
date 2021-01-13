@@ -113,10 +113,10 @@ background:#020202;
 position:absolute;
 right:0px
 @media (min-width: 1px) and (max-width: 426px) {
-  margin:0vw;
-  position:relative;
+  margin: 0vw;
+  position: relative;
   top: 0;
-
+  right: -48vw;
  }
 `
 
@@ -125,35 +125,12 @@ height: 40vw;
     width: 28vw;
     margin-top: 25vw;
 @media (min-width: 1px) and (max-width: 426px) {
-  width:100%
+  width: 49vw;
   margin-top: 7vw;
-  height:100vw
- }
-`
-const ContainerMobile = styled.div`
-  margin-top: 25vw;
-  min-height:65vh
-  width: 38vw;
-@media (min-width: 1px) and (max-width: 426px) {
-  margin: 7vw 0vw;
-  
- }
- @media (min-width: 426px)  {
-  
+  height: 82vw;
  }
 `
 
-const ContainerImgMobile = styled.img`
-height: 43vw;
-width: 38vw;
-    margin-top: 25vw;
-@media (min-width: 1px) and (max-width: 426px) {
-  height: 100%;
-  width: 42vw;
-  margin-top: 0vw;
- 
- }
-`
 
 class Page3 extends Component {
   componentDidMount(){
@@ -186,12 +163,6 @@ render() {
      <Heading3 data-aos='slide-up'> I am a</Heading3>
         <Heading2  data-aos='slide-up'>FRONT-END<br/><Focus>DEVELOPER</Focus></Heading2>
         </TitleHolder>
-
-        <ContainerMobile >
-      
-      <ContainerImgMobile src={Port} alt="" />
-      
-      </ContainerMobile>
 
         <Holder>
           <Para data-aos='slide-up'>I have always had a passion for learning and trying new things. I consider myself a hardworking and reliable person. I like applying new methods and ideas to traditional problem solving. I Also enjoy working on new and exciting projects that allow me to express my creativity and opinions </Para>
