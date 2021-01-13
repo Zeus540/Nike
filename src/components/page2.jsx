@@ -8,7 +8,7 @@ import 'aos/dist/aos.css';
 const Container = styled.div`
 
 margin: 20vw 0% 10vw 0%;
-position: relative;
+
 @media (min-width: 1px) and (max-width: 426px) {
  flex-direction:column
  margin: 0px;
@@ -70,9 +70,9 @@ render() {
       
       <Container  id="gallery">
         <TextHolder>
-          <Focus data-aos='slide-up' data-aos-duration="1200"> 0</Focus>
-          <Focus data-aos='slide-up' data-aos-duration="1400"> 2</Focus>
-  <Heading2  data-aos='slide-up' data-aos-duration="1000">PROJECTS</Heading2>
+          <Focus > 0</Focus>
+          <Focus> 2</Focus>
+  <Heading2 >PROJECTS</Heading2>
 
   </TextHolder>
 
