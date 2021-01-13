@@ -6,7 +6,7 @@ import 'aos/dist/aos.css';
 
 
 const Container = styled.div`
-height:100%;
+
 margin: 20vw 0% 10vw 0%;
 position: relative;
 @media (min-width: 1px) and (max-width: 426px) {
@@ -37,11 +37,11 @@ font-weight:bolder;
 
 const TextHolder =styled.div`
 display:flex;
-margin: 31vw;
+
 justify-content:center;
 @media (min-width: 1px) and (max-width: 426px) {
  
-  margin: 55vw 0vw;
+ 
 
   }
 `

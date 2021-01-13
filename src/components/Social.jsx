@@ -10,6 +10,7 @@ display:flex;
 justify-content: space-between;
 left:0px;
 position: relative;
+overflow:hidden;
 padding:10vw 0vw;
     @media (min-width: 1px) and (max-width: 426px) {
       flex-direction: column;

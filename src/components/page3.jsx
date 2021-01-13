@@ -6,7 +6,7 @@ import 'aos/dist/aos.css';
 import Typical from 'react-typical'
 
 const Container = styled.div`
-height:100%;
+
 display:flex;
 background:#020202;
 position:relative;
@@ -194,7 +194,7 @@ render() {
       <Holder2>
         <RightContainerImgMobile src={Port} alt="" data-aos='slide-right'/>
         </Holder2>
-        
+
         <Holder>
           <Para data-aos='slide-up'>I have always had a passion for learning and trying new things. I consider myself a hardworking and reliable person. I like applying new methods and ideas to traditional problem solving. I Also enjoy working on new and exciting projects that allow me to express my creativity and opinions </Para>
 
