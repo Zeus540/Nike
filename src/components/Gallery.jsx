@@ -1,8 +1,5 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
-import Kkwe from '../images/Kkwe.png'
-import Crud from '../images/Crud.png'
-import Port from '../images/Port.png'
 import 'react-alice-carousel/lib/alice-carousel.css'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -41,18 +38,6 @@ width:100%;
  }
 `
 
-const ProjectImg =styled.img`
-width:100%;
-height:100%;
-`
-const ProjectImgHolder =styled.div`
-
-margin: 5vw 0vw 5vw 0vw;
-@media (min-width: 1px) and (max-width: 426px) {
-  height: 100%;
-  width: 100%;
- }
-`
 
 const ProjectHeading =styled.h1`
 font-size:6vw;
@@ -100,10 +85,6 @@ class Gallery1 extends Component {
   </a>
   </HolderInner>
   
-  
-  <ProjectImg src={Kkwe} alt=""/>
-  
-
           </Holder>
          
 
@@ -115,9 +96,7 @@ class Gallery1 extends Component {
   <Heading  >REACT.JS - SASS </Heading>
   </a>
   </HolderInner>
-  <ProjectImgHolder>
-  <ProjectImg src={Crud} alt=""/>
-  </ProjectImgHolder>
+ 
           </Holder>
         
           <Holder> 
@@ -128,9 +107,7 @@ class Gallery1 extends Component {
   <Heading  >REACT.JS </Heading>
   </a>
   </HolderInner>
-  <ProjectImgHolder>
-  <ProjectImg src={Port} alt=""/>
-  </ProjectImgHolder>
+ 
           </Holder>
          
       </Container>
