@@ -112,8 +112,8 @@ const RightContainer = styled.div`
 overflow:hidden
 display:flex;
 background:#020202;
-position:absolute;
-right:0px
+position: relative;
+right: 0vw;
 @media (min-width: 1px) and (max-width: 426px) {
   margin: 0vw;
   position: relative;
