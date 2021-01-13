@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
 import Kkwe from '../images/Kkwe.png'
+import Crud from '../images/Crud.png'
+import Port from '../images/Port.png'
 import 'react-alice-carousel/lib/alice-carousel.css'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -96,11 +98,13 @@ class Gallery1 extends Component {
       <Container>
     <Block>
   <Holder data-aos='slide-up'> 
+ 
       <HolderInner data-aos='slide-up'>
+      <a href="https://kkwe.co.za/" target="_blank" rel="noopener noreferrer">
       <ProjectHeading  >Kkwe</ProjectHeading>
   <Heading  >Website - Events Planner</Heading>
   <Heading  >REACT.JS - AOS </Heading>
-  
+  </a>
   </HolderInner>
   <ProjectImgHolder data-aos='slide-up'>
   <ProjectImg src={Kkwe} alt=""/>
@@ -111,13 +115,14 @@ class Gallery1 extends Component {
           <Block>
           <Holder data-aos='slide-up'> 
       <HolderInner data-aos='slide-up'>
-      <ProjectHeading  >Crud App</ProjectHeading>
+        <a href="https://zeus540.github.io/react-firebase-crud-app/" target="_blank" rel="noopener noreferrer" >
+      <ProjectHeading  >To do list</ProjectHeading>
   <Heading  >WEBSITE - CRUD APP</Heading>
   <Heading  >REACT.JS - SASS </Heading>
-  
+  </a>
   </HolderInner>
   <ProjectImgHolder data-aos='slide-up'>
-  <ProjectImg src={Kkwe} alt=""/>
+  <ProjectImg src={Crud} alt=""/>
   </ProjectImgHolder>
           </Holder>
           </Block>
@@ -125,13 +130,14 @@ class Gallery1 extends Component {
           <Block>
           <Holder data-aos='slide-up'> 
       <HolderInner data-aos='slide-up'>
-      <ProjectHeading data-aos='slide-up' >Kkwe</ProjectHeading>
-  <Heading  >Website - Events Planner</Heading>
-  <Heading  >REACT.JS - AOS </Heading>
-  
+      <a href="https://zaheer.netlify.com" target="_blank" rel="noopener noreferrer" >
+      <ProjectHeading data-aos='slide-up' >Portfolio</ProjectHeading>
+  <Heading  >Website </Heading>
+  <Heading  >REACT.JS </Heading>
+  </a>
   </HolderInner>
   <ProjectImgHolder>
-  <ProjectImg src={Kkwe} alt=""/>
+  <ProjectImg src={Port} alt=""/>
   </ProjectImgHolder>
           </Holder>
           </Block>

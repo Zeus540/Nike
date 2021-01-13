@@ -2,13 +2,14 @@ import React, {Component} from 'react';
 import styled from 'styled-components';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Cv from '../images/cv.pdf';
 
 const Container = styled.div`
 width: 100%;
 display:flex;
 justify-content: space-between;
 left:0px;
-    position:absolute;
+   
     @media (min-width: 1px) and (max-width: 426px) {
       flex-direction: column;
       
@@ -77,7 +78,7 @@ render() {
           <Heading>LINKEDIN</Heading>
           </Holder>
           </Anchor>
-          <Anchor href="https://www.linkedin.com/in/zaheerroberts/" target="_blank" rel="noopener noreferrer">
+        <Anchor href={Cv} target="_blank" rel="noopener noreferrer">
           <Holder  >
           <Heading>RESUME</Heading>
           </Holder>

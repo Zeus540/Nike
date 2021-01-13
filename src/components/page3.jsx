@@ -121,8 +121,8 @@ right:0px
 `
 
 const RightContainerImg = styled.img`
-height: 43vw;
-width: 38vw;
+height: 40vw;
+    width: 28vw;
     margin-top: 25vw;
 @media (min-width: 1px) and (max-width: 426px) {
   width:100%
@@ -134,7 +134,7 @@ const ContainerMobile = styled.div`
   margin-top: 25vw;
 @media (min-width: 1px) and (max-width: 426px) {
   position: relative;
-  right: -35vw;
+  right: -53vw;
   margin: 7vw 0vw;
   
  }
@@ -148,9 +148,10 @@ height: 43vw;
 width: 38vw;
     margin-top: 25vw;
 @media (min-width: 1px) and (max-width: 426px) {
-  width: 60vw;
+  height: 100%;
+  width: 42vw;
   margin-top: 0vw;
-  height: 60vw;
+ 
  }
 `
 

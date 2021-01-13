@@ -5,7 +5,7 @@ import Page3 from './components/page3.jsx'
 import Nav from './components/Nav.jsx'
 import Social from './components/Social.jsx'
 import Gallery1 from './components/Gallery.jsx'
-
+import Form from './components/Form.jsx'
 function App() {
 
   return (
@@ -15,6 +15,7 @@ function App() {
         <Page2/>
         <Gallery1/>
         <Social/>
+        <Form/>
     </div>
   );
 }

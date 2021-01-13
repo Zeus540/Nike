@@ -53,7 +53,9 @@ render() {
           </Holder>
 
           <Holder data-aos='fade-down'>
+            <a href="mailto:zaheerroberts4@gmail.com">
           <Heading>Work with me</Heading>
+          </a>
           </Holder>
 
       </Container>
