@@ -132,6 +132,7 @@ height: 40vw;
 `
 const ContainerMobile = styled.div`
   margin-top: 25vw;
+  min-height:65vh
 @media (min-width: 1px) and (max-width: 426px) {
   margin: 7vw 0vw;
   
