@@ -146,7 +146,7 @@ height: 40vw;
 `
 const RightContainerImgMobile = styled.img`
 height: 100%;
-
+width: 110%;
 padding-top: 2vw;
 margin-bottom: 2vw;
 @media (min-width: 426px)  {
