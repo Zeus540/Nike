@@ -114,7 +114,7 @@ position:absolute;
 right:0px
 @media (min-width: 1px) and (max-width: 426px) {
   margin:0vw;
-  position:relative!important;
+  position:relative;
   top: 0;
   display: none;
  }
@@ -133,8 +133,6 @@ height: 40vw;
 const ContainerMobile = styled.div`
   margin-top: 25vw;
 @media (min-width: 1px) and (max-width: 426px) {
-  position: relative;
-
   margin: 7vw 0vw;
   
  }
