@@ -133,6 +133,7 @@ height: 40vw;
 const ContainerMobile = styled.div`
   margin-top: 25vw;
   min-height:65vh
+  width: 38vw;
 @media (min-width: 1px) and (max-width: 426px) {
   margin: 7vw 0vw;
   
@@ -167,11 +168,7 @@ render() {
       <Container id="Home">
         
      <LeftContainer>
-     <ContainerMobile >
-      
-      <ContainerImgMobile src={Port} alt="" />
-      
-      </ContainerMobile>
+
      <HeadingAnimated >
         <Typical data-aos='slide-up'
               steps={['Hello!', 1000,'Hola!',1000,'Bonjour!',1000,'Konnichiwa!',1000,'God dag!',1000,'Shalom!',1000]}
@@ -190,7 +187,11 @@ render() {
         <Heading2  data-aos='slide-up'>FRONT-END<br/><Focus>DEVELOPER</Focus></Heading2>
         </TitleHolder>
 
-        
+        <ContainerMobile >
+      
+      <ContainerImgMobile src={Port} alt="" />
+      
+      </ContainerMobile>
 
         <Holder>
           <Para data-aos='slide-up'>I have always had a passion for learning and trying new things. I consider myself a hardworking and reliable person. I like applying new methods and ideas to traditional problem solving. I Also enjoy working on new and exciting projects that allow me to express my creativity and opinions </Para>
