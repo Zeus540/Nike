@@ -53,7 +53,12 @@ const ProjectImgHolder =styled.div`
 width:35vw;
 height:15vw;
 margin: 5vw 0vw 5vw 0vw;
+@media (min-width: 1px) and (max-width: 426px) {
+  height: 100%;
+  width: 100%;
+ }
 `
+
 const ProjectHeading =styled.h1`
 font-size:6vw;
 color:white;

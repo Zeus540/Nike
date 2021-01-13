@@ -76,12 +76,7 @@ body::-webkit-scrollbar {
     background-color: #1f1f1f;
     border-radius: 9999px;
 }
-@media (min-width: 1px) and (max-width: 426px) {
-    .Hide{
-    
-        display: none;
-    }
-   }
+
 
 .text-flicker-in-glow
 {animation:text-flicker-in-glow 4s linear both}

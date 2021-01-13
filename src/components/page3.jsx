@@ -116,6 +116,7 @@ right:0px
   margin:0vw;
   position:relative!important;
   top: 0;
+  display: none;
  }
 `
 
@@ -127,6 +128,29 @@ width: 38vw;
   width:100%
   margin-top: 7vw;
   height:100vw
+ }
+`
+const ContainerMobile = styled.div`
+  margin-top: 25vw;
+@media (min-width: 1px) and (max-width: 426px) {
+  position: relative;
+  right: -35vw;
+  margin: 7vw 0vw;
+  
+ }
+ @media (min-width: 426px)  {
+  display:none;
+ }
+`
+
+const ContainerImgMobile = styled.img`
+height: 43vw;
+width: 38vw;
+    margin-top: 25vw;
+@media (min-width: 1px) and (max-width: 426px) {
+  width: 60vw;
+  margin-top: 0vw;
+  height: 60vw;
  }
 `
 
@@ -162,6 +186,12 @@ render() {
         <Heading2  data-aos='slide-up'>FRONT-END<br/><Focus>DEVELOPER</Focus></Heading2>
         </TitleHolder>
 
+        <ContainerMobile >
+      
+      <ContainerImgMobile src={Port} alt="" data-aos='slide-right'/>
+      
+      </ContainerMobile>
+
         <Holder>
           <Para data-aos='slide-up'>I have always had a passion for learning and trying new things. I consider myself a hardworking and reliable person. I like applying new methods and ideas to traditional problem solving. I Also enjoy working on new and exciting projects that allow me to express my creativity and opinions </Para>
 
@@ -175,7 +205,7 @@ I am very skilled in my craft</Para>
 
      
      
-      <RightContainer >
+      <RightContainer className="Hide">
       
       <RightContainerImg src={Port} alt="" data-aos='slide-right'/>
       
