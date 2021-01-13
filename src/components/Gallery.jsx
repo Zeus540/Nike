@@ -8,11 +8,8 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 const Container = styled.div`
-justify-content:center;
-align-items:center;
+height: 100%;
 margin:0 auto;
-
-position: relative;
 @media (min-width: 1px) and (max-width: 426px) {
 
   width: 80%;
@@ -21,7 +18,6 @@ position: relative;
 
 const  Holder = styled.div`
 display:flex;
-
 margin: 0px auto;
 padding-bottom: 0px;
 flex-direction:row;
@@ -103,9 +99,11 @@ class Gallery1 extends Component {
   <Heading  >REACT.JS - AOS </Heading>
   </a>
   </HolderInner>
-  <ProjectImgHolder>
+  
+  
   <ProjectImg src={Kkwe} alt=""/>
-  </ProjectImgHolder>
+  
+
           </Holder>
          
 
