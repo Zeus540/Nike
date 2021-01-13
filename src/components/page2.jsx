@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Gallery1 from './Gallery.jsx'
-import Gallery2 from './Gallery.jsx'
+
 
 const Container = styled.div`
 height:100%;
