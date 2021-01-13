@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import styled from 'styled-components';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import Cv from '../images/cv.pdf';
+
 
 const Container = styled.div`
 width: 100%;
