@@ -128,9 +128,20 @@ height: 40vw;
   width: 49vw;
   margin-top: 7vw;
   height: 82vw;
+  display:none;
  }
 `
-
+const RightContainerImgMobile = styled.img`
+height: 40vw;
+    width: 28vw;
+    margin-top: 25vw;
+@media (min-width: 426px)  {
+  width: 49vw;
+  margin-top: 7vw;
+  height: 82vw;
+  display:none;
+ }
+`
 
 class Page3 extends Component {
   componentDidMount(){
@@ -164,6 +175,8 @@ render() {
         <Heading2  data-aos='slide-up'>FRONT-END<br/><Focus>DEVELOPER</Focus></Heading2>
         </TitleHolder>
 
+        <RightContainerImgMobile src={Port} alt="" data-aos='slide-right'/>
+
         <Holder>
           <Para data-aos='slide-up'>I have always had a passion for learning and trying new things. I consider myself a hardworking and reliable person. I like applying new methods and ideas to traditional problem solving. I Also enjoy working on new and exciting projects that allow me to express my creativity and opinions </Para>
 
@@ -177,7 +190,7 @@ I am very skilled in my craft</Para>
 
      
      
-      <RightContainer className="Hide">
+      <RightContainer >
       
       <RightContainerImg src={Port} alt="" data-aos='slide-right'/>
       
