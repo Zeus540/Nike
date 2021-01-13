@@ -19,7 +19,7 @@ width: 33vw;
 overflow:hidden;
 margin:0px;
 @media (min-width: 1px) and (max-width: 426px) {
-  width: 60vw; 
+  width: 84%;
    }
 `
 const TitleHolder = styled.div`
@@ -85,8 +85,8 @@ font-family:arial;
 margin:2vw 0% 0% 0%;
 
 @media (min-width: 1px) and (max-width: 426px) {
-  font-size:2.5vw;
-  line-height:4vw;
+  font-size: 3vw;
+  line-height: 5vw;
 
    }
 `

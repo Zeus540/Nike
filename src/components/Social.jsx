@@ -9,7 +9,7 @@ width: 100%;
 display:flex;
 justify-content: space-between;
 left:0px;
-   
+padding:10vw 0vw;
     @media (min-width: 1px) and (max-width: 426px) {
       flex-direction: column;
       
@@ -27,7 +27,7 @@ letter-spacing:5px;
     padding: 5vw;
     @media (min-width: 1px) and (max-width: 426px) {
       width: auto;
-      padding: 10vw;
+      padding: 15vw 0vw;
       }
 `
 
@@ -57,6 +57,7 @@ width: 33.3%;
       }
 `
 
+
 class Social extends Component {
   componentDidMount(){
     AOS.init({
@@ -69,16 +70,16 @@ render() {
       
       <Container id="Home">
 
-          <Anchor href="https://github.com/Zeus540" target="_blank" rel="noopener noreferrer"><Holder  >
+          <Anchor href="https://github.com/Zeus540" target="_blank" rel="noopener noreferrer" data-aos='slide-left'><Holder  >
           <Heading>GITHUB</Heading>
           </Holder>
           </Anchor>
-          <Anchor href="https://www.linkedin.com/in/zaheerroberts/" target="_blank" rel="noopener noreferrer">
+          <Anchor href="https://www.linkedin.com/in/zaheerroberts/" target="_blank" rel="noopener noreferrer" data-aos='slide-up'>
           <Holder >
           <Heading>LINKEDIN</Heading>
           </Holder>
           </Anchor>
-        <Anchor href={Cv} target="_blank" rel="noopener noreferrer">
+        <Anchor href={Cv} target="_blank" rel="noopener noreferrer" data-aos='slide-right'>
           <Holder  >
           <Heading>RESUME</Heading>
           </Holder>
