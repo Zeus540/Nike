@@ -12,13 +12,13 @@ margin: 20vw 0% 10vw 0%;
 @media (min-width: 1px) and (max-width: 426px) {
  flex-direction:column
  margin: 0px;
-
+padding:40vw 0vw;
 }
  @media (min-width: 427px) and (max-width: 768px) {
-
+  padding:30vw 0vw;
   }
  @media (min-width: 769px) and (max-width: 1024px) {
-
+  padding:10vw 0vw;
   }
 `
 
