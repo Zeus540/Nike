@@ -7,9 +7,8 @@ import Cv from '../images/cv.pdf';
 const Container = styled.div`
 width: 100%;
 display:flex;
+height:100%;
 justify-content: space-between;
-left:0px;
-position: relative;
 overflow:hidden;
 padding:10vw 0vw;
     @media (min-width: 1px) and (max-width: 426px) {
