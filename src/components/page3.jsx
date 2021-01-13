@@ -9,6 +9,7 @@ const Container = styled.div`
 height:100%;
 display:flex;
 background:#020202;
+position:relative;
 @media (min-width: 1px) and (max-width: 426px) {
   flex-direction:column
  }
@@ -18,6 +19,7 @@ const Holder = styled.div`
 width: 33vw;
 overflow:hidden;
 margin:0px;
+position: relative;
 @media (min-width: 1px) and (max-width: 426px) {
   width: 84%;
    }

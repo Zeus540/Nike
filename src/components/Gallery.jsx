@@ -22,7 +22,6 @@ display:flex;
 flex-direction:column;
 `
 const  Holder = styled.div`
-border-bottom:2px solid white;
 display:flex;
 margin: 0px auto;
 padding-bottom: 0px;

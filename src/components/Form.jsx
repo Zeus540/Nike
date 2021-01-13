@@ -24,17 +24,23 @@ color:white;
 const Label = styled.label`
 color:white;
 font-size:2vw;
+font-family:arial;
+@media (min-width: 1px) and (max-width: 426px) {
+  font-size:3.5vw;
+ }
 `
 const Input = styled.input`
 background:transparent;
-height:2vw;
+height:5vw;
 font-size:1vw;
 width:50vw;
 border:none;
 border-bottom:2px solid white;
 margin:1vw 0vw;
 color:white;
-
+@media (min-width: 1px) and (max-width: 426px) {
+  font-size:3.4vw;
+ }
 `
 const TextArea = styled.textarea`
 background:transparent;
@@ -45,6 +51,9 @@ border:none;
 border-bottom:2px solid white;
 margin:2vw 0vw;
 color:white;
+@media (min-width: 1px) and (max-width: 426px) {
+  font-size:3.4vw;
+ }
 `
 
 const Button = styled.input`

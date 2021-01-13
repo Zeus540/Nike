@@ -8,6 +8,7 @@ import 'aos/dist/aos.css';
 const Container = styled.div`
 height:100%;
 margin: 20vw 0% 10vw 0%;
+position: relative;
 @media (min-width: 1px) and (max-width: 426px) {
  flex-direction:column
  margin: 0px;
