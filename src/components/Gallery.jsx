@@ -11,19 +11,17 @@ const Container = styled.div`
 justify-content:center;
 align-items:center;
 margin:0 auto;
-
+height: initial;
 position: relative;
 @media (min-width: 1px) and (max-width: 426px) {
 
   width: 80%;
   }
 `
-const Block =styled.div`
-display:flex;
-flex-direction:column;
-`
+
 const  Holder = styled.div`
 display:flex;
+
 margin: 0px auto;
 padding-bottom: 0px;
 flex-direction:row;
@@ -95,7 +93,7 @@ class Gallery1 extends Component {
     return (
       
       <Container>
-    <Block>
+    
   <Holder data-aos='slide-up'> 
  
       <HolderInner data-aos='slide-up'>
@@ -109,9 +107,8 @@ class Gallery1 extends Component {
   <ProjectImg src={Kkwe} alt=""/>
   </ProjectImgHolder>
           </Holder>
-          </Block>
+         
 
-          <Block>
           <Holder data-aos='slide-up'> 
       <HolderInner data-aos='slide-up'>
         <a href="https://zeus540.github.io/react-firebase-crud-app/" target="_blank" rel="noopener noreferrer" >
@@ -124,9 +121,7 @@ class Gallery1 extends Component {
   <ProjectImg src={Crud} alt=""/>
   </ProjectImgHolder>
           </Holder>
-          </Block>
-
-          <Block>
+        
           <Holder data-aos='slide-up'> 
       <HolderInner data-aos='slide-up'>
       <a href="https://zaheer.netlify.com" target="_blank" rel="noopener noreferrer" >
@@ -139,7 +134,7 @@ class Gallery1 extends Component {
   <ProjectImg src={Port} alt=""/>
   </ProjectImgHolder>
           </Holder>
-          </Block>
+         
       </Container>
     );
   }
