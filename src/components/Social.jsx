@@ -38,6 +38,9 @@ font-family:arial;
 text-transform:uppercase;
 letter-spacing:5px;
 font-size:1.5vw;
+@media (min-width: 1px) and (max-width: 426px) {
+  font-size:2.5vw;
+  }
 `
 
 class Social extends Component {
@@ -52,18 +55,20 @@ render() {
       
       <Container id="Home">
 
-          <Holder  >
+          <a href="https://github.com/Zeus540" target="_blank"><Holder  >
           <Heading>GITHUB</Heading>
           </Holder>
-
+          </a>
+          <a href="https://www.linkedin.com/in/zaheerroberts/" target="_blank">
           <Holder >
           <Heading>LINKEDIN</Heading>
           </Holder>
-
+          </a>
+          <a href="" target="_blank">
           <Holder  >
           <Heading>LINKEDIN</Heading>
           </Holder>
-
+</a>
       </Container>
   );
   }
