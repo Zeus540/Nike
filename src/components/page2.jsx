@@ -15,7 +15,9 @@ margin: 28vw 0% 8vw 0%;
 margin:40vw 0vw;
 }
  @media (min-width: 427px) and (max-width: 768px) {
-  margin:30vw 0vw;
+ 
+  margin: 18vw 0vw;
+
   }
  @media (min-width: 769px) and (max-width: 1024px) {
   margin: 33vw 0vw 9vw 0vw;

@@ -6,7 +6,7 @@ import 'aos/dist/aos.css';
 import Typical from 'react-typical'
 
 const Container = styled.div`
-padding-left: 5vw;
+
 position:relative;
 @media (min-width: 1px) and (max-width: 426px) {
   flex-direction:column
@@ -19,9 +19,11 @@ width: 33vw;
 overflow:hidden;
 margin:0px;
 position: relative;
+margin: 5vw 0% 5vw 5vw;
 @media (min-width: 1px) and (max-width: 426px) {
   width: 84%;
   padding: 5vw;
+  margin: 0vw;
    }
    
 `
@@ -34,6 +36,7 @@ font-family: arial;
 margin: 5vw 0% 5vw 0%;
 font-size: 2vw;
 color:white;
+margin: 5vw 0% 5vw 5vw;
 @media (min-width: 1px) and (max-width: 426px) {
   padding-left: 5vw;
   font-size: 7vw;
@@ -65,12 +68,12 @@ color:white;
 font-family:arial;
 margin:0px;
 font-size:2vw;
-margin:3vw 0% 5% 0%;
+margin: 5vw 0% 5vw 5vw;
 
 @media (min-width: 1px) and (max-width: 426px) {
 font-size:4vw; 
 
-padding-left: 5vw;
+
  }
 `
 
@@ -110,7 +113,7 @@ font-weight:bolder;
 const Para =styled.p`
 font-size:1vw;
 color:white;
-letter-spacing:2px;
+letter-spacing: 1px;
 line-height:1.7vw;
 font-family:arial;
 margin:2vw 0% 0% 0%;

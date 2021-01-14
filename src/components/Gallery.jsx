@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
 import 'react-alice-carousel/lib/alice-carousel.css'
+import Kkwe from '../images/Kkwe.png'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -8,7 +9,7 @@ const Container = styled.div`
 height: 100%;
 margin:0 auto;
 @media (min-width: 1px) and (max-width: 426px) {
-
+  margin-bottom:20vw;
   width: 80%;
   }
 `
@@ -31,10 +32,12 @@ const  HolderInner = styled.div`
 display:flex;
 margin: 8vw 0vw 5vw 0vw;
 padding-bottom: 0px;
-flex-direction:column;
+flex-direction:row;
 width:100%;
+justify-content: space-between;
 @media (min-width: 1px) and (max-width: 426px) {
   margin: 8vw 0vw 0.5vw 0vw;
+  flex-direction:column;
  }
 `
 
@@ -55,9 +58,19 @@ font-size:1vw;
 color:white;
 font-family:arial;
 margin: 0.5vw 0vw 0.5vw 0.5vw;
-font-weight:bolder;
+
 @media (min-width: 1px) and (max-width: 426px) {
-  font-size:3vw;
+  font-size: 3.5vw;
+ }
+`
+const Img =styled.img`
+width:30%;
+height:100%
+ 
+@media (min-width: 1px) and (max-width: 426px) {
+  margin-top:5vw; 
+  width:100%;
+  height:100%
  }
 `
 
@@ -83,6 +96,7 @@ class Gallery1 extends Component {
   <Heading  >Website - Events Planner</Heading>
   <Heading  >REACT.JS - AOS </Heading>
   </a>
+  <Img src={Kkwe} alt=""/>
   </HolderInner>
   
           </Holder>
@@ -95,6 +109,7 @@ class Gallery1 extends Component {
   <Heading  >WEBSITE - CRUD APP</Heading>
   <Heading  >REACT.JS - SASS </Heading>
   </a>
+  <Img src={Kkwe} alt=""/>
   </HolderInner>
  
           </Holder>
@@ -106,6 +121,7 @@ class Gallery1 extends Component {
   <Heading  >Website </Heading>
   <Heading  >REACT.JS </Heading>
   </a>
+  <Img src={Kkwe} alt=""/>
   </HolderInner>
  
           </Holder>

@@ -1,105 +1,102 @@
-import React, {Component} from 'react';
-import styled from 'styled-components';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+  import React, {Component} from 'react';
+  import styled from 'styled-components';
+  import AOS from 'aos';
+  import 'aos/dist/aos.css';
 
 
-const Container = styled.div`
-width: 100%;
-overflow: hidden;
-display:flex;
-justify-content: space-between;
-padding-bottom:10vw;;
-    @media (min-width: 1px) and (max-width: 426px) {
-      flex-direction: column;
-      
-      }
-`
+  const Container = styled.div`
+  overflow: hidden;
 
-const FormHolder = styled.form`
+  justify-content: space-between;
+  padding-bottom:10vw;;
+      @media (min-width: 1px) and (max-width: 426px) {
+    
+        
+        }
+  `
 
-margin:0 auto;
-color:white;
-`
-const Label = styled.label`
-color:white;
+  const Para =styled.p`
+  font-size:0.8vw;
+  color:black;
+  letter-spacing: 1px;
+  line-height:1.5vw;
+  font-family:arial;
+  margin:1vw 0% 0% 0%;
+  @media (min-width: 1px) and (max-width: 426px) {
+    font-size: 4vw;
+    line-height: 5vw;
+
+    }
+  `
+
+  const Heading =styled.h1`
 font-size:2vw;
+color:black;
 font-family:arial;
+
+font-weight:bolder;
 @media (min-width: 1px) and (max-width: 426px) {
-  font-size:3.5vw;
- }
+  font-size:7vw; 
+  margin:0vw 0% 5vw 0%;
+   }
 `
-const Input = styled.input`
-background:transparent;
-height:5vw;
-font-size:1vw;
-width:50vw;
-border:none;
-border-bottom:2px solid white;
-margin:1vw 0vw;
+
+const MainHeading =styled.h1`
+font-size: 8vw;
 color:white;
+font-family:arial;
+text-align:center;
+font-weight:bolder;
+    margin: 15vw 0% 15vw 0%;
 @media (min-width: 1px) and (max-width: 426px) {
-  font-size:3.4vw;
- }
+  font-size: 10vw;
+  margin: 15vw 0% 15vw 0%;
+   }
 `
-const TextArea = styled.textarea`
-background:transparent;
-min-height:5vw;
-font-size:2vw;
-width:50vw;
-border:none;
-border-bottom:2px solid white;
-margin:2vw 0vw;
-color:white;
-@media (min-width: 1px) and (max-width: 426px) {
-  font-size:3.4vw;
- }
-`
+  class Form extends Component {
+    componentDidMount(){
+      AOS.init({
+        duration : 1000
+      })
+    }
+  render() {
+  
+      return (
+        
+        <Container >
+          <MainHeading>HIGHLIGHTS</MainHeading>
+        <div class="timeline" >
+  
+    <div class="container left"  data-aos='slide-up'>
+      <div class="content">
+        <Heading>2015</Heading>
+        <Para>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</Para>
+      </div>
+    </div>
 
-const Button = styled.input`
-border: none;
-border-radius: 0px;
-padding: 1vw 6vw;
-    text-align: center;
-    @media (min-width: 1px) and (max-width: 426px) {
-      width: auto;
+    <div class="container right"  data-aos='slide-up'>
+      <div class="content">
+        <Heading>2020</Heading>
+        <Para>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</Para>
+      </div>
+    </div>
+    <div class="container left" data-aos='slide-up'>
+      <div class="content">
+        <Heading>2019</Heading>
+        <Para>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</Para>
+      </div>
+    </div>
+    <div class="container right"  data-aos='slide-up'>
+      <div class="content">
+        <Heading>2018</Heading>
+        <Para>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</Para>
+      </div>
+    </div>
+  </div>
 
-      }
-`
-class Form extends Component {
-  componentDidMount(){
-    AOS.init({
-      duration : 1000
-    })
+        </Container>
+    );
+    }
   }
-render() {
- 
-    return (
-      
-      <Container id="Home">
-            <FormHolder data-aos='slide-up' name="contact" method="POST" data-netlify="true">
-      <Label htmlFor="Name">Name</Label>
-      <br/>
-              <Input type="text" name="Name"/>
-              <br/>
-              
-              <Label htmlFor="Email">Email</Label>
-              <br/>
-              <Input type="text" name="Email"/>
-              <br/>
-              <Label htmlFor="Subject">Subject</Label>
-              <br/>
-              <Input type="text" name="Subject"/>
-              <br/>
-              <Label htmlFor="Message">Message</Label>
-              <br/>
-              <TextArea name="Message" id="" cols="30" rows="10"></TextArea>
-              <br/>
-              <Button type="submit" value="Submit"/>
-            </FormHolder>
-      </Container>
-  );
-  }
-}
 
-export default Form;
+  export default Form;
