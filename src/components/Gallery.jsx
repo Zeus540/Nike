@@ -2,6 +2,10 @@ import React, { Component } from 'react'
 import styled from 'styled-components'
 import 'react-alice-carousel/lib/alice-carousel.css'
 import Kkwe from '../images/Kkwe.png'
+import Crud from '../images/Crud.png'
+import FunFox from '../images/FunFox.png'
+import Port from '../images/Port.png'
+import Rot from '../images/Rot.png'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -21,20 +25,22 @@ padding-bottom: 0px;
 flex-direction:row;
 width:80vw;
 height: inherit;
+margin: 10vw 10vw;
 @media (min-width: 1px) and (max-width: 426px) {
  width:100%;
  display: flex;
  flex-direction: column;
+ margin: 0vw 0vw;
  }
 `
 
 const  HolderInner = styled.div`
 display:flex;
-margin: 8vw 0vw 5vw 0vw;
+
 padding-bottom: 0px;
-flex-direction:row;
+flex-direction:column;
 width:100%;
-justify-content: space-between;
+
 @media (min-width: 1px) and (max-width: 426px) {
   margin: 8vw 0vw 0.5vw 0vw;
   flex-direction:column;
@@ -64,11 +70,20 @@ margin: 0.5vw 0vw 0.5vw 0.5vw;
  }
 `
 const Img =styled.img`
-width:30%;
+width:100%;
 height:100%
  
 @media (min-width: 1px) and (max-width: 426px) {
   margin-top:5vw; 
+  width:100%;
+  height:100%
+ }
+`
+const ImgHolder =styled.div`
+width:60vw;
+height:100%
+ 
+@media (min-width: 1px) and (max-width: 426px) {
   width:100%;
   height:100%
  }
@@ -96,41 +111,82 @@ class Gallery1 extends Component {
   <Heading  >Website - Events Planner</Heading>
   <Heading  >REACT.JS - AOS </Heading>
   </a>
-  <div>
-  <Img src={Kkwe} alt=""/>
-  </div>
   </HolderInner>
+  <ImgHolder>
+  <Img src={Kkwe} alt=""/>
+  </ImgHolder>
+  
   
           </Holder>
          
+          <Holder data-aos='slide-up'> 
+ 
+ <HolderInner>
+ <a href="https://zeus540.github.io/react-firebase-crud-app/" target="_blank" rel="noopener noreferrer">
+ <ProjectHeading  >Crud App</ProjectHeading>
+<Heading  >WEBSITE</Heading>
+<Heading  >REACT.JS - SCSS </Heading>
+</a>
+<a href="https://github.com/Zeus540/react-firebase-crud-app" target="_blank" rel="noopener noreferrer">
+<Heading  >VIEW CODE</Heading>
+</a>
+</HolderInner>
+<ImgHolder>
+<Img src={Crud} alt=""/>
+</ImgHolder>
 
-          <Holder data-aos='slide-up'> 
-      <HolderInner>
-        <a href="https://zeus540.github.io/react-firebase-crud-app/" target="_blank" rel="noopener noreferrer" >
-      <ProjectHeading  >To do list</ProjectHeading>
-  <Heading  >WEBSITE - CRUD APP</Heading>
-  <Heading  >REACT.JS - SASS </Heading>
-  </a>
-  <div>
-  <Img src={Kkwe} alt=""/>
-  </div>
-  </HolderInner>
+
+     </Holder>
+
+     <Holder data-aos='slide-up'> 
  
-          </Holder>
-        
-          <Holder data-aos='slide-up'> 
-      <HolderInner>
-      <a href="https://zaheer.netlify.com" target="_blank" rel="noopener noreferrer" >
-      <ProjectHeading >Portfolio</ProjectHeading>
-  <Heading  >Website </Heading>
-  <Heading  >REACT.JS </Heading>
-  </a>
-  <div>
-  <Img src={Kkwe} alt=""/>
-  </div>
-  </HolderInner>
+ <HolderInner>
+ <a href="https://FunFox.co.uk/" target="_blank" rel="noopener noreferrer">
+ <ProjectHeading  >FunFox</ProjectHeading>
+<Heading  >WEBSITE - E-COMMERCE</Heading>
+<Heading  >WORDPRESS - WOOCOMMERCE </Heading>
+</a>
+</HolderInner>
+<ImgHolder>
+<Img src={FunFox} alt=""/>
+</ImgHolder>
+
+
+     </Holder>
+
  
-          </Holder>
+
+<Holder data-aos='slide-up'> 
+
+<HolderInner>
+<a href="https://zaheer.netlify.com" target="_blank" rel="noopener noreferrer">
+<ProjectHeading  >Portfolio V1</ProjectHeading>
+<Heading  >WEBSITE</Heading>
+<Heading  >REACT.JS </Heading>
+</a>
+</HolderInner>
+<ImgHolder>
+<Img src={Port} alt=""/>
+</ImgHolder>
+
+
+</Holder>
+
+     <Holder data-aos='slide-up'> 
+ 
+ <HolderInner>
+ <a href="https://rottweileraddicts.netlify.app/" target="_blank" rel="noopener noreferrer">
+ <ProjectHeading  >Rottweiler Addicts</ProjectHeading>
+<Heading  >WEBSITE </Heading>
+<Heading  >HTML - CSS GRID - JAVASCRIPT </Heading>
+</a>
+</HolderInner>
+<ImgHolder>
+<Img src={Rot} alt=""/>
+</ImgHolder>
+
+
+     </Holder>
          
       </Container>
     );

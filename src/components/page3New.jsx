@@ -200,8 +200,8 @@ render() {
 
          <HeadingAnimated >
         
-             <Heading3 data-aos='slide-up'> I am a</Heading3>
-        <Heading2  data-aos='slide-up' className="text-flicker-in-glow">CREATIVE FRONT-END<br/></Heading2>
+             <Heading3 > I am a</Heading3>
+        <Heading2   className="text-flicker-in-glow">CREATIVE FRONT-END<br/></Heading2>
         <Focus className="text-flicker-in-glow">DEVELOPER</Focus>
         </HeadingAnimated>
 
