@@ -65,29 +65,29 @@ font-weight:bolder;
         
         <Container >
           <MainHeading>HIGHLIGHTS</MainHeading>
-        <div class="timeline" >
+        <div className="timeline" >
   
-    <div class="container left"  data-aos='slide-up'>
-      <div class="content">
+    <div className="container left"  data-aos='slide-up'>
+      <div className="content">
         <Heading>2015</Heading>
         <Para>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</Para>
       </div>
     </div>
 
-    <div class="container right"  data-aos='slide-up'>
-      <div class="content">
+    <div className="container right"  data-aos='slide-up'>
+      <div className="content">
         <Heading>2020</Heading>
         <Para>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</Para>
       </div>
     </div>
-    <div class="container left" data-aos='slide-up'>
-      <div class="content">
+    <div className="container left" data-aos='slide-up'>
+      <div className="content">
         <Heading>2019</Heading>
         <Para>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</Para>
       </div>
     </div>
-    <div class="container right"  data-aos='slide-up'>
-      <div class="content">
+    <div className="container right"  data-aos='slide-up'>
+      <div className="content">
         <Heading>2018</Heading>
         <Para>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</Para>
       </div>

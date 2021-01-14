@@ -96,7 +96,9 @@ class Gallery1 extends Component {
   <Heading  >Website - Events Planner</Heading>
   <Heading  >REACT.JS - AOS </Heading>
   </a>
+  <div>
   <Img src={Kkwe} alt=""/>
+  </div>
   </HolderInner>
   
           </Holder>
@@ -109,7 +111,9 @@ class Gallery1 extends Component {
   <Heading  >WEBSITE - CRUD APP</Heading>
   <Heading  >REACT.JS - SASS </Heading>
   </a>
+  <div>
   <Img src={Kkwe} alt=""/>
+  </div>
   </HolderInner>
  
           </Holder>
@@ -121,7 +125,9 @@ class Gallery1 extends Component {
   <Heading  >Website </Heading>
   <Heading  >REACT.JS </Heading>
   </a>
+  <div>
   <Img src={Kkwe} alt=""/>
+  </div>
   </HolderInner>
  
           </Holder>

@@ -54,7 +54,7 @@ color:lime;
 margin:0px;
 font-family:arial;
 @media (min-width: 1px) and (max-width: 426px) {
- 
+  font-size: 27vw;
   }
 
 `
