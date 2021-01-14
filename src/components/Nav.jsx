@@ -13,7 +13,7 @@ padding-bottom:2vw;
 `
 
 const Holder = styled.div`
-color:white;
+
 font: italic
 font-family:arial;
 text-transform:uppercase;
@@ -21,7 +21,7 @@ letter-spacing:5px;
 `
 
 const Heading = styled.h1`
-
+color:white;
 font: italic
 font-family:arial;
 text-transform:uppercase;
@@ -32,6 +32,17 @@ font-size:1.5vw;
  }
 `
 
+const Heading2 = styled.h1`
+color:lime;
+font: italic
+font-family:arial;
+text-transform:uppercase;
+letter-spacing:5px;
+font-size:1.5vw;
+@media (min-width: 1px) and (max-width: 426px) {
+  font-size:2vw;
+ }
+`
 class Nav extends Component {
   componentDidMount(){
     AOS.init({
@@ -54,7 +65,7 @@ render() {
 
           <Holder data-aos='fade-down'>
             <a href="mailto:zaheerroberts4@gmail.com">
-          <Heading>Work with me</Heading>
+          <Heading2>Work with me</Heading2>
           </a>
           </Holder>
 

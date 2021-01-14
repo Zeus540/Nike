@@ -6,6 +6,7 @@ import 'aos/dist/aos.css';
 
 const Container = styled.div`
 width: 100%;
+overflow: hidden;
 display:flex;
 justify-content: space-between;
 padding-bottom:10vw;;

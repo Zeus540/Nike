@@ -18,7 +18,7 @@ padding:10vw 0vw;
 `
 
 const Holder = styled.div`
-color:antiquewhite;
+color:white;
 font: italic
 font-family:arial;
 text-transform:uppercase;
@@ -33,18 +33,20 @@ letter-spacing:5px;
 `
 
 const Heading = styled.h1`
-color:antiquewhite;
+color:white;
 font: italic
 font-family:arial;
 text-transform:uppercase;
 letter-spacing:5px;
 font-size:1.5vw;
-@media (min-width: 1px) and (max-width: 426px) {
-  font-size:2.5vw;
-  }
+
+  @media (min-width: 1px) and (max-width: 426px) {
+    font-size: 4vw;
+  
+     }
 `
 const Anchor = styled.a`
-color:antiquewhite;
+color:white;
 font: italic
 font-family:arial;
 text-transform:uppercase;

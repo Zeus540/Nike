@@ -6,19 +6,19 @@ import 'aos/dist/aos.css';
 
 
 const Container = styled.div`
-
-margin: 20vw 0% 10vw 0%;
+overflow: hidden;
+margin: 28vw 0% 8vw 0%;
 
 @media (min-width: 1px) and (max-width: 426px) {
  flex-direction:column
  margin: 0px;
-padding:40vw 0vw;
+margin:40vw 0vw;
 }
  @media (min-width: 427px) and (max-width: 768px) {
-  padding:30vw 0vw;
+  margin:30vw 0vw;
   }
  @media (min-width: 769px) and (max-width: 1024px) {
-  padding:10vw 0vw;
+  margin: 33vw 0vw 9vw 0vw;
   }
 `
 
@@ -48,7 +48,7 @@ justify-content:center;
 
 const Focus =styled.h1`
 font-size:15vw;
-color:white;
+color:lime;
 margin:0px;
 font-family:arial;
 @media (min-width: 1px) and (max-width: 426px) {

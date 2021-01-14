@@ -6,12 +6,11 @@ import 'aos/dist/aos.css';
 import Typical from 'react-typical'
 
 const Container = styled.div`
-
 padding-left: 5vw;
-
 position:relative;
 @media (min-width: 1px) and (max-width: 426px) {
   flex-direction:column
+  padding-left: 0vw;
  }
 `
 
@@ -22,23 +21,42 @@ margin:0px;
 position: relative;
 @media (min-width: 1px) and (max-width: 426px) {
   width: 84%;
+  padding: 5vw;
    }
+   
+`
+
+const TypicalHolder = styled.div`
+overflow:hidden;
+margin:0px;
+position: relative;
+font-family: arial;
+margin: 5vw 0% 5vw 0%;
+font-size: 2vw;
+color:white;
+@media (min-width: 1px) and (max-width: 426px) {
+  padding-left: 5vw;
+  font-size: 7vw;
+  margin: 10vw 0% 10vw 0%;
+   }
+   
 `
 
 const Holder2 = styled.div`
 height:100%
-
+width:100vw; 
 margin:0px;
 position: relative;
 @media (min-width: 1px) and (max-width: 426px) {
   
    }
 `
+
 const Flex = styled.div`
 display:flex;
 
 @media (min-width: 1px) and (max-width: 426px) {
-  width: 80vw; 
+  width: 100%; 
    }
 `
 
@@ -51,6 +69,8 @@ margin:3vw 0% 5% 0%;
 
 @media (min-width: 1px) and (max-width: 426px) {
 font-size:4vw; 
+
+padding-left: 5vw;
  }
 `
 
@@ -96,8 +116,8 @@ font-family:arial;
 margin:2vw 0% 0% 0%;
 
 @media (min-width: 1px) and (max-width: 426px) {
-  font-size: 3vw;
-  line-height: 5vw;
+  font-size: 4vw;
+  line-height: 7vw;
 
    }
 `
@@ -114,7 +134,6 @@ font-family:arial;
 
 const LeftContainer = styled.div`
 height:100%;
-
 
 `
 
@@ -167,14 +186,17 @@ render() {
     return (
       
       <Container id="Home">
-
-         <HeadingAnimated >
+        <TypicalHolder>
         <Typical
               steps={['Hello!', 1000,'Hola!',1000,'Bonjour!',1000,'Konnichiwa!',1000,'God dag!',1000,'Shalom!',1000]}
               loop={Infinity}
               wrapper={"h1"}
             />
              <Heading data-aos='slide-up'> my name is Zaheer.</Heading>
+        </TypicalHolder>
+
+         <HeadingAnimated >
+        
              <Heading3 data-aos='slide-up'> I am a</Heading3>
         <Heading2  data-aos='slide-up' className="text-flicker-in-glow">CREATIVE FRONT-END<br/></Heading2>
         <Focus className="text-flicker-in-glow">DEVELOPER</Focus>
