@@ -6,7 +6,7 @@ import 'aos/dist/aos.css';
 import Typical from 'react-typical'
 
 const Container = styled.div`
-height: 100%;
+
 padding-left: 5vw;
 background:#020202;
 position:relative;
@@ -17,8 +17,9 @@ position:relative;
 
 const Holder = styled.div`
 width: 33vw;
-
-
+overflow:hidden;
+margin:0px;
+position: relative;
 @media (min-width: 1px) and (max-width: 426px) {
   width: 84%;
    }
@@ -114,28 +115,27 @@ const RightContainer = styled.div`
 overflow:hidden
 display:flex;
 background:#020202;
-position: absolute;
-right: 0px;
-top:23vw
+position:relative;
+right: -37vw;
+
 @media (min-width: 1px) and (max-width: 426px) {
   right: 0vw;
-  position: relative!important;
-  top: 10px;
  }
 
  @media (min-width: 768px) and (max-width: 1440px) {
-  right: 0vw;
+  right: -36vw;
  }
 `
 
 const RightContainerImg = styled.img`
 height: 40vw;
     width: 25vw;
+   
 @media (min-width: 1px) and (max-width: 426px) {
-  width:82vw;
+  width: 100%;
   min-height: 100%;
   height: 100%;
-  margin-top: 8vw;
+  display:none;
  }
  @media (min-width: 768px) and (max-width: 1024px)   {
   width: 30vw;
@@ -144,6 +144,15 @@ height: 40vw;
  }
 `
 
+const RightContainerImgMobile = styled.img`
+height: 100%;
+width: 83vw;
+padding-top: 2vw;
+margin-bottom: 2vw;
+@media (min-width: 426px)  {
+  display:none;
+ }
+`
 
 class Page3New extends Component {
   componentDidMount(){
@@ -167,7 +176,7 @@ render() {
              <Heading3 data-aos='slide-up'> I am a</Heading3>
         <Heading2  data-aos='slide-up' className="text-flicker-in-glow">FRONT-END<br/><Focus>DEVELOPER</Focus></Heading2>
         </HeadingAnimated>
-
+        <RightContainerImgMobile src={Port} alt="" data-aos='slide-right'/>
         <Flex>
      <LeftContainer>
 
