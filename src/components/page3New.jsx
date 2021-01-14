@@ -6,7 +6,7 @@ import 'aos/dist/aos.css';
 import Typical from 'react-typical'
 
 const Container = styled.div`
-
+height: 100%;
 padding-left: 5vw;
 background:#020202;
 position:relative;
@@ -17,9 +17,8 @@ position:relative;
 
 const Holder = styled.div`
 width: 33vw;
-overflow:hidden;
-margin:0px;
-position: relative;
+
+
 @media (min-width: 1px) and (max-width: 426px) {
   width: 84%;
    }
@@ -115,26 +114,28 @@ const RightContainer = styled.div`
 overflow:hidden
 display:flex;
 background:#020202;
-position:relative;
-right: -37vw;
-
+position: absolute;
+right: 0px;
+top:23vw
 @media (min-width: 1px) and (max-width: 426px) {
   right: 0vw;
+  position: relative!important;
+  top: 10px;
  }
 
  @media (min-width: 768px) and (max-width: 1440px) {
-  right: -36vw;
+  right: 0vw;
  }
 `
 
 const RightContainerImg = styled.img`
 height: 40vw;
     width: 25vw;
-   
 @media (min-width: 1px) and (max-width: 426px) {
-  width: 100%;
+  width:82vw;
   min-height: 100%;
   height: 100%;
+  margin-top: 8vw;
  }
  @media (min-width: 768px) and (max-width: 1024px)   {
   width: 30vw;
