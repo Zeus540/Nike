@@ -8,7 +8,7 @@ import Typical from 'react-typical'
 const Container = styled.div`
 
 padding-left: 5vw;
-background:#020202;
+
 position:relative;
 @media (min-width: 1px) and (max-width: 426px) {
   flex-direction:column
@@ -47,8 +47,7 @@ color:white;
 font-family:arial;
 margin:0px;
 font-size:2vw;
-font-weight:bolder;
-margin:10% 0% 5% 0%;
+margin:3vw 0% 5% 0%;
 
 @media (min-width: 1px) and (max-width: 426px) {
 font-size:4vw; 
@@ -105,7 +104,8 @@ margin:2vw 0% 0% 0%;
 const Focus =styled.span`
 font-size:9vw;
 color:white;
-margin:0px;
+font-weight:bolder;
+margin:1vw 0px 0px 0px;
 font-family:arial;
 @media (min-width: 1px) and (max-width: 426px) {
   font-size:13vw; 
@@ -114,17 +114,17 @@ font-family:arial;
 
 const LeftContainer = styled.div`
 height:100%;
-background:#020202;
+
 
 `
 
 const RightContainer = styled.div`
 overflow:hidden
 display:flex;
-background:#020202;
+
 position:absolute;
-top:25vw;
-right:0px;
+top:30vw;
+right:4vw;
 @media (min-width: 1px) and (max-width: 426px) {
 
  }
@@ -176,7 +176,8 @@ render() {
             />
              <Heading data-aos='slide-up'> my name is Zaheer.</Heading>
              <Heading3 data-aos='slide-up'> I am a</Heading3>
-        <Heading2  data-aos='slide-up' className="text-flicker-in-glow">FRONT-END<br/><Focus>DEVELOPER</Focus></Heading2>
+        <Heading2  data-aos='slide-up' className="text-flicker-in-glow">CREATIVE FRONT-END<br/></Heading2>
+        <Focus className="text-flicker-in-glow">DEVELOPER</Focus>
         </HeadingAnimated>
 
         <Flex>

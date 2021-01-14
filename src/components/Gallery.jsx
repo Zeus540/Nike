@@ -75,7 +75,7 @@ class Gallery1 extends Component {
       
       <Container>
     
-  <Holder> 
+  <Holder data-aos='slide-up'> 
  
       <HolderInner>
       <a href="https://kkwe.co.za/" target="_blank" rel="noopener noreferrer">
@@ -88,7 +88,7 @@ class Gallery1 extends Component {
           </Holder>
          
 
-          <Holder> 
+          <Holder data-aos='slide-up'> 
       <HolderInner>
         <a href="https://zeus540.github.io/react-firebase-crud-app/" target="_blank" rel="noopener noreferrer" >
       <ProjectHeading  >To do list</ProjectHeading>
@@ -99,7 +99,7 @@ class Gallery1 extends Component {
  
           </Holder>
         
-          <Holder> 
+          <Holder data-aos='slide-up'> 
       <HolderInner>
       <a href="https://zaheer.netlify.com" target="_blank" rel="noopener noreferrer" >
       <ProjectHeading >Portfolio</ProjectHeading>
