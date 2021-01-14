@@ -76,7 +76,7 @@ render() {
     return (
       
       <Container id="Home">
-            <FormHolder name="contact" data-aos='slide-up' netlify>
+            <FormHolder data-aos='slide-up' name="contact" method="POST" data-netlify="true">
       <Label htmlFor="Name">Name</Label>
       <br/>
               <Input type="text" name="Name"/>
