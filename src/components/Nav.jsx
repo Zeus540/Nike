@@ -1,96 +1,64 @@
 import React, {Component} from 'react';
 import styled from 'styled-components';
-import {Link} from "react-scroll";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
-const Navbar = styled.div`
-border: none;
-border-radius: 0px;
-background: #1f1f1fd6;
-margin: 0px!important;
-z-index: 2;
+const Container = styled.div`
+
+display:flex;
+justify-content: space-between;
+padding:5vw;
+padding-top:0vw;
+padding-bottom:2vw;
+`
+
+const Holder = styled.div`
 color:white;
-position: fixed;
-left:0px;
-top:0px;
-display:inline-block;
+font: italic
+font-family:arial;
+text-transform:uppercase;
+letter-spacing:5px;
 `
 
-const List = styled.ul`
-display: flex;
-flex-direction:row;
-justify-content:center;
-margin: 0px;
-padding:0px;
-`
+const Heading = styled.h1`
 
-const ListItem = styled.li`
-list-style:none;
-margin:0px 0px
-padding:15px 15px;
-transition: ease-in 200ms;
-  &:hover {
-    background-color: #5953ff;
-    box-shadow: #000000 0px 5px 20px 7px;
-    transform: scale(1.2);
-    padding:20px 5px;
-    margin:0px 15px;
-}
-    
+font: italic
+font-family:arial;
+text-transform:uppercase;
+letter-spacing:5px;
+font-size:1.5vw;
+@media (min-width: 1px) and (max-width: 426px) {
+  font-size:2vw;
+ }
 `
 
 class Nav extends Component {
-
-render() { 
+  componentDidMount(){
+    AOS.init({
+      duration : 1000
+    })
+  }
+render() {
+ 
     return (
-      <Navbar>
-      <List>
-      <ListItem>
-        <Link
-          activeClass="active"
-          to="Nav"
-          spy={true}
-          smooth={true}
-          offset={-100}
-          duration= {500}
-          >Home
-        </Link>
-      </ListItem>
-      <ListItem>
-        <Link
-          activeClass="active"
-          to="Skills"
-          spy={true}
-          smooth={true}
-          offset={-55}
-          duration= {500}
-          >Projects
-        </Link>
-      </ListItem>
-      <ListItem>
-        <Link
-          activeClass="active"
-          to="ContactMe"
-          spy={true}
-          smooth={true}
-          offset={-55}
-          duration= {500}
-          >Contact Me
-        </Link>
-      </ListItem>
-      <ListItem>
-        <Link
-          activeClass="active"
-          to="Hobbies"
-          spy={true}
-          smooth={true}
-          offset={-430}
-          duration= {500}
-          >Hobbies
-        </Link>  
-      </ListItem>         
-      </List>
-      </Navbar>
+      
+      <Container id="Home">
 
+          <Holder  data-aos='fade-down'>
+          <Heading>Personal Website</Heading>
+          </Holder>
+
+          <Holder  data-aos='fade-down'>
+          <Heading> </Heading>
+          </Holder>
+
+          <Holder data-aos='fade-down'>
+            <a href="mailto:zaheerroberts4@gmail.com">
+          <Heading>Work with me</Heading>
+          </a>
+          </Holder>
+
+      </Container>
   );
   }
 }
