@@ -122,8 +122,9 @@ const RightContainer = styled.div`
 overflow:hidden
 display:flex;
 background:#020202;
-
-right:0px
+position:absolute;
+top:25vw;
+right:0px;
 @media (min-width: 1px) and (max-width: 426px) {
 
  }
@@ -132,6 +133,7 @@ right:0px
 const RightContainerImg = styled.img`
 height: 40vw;
     width: 25vw;
+   
 @media (min-width: 1px) and (max-width: 426px) {
   width: 49vw;
 

@@ -30,7 +30,7 @@ font-family:arial;
 
 font-weight:bolder;
 @media (min-width: 1px) and (max-width: 426px) {
-
+  font-size:7vw;
   }
 `
 
@@ -47,7 +47,7 @@ justify-content:center;
 `
 
 const Focus =styled.h1`
-font-size:10vw;
+font-size:15vw;
 color:white;
 margin:0px;
 font-family:arial;
