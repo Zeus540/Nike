@@ -24,12 +24,16 @@ height:100vh;
   float:left;
   font-family:arial
   min-width: 35vw;
+ 
   @media  (min-width: 1px) and (max-width: 425px) {
     min-width: 114vw;
   }
+  @media  (min-width: 426px) and (max-width: 480px) {
+    min-width: 55vw;
+  }
  
-  @media  (min-width: 425px) and (max-width: 768px) {
-    width: 110vw;
+  @media  (min-width: 480px) and (max-width: 768px) {
+    width: 100vw;
   }
 `
 
@@ -50,7 +54,7 @@ const Img = styled.img`
 `   
 
 const TextContainer =styled.div`
-width:100%;
+width: 70%;
 overflow-y: auto;
 
 @media  (min-width: 1px) and (max-width: 425px) {
@@ -73,6 +77,7 @@ const Text = styled.p`
     font-size: 4.5vw;
     position: relative;
     width: unset;
+    text-align:left;
   }
   @media  (min-width: 426px) and (max-width: 768px) {
     padding:4vw 4vw 4vw 4vw;
@@ -132,7 +137,7 @@ margin:5% 0px 0px 0px;
 }
 @media  (min-width: 426px) and (max-width: 768px) {
   font-size:10vw;
-  bottom: 5vw
+  bottom: 3vw
   margin:2vw 0px 0px 0px;
 }
 `
