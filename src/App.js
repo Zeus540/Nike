@@ -3,7 +3,7 @@ import './App.css';
 import Parallax2 from './components/parallax2.jsx'
 import Footer from './components/Footer.jsx'
 import af1 from './images/react.jpg'
-import af2 from './images/A5AEDE33-E71E-4BC1-B417-A83A46EFA2FB.jpg';
+import af2 from './images/A5AEDE33-E71E-4BC1-B417-A83A46EFA2FB1.png';
 import acw1 from './images/acw1.jpg'
 import acw2 from './images/acw2.jpg';
 import Fog from './images/e5c5a58103d2d993135ae505abfb08d7.jpg'
@@ -56,23 +56,7 @@ function App() {
 
   return (
     <div className="App" >
-            
-            {State3.map((data, index) => (
-            <Parallax2
-             key={index} 
-             color="#59c3a0" 
-           
-             Tcolor="white" 
-             T1="aliceblue" 
-             T2="coral" 
-             img={data.img} 
-             img1={data.img1} 
-             text1={data.text1} 
-             text2={data.text2} 
-             heading={data.heading}
-             heading2={data.heading2}  
-             paragraph1={data.paragraph1}
-              />))}
+        
 
             {State1.map((data, index) => (
             <Parallax2

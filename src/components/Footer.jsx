@@ -1,19 +1,25 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import footer from '../images/footer.png'
 
 const Container = styled.div`
-background-color:#59c3a0;
+background: url(${footer});  
+background-size:100% 100%;
 display:inline-block;
 right: 0;
-z-index:25;
+width: 7vw;
+    height: 32vw;
+    z-index:25;
     position: absolute;
     color: black;
-@media(max-width:480px){
+
+@media  (min-width: 1px) and (max-width: 425px) {
     display:flex;
     flex-direction:column;
     text-align:center;
-   
-}
+    width: 31vw;
+    height: 98vw;
+  }
 `
 
 const Copyright = styled.p`
@@ -36,7 +42,16 @@ justify-content: center;
 
 const Legal = styled.div`
 display: inline-block;
-padding: 15px 15px;
+padding: 2vw 1vw;
+position:absolute;
+top:2vw;
+right:0vw;
+@media  (min-width: 1px) and (max-width: 425px) {
+  padding: 4vw 2vw;
+}
+@media  (min-width: 426px) and (max-width: 768px) {
+
+}
 `
 
 
