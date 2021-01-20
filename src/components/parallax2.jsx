@@ -3,24 +3,24 @@ import styled from 'styled-components';
 
 
 const Container = styled.div`
-  min-width: 100vw;
+
   min-height:100vh;
   background: ${props=> props.color};
   position:relative;
-
+  display: flex;
 `
 
 const LeftContainer = styled.div`
-  min-width: 30vw;
   max-height: 100vh;
   display: flex;
   flex-direction: column;
   float:left;
-  @media (max-width: 480px) {
-    max-height: unset;
+  font-family:arial
+  @media  (min-width: 1px) and (max-width: 425px) {
+    min-width:80vw;
   }
-  @media (min-width: 768px) and (max-width: 1024px) and (orientation:portrait) {
-    min-width: 50vw;
+  @media  (min-width: 426px) and (max-width: 768px) {
+    width:90vw;
   }
 `
 const Topbox = styled.div`
@@ -29,114 +29,106 @@ const Topbox = styled.div`
   width:30vw;
   height:50vh;
   padding:0px 0px 0px 0px;
+  @media  (min-width: 1px) and (max-width: 425px) {
+    min-width:100%;
+  }
+  @media  (min-width: 426px) and (max-width: 768px) {
+    width:100%;
+  }
 `
 
 const RightContainer = styled.div`
   min-width: 70vw;
   height: 100vh;
   float:right;
-  @media (max-width: 480px) {
-    height:50vh;
+
+  @media  (min-width: 1px) and (max-width: 425px) {
+    min-width:240vw;
   }
-  @media (min-width: 768px) and (max-width: 1024px) and (orientation:portrait) {
-    min-width: 50vw;
-  }
+
 
 `
 
 const Img = styled.img`
-  width:70vw;
+  width:100%;
   height:100%;
   border:none;
-  @media (max-width: 480px) {
-    width:100vw;
-    height:50vh;
-  }
-  @media (min-width: 768px) and (max-width: 1024px) and (orientation:portrait) {
-    width: 50vw;
-  }
+ 
 `
 const Imgtop = styled.img`
   width:100%;
   height:100%;
   border:none;
-  @media (max-width: 480px) {
-    width:100vw;
-    height:50vh;
-  }
-  @media (min-width: 768px) and (max-width: 1024px) and (orientation:portrait) {
-    width: 50vw;
-  }
 `
 const TextContainer =styled.div`
-width:30vw;
-
-  @media (max-width: 480px) {
-    width:100vw;
-    height:unset;
-    overflow-y: scroll;
-  }
+width:100%;
+overflow-y: auto;
 `
 
 const Text = styled.p`
   color:${props=> props.Tcolor};
-  padding:0px 5px 0px 5px;
-
-  
-
-`
-const Heading = styled.h1`
-padding:0px 20px 0px 20px;
-margin:0px;
-color:${props=> props.Hcolor};
-font-size:25px;
-display:none;
-@media (max-width: 480px) {
-  padding:0px 0px 0px 0px;
-  text-align:center;
-  display:block;
-}
-`
-
-const Heading2 = styled.h1`
-padding:0px 20px 0px 20px;
-margin:0px;
-color:${props=> props.Hcolor};
-font-size:25px;
-display:none;
-@media (max-width: 480px) {
-  padding:0px 0px 0px 0px;
-  text-align:center;
-  display:block;
-}
+  padding:2vw 2vw 2vw 2vw;
+  text-align:justify;
+  @media  (min-width: 1px) and (max-width: 425px) {
+    padding:6vw 8vw 5vw 8vw;
+    font-weight: lighter;
+    font-size: 4.5vw;
+  }
+  @media  (min-width: 426px) and (max-width: 768px) {
+   
+    padding:4vw 4vw 4vw 4vw;
+  }
 `
 
 const Floating = styled.div`
 position:absolute;
-padding:0px 20px 0px 17%;
 color:white;
-@media (max-width: 480px){
-position:unset;
-text-align:center;
-display:none;
+top: 4.5vw;
+left: 20vw;
+white-space:nowrap;
+font-family:arial;
+font-weight:bold;
+@media (max-width: 425px){
+  font-size:20vw;
+  letter-spacing: 1vw;
+  top: 21vw;
+  left: 94vw;
 }
+@media  (min-width: 426px) and (max-width: 768px) {
+  top:10vw;
+  left: 40vw;
+}
+
 `
 
 const Text1 = styled.h1`
 color:${props=> props.T1};
-margin:5% 0px 0px 0px;
-
+font-size:6vw;
+@media  (min-width: 1px) and (max-width: 425px) {
+  font-size: 27vw;
+}
+@media  (min-width: 426px) and (max-width: 768px) {
+  font-size:10vw;
+  top:10vw;
+  left: 40vw;
+}
 `
 
 const Text2 = styled.h1`
 margin:0px;
 color:${props=> props.T2};
-@media (min-width: 731px){
-  font-size:9vw;
-  }
-  @media (min-width: 1440px){
-    font-size:7vw;
-    }
+font-size:6vw;
+margin:5% 0px 0px 0px;
+@media  (min-width: 1px) and (max-width: 425px) {
+  font-size: 27vw;
+  margin:4vw 0px 0px 0px;
+}
+@media  (min-width: 426px) and (max-width: 768px) {
+  font-size:10vw;
+  top:10vw;
+  left: 40vw;
+  margin:2vw 0px 0px 0px;
+}
 `
 
 class Parallax2 extends Component {
@@ -159,8 +151,7 @@ render() {
           </Topbox>
 
           <TextContainer>
-            <Heading Hcolor={this.props.Hcolor}>{this.props.heading}</Heading>
-            <Heading2 Hcolor={this.props.Hcolor}>{this.props.heading2}</Heading2>
+         
           <Text Tcolor={this.props.Tcolor}>{this.props.paragraph1}</Text>
           </TextContainer>
 

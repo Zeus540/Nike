@@ -10,7 +10,7 @@ import Fog from './images/e5c5a58103d2d993135ae505abfb08d7.jpg'
 import Fog2 from './images/nike-air-fear-of-god-1-release-date-2.jpg'
 import github from '../src/images/github.png'
 import linkedin from '../src/images/linkedin.png'
-import ContactMe from './components/ContactMe.jsx';
+
 
 function App() {
 
@@ -19,7 +19,7 @@ function App() {
     img:af1,
     img1:af2,
     text1:"# AF-1",
-    text2:'"REACT D/MS/X"',
+    text2:'"REACT"',
     heading:"# AF-1",
     heading2:'"REACT"',
     paragraph1:"The AF1 React D/MS/X optimizes comfort with a full length Nike React midsole equipped with a heel Ramp Air unit. The upper features a large bold Swoosh and mesh construction on the side panels. The traditional AIR logo appears on the heel, along with a newly added Nike React branded stripe. Nike React’s pattern replaces the traditional stars at the heel and toe of the outsole.",
@@ -60,8 +60,8 @@ function App() {
             {State3.map((data, index) => (
             <Parallax2
              key={index} 
-             color="#202020" 
-             Hcolor="coral"
+             color="#cac8bb" 
+           
              Tcolor="aliceblue" 
              T1="aliceblue" 
              T2="coral" 
@@ -77,7 +77,7 @@ function App() {
             {State1.map((data, index) => (
             <Parallax2
              key={index} 
-             color="#202020" 
+             color="#cac8bb" 
              Hcolor="#ffffff"
              Tcolor="#ffffff"
              img={data.img} 
@@ -91,45 +91,10 @@ function App() {
              paragraph1={data.paragraph1}
               />))}
               
-
-            {State3.map((data, index) => (
-            <Parallax2
-             key={index} 
-             color="#202020" 
-             Hcolor="coral"
-             Tcolor="aliceblue" 
-             T1="aliceblue" 
-             T2="coral" 
-             img={data.img} 
-             img1={data.img1} 
-             text1={data.text1} 
-             text2={data.text2} 
-             heading={data.heading}
-             heading2={data.heading2}  
-             paragraph1={data.paragraph1}
-              />))}
-
-               {State1.map((data, index) => (
-            <Parallax2
-             key={index} 
-             color="#202020" 
-             Hcolor="#ffffff"
-             Tcolor="#ffffff"
-             img={data.img} 
-             img1={data.img1} 
-             text1={data.text1} 
-             T1="#ffffff" 
-             text2={data.text2} 
-             T2="#ffffff" 
-             heading={data.heading}
-             heading2={data.heading2}  
-             paragraph1={data.paragraph1}
-              />))}
-
       {State5.map((data, index) => (
             <Parallax2 
             key={index} 
-            color="#202020" 
+            color="#cac8bb" 
             Hcolor="#ffffff" 
             Tcolor="#f4f8ff" 
             img={data.img} 
@@ -143,9 +108,7 @@ function App() {
             paragraph1={data.paragraph1} 
             />))}
      
-     <ContactMe/>
-
-
+   
 <Footer link1={linkedin} link2={github}/>
     </div>
   );
