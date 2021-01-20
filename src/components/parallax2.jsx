@@ -208,14 +208,20 @@ white-space: nowrap;
 
 const ShoeHolder = styled.div`
 position: relative;
-top: 35%;
+top:12vw
     left: 27%;
     transform: translate(-50%, -50%);
 @media  (min-width: 1px) and (max-width: 425px) {
- 
+  top: 35vw;
 }
 @media  (min-width: 426px) and (max-width: 768px) {
- 
+  top: 40vw;
+}
+@media  (min-width: 769px) and (max-width:1024px) {
+  top: 30vw;
+}
+@media  (min-width: 1025px) and (max-width: 1440px) {
+  top: 17vw;
 }
 `
     
