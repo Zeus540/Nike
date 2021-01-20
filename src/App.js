@@ -71,9 +71,9 @@ function App() {
             img={data.img} 
             img1={data.img1} 
             text1={data.text1} 
-            T1="aliceblue" 
+            T1="white" 
             text2={data.text2} 
-            T2="#4d6a88" 
+            T2="white" 
             heading={data.heading}
             heading2={data.heading2}  
             paragraph1={data.paragraph1} 

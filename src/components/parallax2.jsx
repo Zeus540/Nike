@@ -18,23 +18,26 @@ const Container = styled.div`
 const LeftContainer = styled.div`
 background: url(${Left});  
 background-size:100% 100%;
-  max-height: 100vh;
+height: 100vh;
   display: flex;
   flex-direction: column;
   float:left;
   font-family:arial
-  min-width: 28vw;
+  min-width: 35vw;
   @media  (min-width: 1px) and (max-width: 425px) {
     min-width: 114vw;
   }
-  @media  (min-width: 426px) and (max-width: 768px) {
-    width:90vw;
+  @media  (min-width: 426px) and (max-width: 480px) {
+    width: 120vw;
+  }
+  @media  (min-width: 481px) and (max-width: 768px) {
+    width: 110vw;
   }
 `
 
 
 const RightContainer = styled.div`
-  min-width: 70vw;
+  min-width: 60vw;
   height: 100vh;
   float:right;
   @media  (min-width: 1px) and (max-width: 425px) {
@@ -50,13 +53,14 @@ const Img = styled.img`
 
 const TextContainer =styled.div`
 width:100%;
+overflow-y: auto;
 
 @media  (min-width: 1px) and (max-width: 425px) {
   width: 77vw;
   position: relative;
   top: 0vw;
   left: 0vw;
-  overflow-y: auto;
+ 
   
 }
 `
@@ -124,10 +128,13 @@ margin:5% 0px 0px 0px;
 @media  (min-width: 1px) and (max-width: 425px) {
   font-size: 22vw;
   margin:4vw 0px 0px 0px;
+  
+  bottom: 4vw;
+
 }
 @media  (min-width: 426px) and (max-width: 768px) {
   font-size:10vw;
-
+  bottom: 5vw
   margin:2vw 0px 0px 0px;
 }
 `

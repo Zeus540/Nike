@@ -20,6 +20,10 @@ width: 7vw;
     width: 19vw;
     height: 98vw;
   }
+  @media  (min-width: 426px) and (max-width: 768px) {
+    width: 17vw;
+    height: 57vw;
+  }
 `
 
 const Copyright = styled.p`
@@ -46,12 +50,17 @@ padding: 2vw 1vw;
 position:absolute;
 top:2vw;
 right:0vw;
+
+font-size: 1vw;
+
 @media  (min-width: 1px) and (max-width: 425px) {
      font-size: 3.5vw;
      top:16vw;
 right:0vw;
 }
 @media  (min-width: 426px) and (max-width: 768px) {
+
+    font-size: 2.1vw;
 
 }
 `
