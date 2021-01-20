@@ -17,7 +17,7 @@ width: 7vw;
     display:flex;
     flex-direction:column;
     text-align:center;
-    width: 31vw;
+    width: 19vw;
     height: 98vw;
   }
 `
@@ -32,7 +32,7 @@ writing-mode: vertical-lr;
 justify-content: center;
 @media  (min-width: 1px) and (max-width: 425px) {
 
-  font-size:4vw;
+    font-size: 3.5vw;
 }
 @media  (min-width: 426px) and (max-width: 768px) {
 
@@ -47,7 +47,9 @@ position:absolute;
 top:2vw;
 right:0vw;
 @media  (min-width: 1px) and (max-width: 425px) {
-  padding: 4vw 2vw;
+     font-size: 3.5vw;
+     top:16vw;
+right:0vw;
 }
 @media  (min-width: 426px) and (max-width: 768px) {
 

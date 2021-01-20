@@ -9,10 +9,10 @@ const Container = styled.div`
   display: flex;
 
   @media  (min-width: 426px) and (max-width: 768px) {
-    width:100vw;
+
   }
   @media  (min-width: 769px) and (max-width: 2560px) {
-    width:100vw;
+    min-width:100vw;
 `
 
 const LeftContainer = styled.div`
@@ -50,9 +50,14 @@ const Img = styled.img`
 
 const TextContainer =styled.div`
 width:100%;
-overflow-y: auto;
+
 @media  (min-width: 1px) and (max-width: 425px) {
-  width: 78%;
+  width: 77vw;
+  position: relative;
+  top: 0vw;
+  left: 0vw;
+  overflow-y: auto;
+  
 }
 `
 
@@ -64,9 +69,8 @@ const Text = styled.p`
   @media  (min-width: 1px) and (max-width: 425px) {
     padding:6vw 8vw 5vw 8vw;
     font-size: 4.5vw;
-    z-index: 30;
-    width:60vw;
     position: relative;
+    width: unset;
   }
   @media  (min-width: 426px) and (max-width: 768px) {
     padding:4vw 4vw 4vw 4vw;

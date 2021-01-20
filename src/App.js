@@ -4,8 +4,7 @@ import Parallax2 from './components/parallax2.jsx'
 import Footer from './components/Footer.jsx'
 import af1 from './images/react.jpg'
 import af2 from './images/A5AEDE33-E71E-4BC1-B417-A83A46EFA2FB1.png';
-
-import Fog from './images/e5c5a58103d2d993135ae505abfb08d7.jpg'
+import Fog from './images/e5c5a58103d2d993135ae505abfb08d7.png'
 import Fog2 from './images/nike-air-fear-of-god-1-release-date-2.jpg'
 import github from '../src/images/github.png'
 import linkedin from '../src/images/linkedin.png'
