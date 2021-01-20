@@ -4,7 +4,7 @@ import Left from '../images/left.png'
 
 const Container = styled.div`
   background:#323a3a;
-  min-height:100vh;
+
   position:relative;
   display: flex;
 
@@ -18,7 +18,7 @@ const Container = styled.div`
 const LeftContainer = styled.div`
 background: url(${Left});  
 background-size:100% 100%;
-height: 100vh;
+height:100vh;
   display: flex;
   flex-direction: column;
   float:left;
@@ -27,10 +27,8 @@ height: 100vh;
   @media  (min-width: 1px) and (max-width: 425px) {
     min-width: 114vw;
   }
-  @media  (min-width: 426px) and (max-width: 480px) {
-    width: 120vw;
-  }
-  @media  (min-width: 481px) and (max-width: 768px) {
+ 
+  @media  (min-width: 425px) and (max-width: 768px) {
     width: 110vw;
   }
 `
@@ -69,16 +67,16 @@ const Text = styled.p`
   color:${props=> props.Tcolor};
   padding:2vw 2vw 2vw 2vw;
   text-align:justify;
-  width:20vw;
+ 
   @media  (min-width: 1px) and (max-width: 425px) {
-    padding:6vw 8vw 5vw 8vw;
+    padding: 6vw 1vw 5vw 8vw;
     font-size: 4.5vw;
     position: relative;
     width: unset;
   }
   @media  (min-width: 426px) and (max-width: 768px) {
     padding:4vw 4vw 4vw 4vw;
-    width:35vw;
+ 
   }
 `
 
