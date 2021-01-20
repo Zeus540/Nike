@@ -4,8 +4,7 @@ import Parallax2 from './components/parallax2.jsx'
 import Footer from './components/Footer.jsx'
 import af1 from './images/react.jpg'
 import af2 from './images/A5AEDE33-E71E-4BC1-B417-A83A46EFA2FB1.png';
-import acw1 from './images/acw1.jpg'
-import acw2 from './images/acw2.jpg';
+
 import Fog from './images/e5c5a58103d2d993135ae505abfb08d7.jpg'
 import Fog2 from './images/nike-air-fear-of-god-1-release-date-2.jpg'
 import github from '../src/images/github.png'
@@ -27,18 +26,7 @@ function App() {
 }
   ]);
 
-  const [State3] = useState([
-    {key:"",
-    img:acw2,
-    img1:acw1,
-    text1:"# AF-1",
-    text2:'"A COLD WALL"',
-    heading:'# AF-1 ',
-    heading2:'"A COLD WALL"',
-    paragraph1:"Building on a partnership that began in 2017, A-COLD-WALL* and Nike return with an Air Force 1. Led by Samuel Ross, A-COLD-WALL* is a curated representation of British street culture. The new Air Force 1 Low by A-COLD-WALL* harkens back to their original AF-1 High design from 2017, and features a Flyleather construction made with at least 50% leather fibre. Flyleather looks and feels like natural leather, but is made by recapturing the leather fibres that were previously destined for landfills.",
-
-}
-  ]);
+ 
 
   const [State5] = useState([
     {key:"",
