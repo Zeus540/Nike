@@ -30,9 +30,10 @@ const Topbox = styled.div`
   min-height: 50vh;
   width:30vw;
   height:50vh;
-  padding:0px 0px 0px 0px;
+  padding: 2vw 0px 0px 0px;
   @media  (min-width: 1px) and (max-width: 425px) {
     min-width:100%;
+    padding: 5vw 0px 0px 0px;
   }
   @media  (min-width: 426px) and (max-width: 768px) {
     width:100%;
@@ -45,7 +46,7 @@ const RightContainer = styled.div`
   float:right;
 
   @media  (min-width: 1px) and (max-width: 425px) {
-    min-width:240vw;
+    min-width:200vw;
   }
 
 
@@ -56,11 +57,14 @@ const Img = styled.img`
   height:100%;
   border:none;
  
-`
+`   
 const Imgtop = styled.img`
   width:100%;
   height:100%;
   border:none;
+  -webkit-clip-path: polygon(49% 0, 90% 20%, 89% 82%, 49% 100%, 10% 82%, 10% 19%);
+clip-path: polygon(49% 0, 90% 20%, 89% 82%, 49% 100%, 10% 82%, 10% 19%);
+
 `
 const TextContainer =styled.div`
 width:100%;
@@ -73,7 +77,6 @@ const Text = styled.p`
   text-align:justify;
   @media  (min-width: 1px) and (max-width: 425px) {
     padding:6vw 8vw 5vw 8vw;
-    font-weight: lighter;
     font-size: 4.5vw;
   }
   @media  (min-width: 426px) and (max-width: 768px) {
@@ -90,6 +93,7 @@ left: 20vw;
 white-space:nowrap;
 font-family:arial;
 font-weight:bold;
+z-index:10;
 @media (max-width: 425px){
   font-size:20vw;
   letter-spacing: 1vw;
@@ -107,7 +111,7 @@ const Text1 = styled.h1`
 color:${props=> props.T1};
 font-size:6vw;
 @media  (min-width: 1px) and (max-width: 425px) {
-  font-size: 27vw;
+  font-size: 25vw;
 }
 @media  (min-width: 426px) and (max-width: 768px) {
   font-size:10vw;
@@ -122,7 +126,7 @@ color:${props=> props.T2};
 font-size:6vw;
 margin:5% 0px 0px 0px;
 @media  (min-width: 1px) and (max-width: 425px) {
-  font-size: 27vw;
+  font-size: 22vw;
   margin:4vw 0px 0px 0px;
 }
 @media  (min-width: 426px) and (max-width: 768px) {

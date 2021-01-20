@@ -2,9 +2,10 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 
 const Container = styled.div`
-background-color:#cac8bb;
+background-color:#59c3a0;
 display:inline-block;
 right: 0;
+z-index:25;
     position: absolute;
     color: black;
 @media(max-width:480px){
@@ -24,7 +25,7 @@ display: flex;
 writing-mode: vertical-lr;
 justify-content: center;
 @media  (min-width: 1px) and (max-width: 425px) {
-  writing-mode:unset;
+
   font-size:4vw;
 }
 @media  (min-width: 426px) and (max-width: 768px) {

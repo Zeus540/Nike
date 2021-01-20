@@ -60,9 +60,9 @@ function App() {
             {State3.map((data, index) => (
             <Parallax2
              key={index} 
-             color="#cac8bb" 
+             color="#59c3a0" 
            
-             Tcolor="black" 
+             Tcolor="white" 
              T1="aliceblue" 
              T2="coral" 
              img={data.img} 
@@ -77,9 +77,9 @@ function App() {
             {State1.map((data, index) => (
             <Parallax2
              key={index} 
-             color="#cac8bb" 
+             color="#59c3a0" 
              Hcolor="#ffffff"
-             Tcolor="black"
+             Tcolor="white"
              img={data.img} 
              img1={data.img1} 
              text1={data.text1} 
@@ -94,9 +94,9 @@ function App() {
       {State5.map((data, index) => (
             <Parallax2 
             key={index} 
-            color="#cac8bb" 
+            color="#59c3a0" 
             Hcolor="#ffffff" 
-            Tcolor="black" 
+            Tcolor="white" 
             img={data.img} 
             img1={data.img1} 
             text1={data.text1} 
