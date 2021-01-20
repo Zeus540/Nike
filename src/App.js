@@ -62,7 +62,7 @@ function App() {
              key={index} 
              color="#cac8bb" 
            
-             Tcolor="aliceblue" 
+             Tcolor="black" 
              T1="aliceblue" 
              T2="coral" 
              img={data.img} 
@@ -79,7 +79,7 @@ function App() {
              key={index} 
              color="#cac8bb" 
              Hcolor="#ffffff"
-             Tcolor="#ffffff"
+             Tcolor="black"
              img={data.img} 
              img1={data.img1} 
              text1={data.text1} 
@@ -96,7 +96,7 @@ function App() {
             key={index} 
             color="#cac8bb" 
             Hcolor="#ffffff" 
-            Tcolor="#f4f8ff" 
+            Tcolor="black" 
             img={data.img} 
             img1={data.img1} 
             text1={data.text1} 

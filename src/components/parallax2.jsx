@@ -16,8 +16,10 @@ const LeftContainer = styled.div`
   flex-direction: column;
   float:left;
   font-family:arial
+  overflow-y: auto;
   @media  (min-width: 1px) and (max-width: 425px) {
     min-width:80vw;
+    
   }
   @media  (min-width: 426px) and (max-width: 768px) {
     width:90vw;
@@ -62,7 +64,7 @@ const Imgtop = styled.img`
 `
 const TextContainer =styled.div`
 width:100%;
-overflow-y: auto;
+
 `
 
 const Text = styled.p`
