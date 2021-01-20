@@ -21,8 +21,8 @@ width: 7vw;
     height: 98vw;
   }
   @media  (min-width: 426px) and (max-width: 768px) {
-    width: 17vw;
-    height: 63vw;
+    width: 14vw;
+    height: 51vw;
 
   }
 `

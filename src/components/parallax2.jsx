@@ -28,12 +28,12 @@ height:100vh;
   @media  (min-width: 1px) and (max-width: 425px) {
     min-width: 114vw;
   }
-  @media  (min-width: 426px) and (max-width: 480px) {
+  @media  (min-width: 426px) and (max-width: 768px) {
     min-width: 55vw;
   }
  
-  @media  (min-width: 480px) and (max-width: 768px) {
-    width: 100vw;
+  @media  (min-width: 769px) and (max-width: 1240px) {
+    width: 60vw;
   }
 `
 
@@ -48,10 +48,40 @@ const RightContainer = styled.div`
 `
 
 const Img = styled.img`
-  width:100%;
-  height:100%;
-  border:none;
+width: 30vw;
+height: 30vw;
+border: none;
+position: relative;
+top: 12vw;
+z-index: 2;
+left: 8vw;
+@media  (min-width: 1px) and (max-width: 425px) {
+  width: 70vw;
+  height: 80vw;
+  top: 40vw;
+  left: 45vw;
+  
+}
+@media  (min-width: 426px) and (max-width: 768px) {
+
+  left: 18vw;
+  
+}
 `   
+const Img2 = styled.img`
+width: 30vw;
+height: 30vw;
+border: none;
+top: 15vw;
+position: relative;
+
+@media  (min-width: 1px) and (max-width: 425px) {
+  width: 70vw;
+  height: 80vw;
+  top: 40vw;
+  left: 6vw;
+}
+`  
 
 const TextContainer =styled.div`
 width: 70%;
@@ -69,7 +99,7 @@ overflow-y: auto;
 
 const Text = styled.p`
   color:${props=> props.Tcolor};
-  padding:2vw 2vw 2vw 2vw;
+  margin:2vw 2vw 2vw 2vw;
   text-align:justify;
  
   @media  (min-width: 1px) and (max-width: 425px) {
@@ -109,10 +139,11 @@ z-index:10;
 const Text1 = styled.h1`
 color:${props=> props.T1};
 font-size:6vw;
-margin-top: 5vw;
+margin-top: 4vw;
 margin-bottom: 0;
 margin-left: 0vw;
 white-space: nowrap;
+position:relative;
 @media  (min-width: 1px) and (max-width: 425px) {
   font-size: 25vw;
   margin: 15vw;
@@ -122,7 +153,11 @@ white-space: nowrap;
 }
 @media  (min-width: 426px) and (max-width: 768px) {
   font-size:10vw;
-
+  bottom: -9vw
+}
+@media  (min-width: 769px) and (max-width: 1440px) {
+  font-size:10vw;
+  bottom: -4vw
 }
 `
 
@@ -131,8 +166,8 @@ margin:0px;
 position:absolute;
 color:${props=> props.T2};
 font-size:6vw;
-right: 7vw;
-bottom: 4vw
+right: 2vw;
+bottom: 0vw
 margin: 15vw;
 margin-bottom: 0;
 
@@ -142,12 +177,13 @@ white-space: nowrap;
   margin: 15vw;
   margin-bottom: 0;
   bottom: 4vw;
-
+  right: 15vw;
+ 
 }
 @media  (min-width: 426px) and (max-width: 768px) {
   font-size:10vw;
-  bottom: 3vw
-  
+  bottom: -2vw
+  right: -3vw;
 }
 `
 
@@ -175,7 +211,8 @@ render() {
         </LeftContainer>
 
         <RightContainer>
-          <Img src={this.props.img1} alt=""/>
+          <Img src={this.props.img1} alt="" className="shoe"/>
+          <Img2 src={this.props.img1} alt="" className="shoe"/>
         </RightContainer>
 
       </Container>

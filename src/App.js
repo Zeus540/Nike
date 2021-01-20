@@ -3,11 +3,10 @@ import './App.css';
 import Parallax2 from './components/parallax2.jsx'
 import Footer from './components/Footer.jsx'
 import af1 from './images/react.jpg'
-import af2 from './images/A5AEDE33-E71E-4BC1-B417-A83A46EFA2FB1.png';
+import af2 from './images/test.png';
 import Fog from './images/e5c5a58103d2d993135ae505abfb08d7.png'
 import Fog2 from './images/nike-air-fear-of-god-1-release-date-2.jpg'
-import github from '../src/images/github.png'
-import linkedin from '../src/images/linkedin.png'
+
 
 
 function App() {
@@ -29,8 +28,8 @@ function App() {
 
   const [State5] = useState([
     {key:"",
-    img:Fog2,
-    img1:Fog,
+    img:af2,
+    img1:af2,
     text1:"# NIKE",
     text2:'"FEAR OF GOD"',
     heading:"# NIKE",
@@ -80,7 +79,7 @@ function App() {
             />))}
      
    
-<Footer link1={linkedin} link2={github}/>
+<Footer />
     </div>
   );
 }

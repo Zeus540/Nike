@@ -135,3 +135,13 @@ body::-webkit-scrollbar {
 	}
   }
   
+
+  @keyframes bounce { 
+	0% { transform: translateY(0); }
+	100% { transform: translateY(-50px); }
+  }
+  .shoe {
+	animation: bounce 0.8s;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+  }
