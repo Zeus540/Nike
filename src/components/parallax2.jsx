@@ -109,10 +109,16 @@ z-index:10;
 const Text1 = styled.h1`
 color:${props=> props.T1};
 font-size:6vw;
-padding: 4vw 0vw 2vw 2vw;
+margin-top: 5vw;
+margin-bottom: 0;
+margin-left: 0vw;
+white-space: nowrap;
 @media  (min-width: 1px) and (max-width: 425px) {
   font-size: 25vw;
-  padding: 10vw 0vw 5vw 8vw;
+  margin: 15vw;
+  margin-bottom: 0;
+  margin-top: 30vw;
+  margin-left: 0vw;
 }
 @media  (min-width: 426px) and (max-width: 768px) {
   font-size:10vw;
@@ -127,18 +133,21 @@ color:${props=> props.T2};
 font-size:6vw;
 right: 7vw;
 bottom: 4vw
-margin:5% 0px 0px 0px;
+margin: 15vw;
+margin-bottom: 0;
+
+white-space: nowrap;
 @media  (min-width: 1px) and (max-width: 425px) {
   font-size: 22vw;
-  margin:4vw 0px 0px 0px;
-  
+  margin: 15vw;
+  margin-bottom: 0;
   bottom: 4vw;
 
 }
 @media  (min-width: 426px) and (max-width: 768px) {
   font-size:10vw;
   bottom: 3vw
-  margin:2vw 0px 0px 0px;
+  
 }
 `
 
@@ -148,19 +157,19 @@ render() {
 
 
     return (
-      <Container color={this.props.color}>
+      <Container color={this.props.color} >
 
         <Floating>
          
-          <Text2 T2={this.props.T2}>{this.props.text2}</Text2>
+          <Text2 T2={this.props.T2} className="text-pop-up-tr">{this.props.text2}</Text2>
         </Floating>
 
-        <LeftContainer>
-        <Text1 T1={this.props.T1}>{this.props.text1}</Text1>
+        <LeftContainer >
+        <Text1 T1={this.props.T1} className="text-pop-up-tr">{this.props.text1}</Text1>
 
           <TextContainer>
          
-          <Text Tcolor={this.props.Tcolor}>{this.props.paragraph1}</Text>
+          <Text Tcolor={this.props.Tcolor} >{this.props.paragraph1}</Text>
           </TextContainer>
 
         </LeftContainer>

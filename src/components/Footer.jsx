@@ -21,8 +21,9 @@ width: 7vw;
     height: 98vw;
   }
   @media  (min-width: 426px) and (max-width: 768px) {
-    width: 13vw;
-    height: 46vw;
+    width: 17vw;
+    height: 63vw;
+
   }
 `
 
@@ -46,6 +47,7 @@ justify-content: center;
 
 const Legal = styled.div`
 display: inline-block;
+padding: 2vw 1vw;
 position:absolute;
 top:2vw;
 right:0vw;
@@ -59,7 +61,7 @@ right:0vw;
 }
 @media  (min-width: 426px) and (max-width: 768px) {
 
-    font-size: 1.5vw;
+    font-size: 2.1vw;
 
 }
 `
