@@ -19,11 +19,12 @@ const LeftContainer = styled.div`
 background: url(${Left});  
 background-size:100% 100%;
 height:100vh;
+
   display: flex;
   flex-direction: column;
   float:left;
   font-family:arial
-  min-width: 35vw;
+  width: 35vw;
  
   @media  (min-width: 1px) and (max-width: 425px) {
     min-width: 114vw;
@@ -35,6 +36,7 @@ height:100vh;
   @media  (min-width: 769px) and (max-width: 1240px) {
     width: 60vw;
   }
+  
 `
 
 
@@ -42,44 +44,52 @@ const RightContainer = styled.div`
   min-width: 60vw;
   height: 100vh;
   float:right;
+  position:relative;
   @media  (min-width: 1px) and (max-width: 425px) {
     min-width:200vw;
   }
+  @media  (min-width: 426px) and (max-width: 768px) {
+    min-width: 80vw;
+  }
+
 `
 
 const Img = styled.img`
 width: 30vw;
 height: 30vw;
 border: none;
-position: relative;
-top: 12vw;
+position: absolute;
 z-index: 2;
 left: 8vw;
+top: 50%;
+left: 34%;
+transform: translate(-74%, -50%);
+
 @media  (min-width: 1px) and (max-width: 425px) {
-  width: 70vw;
-  height: 80vw;
-  top: 40vw;
-  left: 45vw;
-  
+  width: 100vw;
+  height: 100vw;
 }
 @media  (min-width: 426px) and (max-width: 768px) {
-
-  left: 18vw;
-  
+  width: 50vw;
+  height: 50vw;
 }
 `   
+
 const Img2 = styled.img`
 width: 30vw;
 height: 30vw;
 border: none;
-top: 15vw;
-position: relative;
-
+position: absolute;
+top: 50%;
+left:50%;
+transform: translate(-45%, -50%);
 @media  (min-width: 1px) and (max-width: 425px) {
-  width: 70vw;
-  height: 80vw;
-  top: 40vw;
-  left: 6vw;
+  width: 100vw;
+  height: 100vw;
+}
+@media  (min-width: 426px) and (max-width: 768px) {
+  width: 50vw;
+  height: 50vw;
 }
 `  
 
@@ -99,18 +109,18 @@ overflow-y: auto;
 
 const Text = styled.p`
   color:${props=> props.Tcolor};
-  margin:2vw 2vw 2vw 2vw;
+  margin:0vw 2vw 2vw 2vw;
   text-align:justify;
  
   @media  (min-width: 1px) and (max-width: 425px) {
-    padding: 6vw 1vw 5vw 8vw;
+    padding: 0vw 1vw 5vw 8vw;
     font-size: 4.5vw;
     position: relative;
     width: unset;
     text-align:left;
   }
   @media  (min-width: 426px) and (max-width: 768px) {
-    padding:4vw 4vw 4vw 4vw;
+    padding:0vw 4vw 4vw 4vw;
  
   }
 `
@@ -139,8 +149,8 @@ z-index:10;
 const Text1 = styled.h1`
 color:${props=> props.T1};
 font-size:6vw;
-margin-top: 4vw;
-margin-bottom: 0;
+margin-top: 6vw;
+
 margin-left: 0vw;
 white-space: nowrap;
 position:relative;
@@ -151,13 +161,22 @@ position:relative;
   margin-top: 30vw;
   margin-left: 0vw;
 }
-@media  (min-width: 426px) and (max-width: 768px) {
+
+@media  (min-width: 426px) and (max-width: 480px) {
   font-size:10vw;
-  bottom: -9vw
+  bottom: -10vw;
+  margin-bottom: 6vw;
 }
-@media  (min-width: 769px) and (max-width: 1440px) {
+@media  (min-width: 481px) and (max-width: 768px) {
   font-size:10vw;
-  bottom: -4vw
+  bottom: -7vw;
+  margin-bottom: 6vw;
+}
+@media  (min-width: 769px) and (max-width: 1024px) {
+  font-size:10vw;
+  bottom: -3vw
+  margin-top: 7vw;
+  margin-bottom: 4vw;
 }
 `
 
@@ -165,9 +184,9 @@ const Text2 = styled.h1`
 margin:0px;
 position:absolute;
 color:${props=> props.T2};
-font-size:6vw;
-right: 2vw;
-bottom: 0vw
+font-size:7vw;
+right: -8vw;
+bottom: -12px;
 margin: 15vw;
 margin-bottom: 0;
 
@@ -176,17 +195,30 @@ white-space: nowrap;
   font-size: 22vw;
   margin: 15vw;
   margin-bottom: 0;
-  bottom: 4vw;
+  bottom: -30px;
   right: 15vw;
  
 }
 @media  (min-width: 426px) and (max-width: 768px) {
-  font-size:10vw;
-  bottom: -2vw
+  font-size: 10vw;
+  bottom: -30px;
   right: -3vw;
 }
 `
 
+const ShoeHolder = styled.div`
+position: relative;
+top: 35%;
+    left: 27%;
+    transform: translate(-50%, -50%);
+@media  (min-width: 1px) and (max-width: 425px) {
+ 
+}
+@media  (min-width: 426px) and (max-width: 768px) {
+ 
+}
+`
+    
 class Parallax2 extends Component {
 
 render() {
@@ -195,10 +227,7 @@ render() {
     return (
       <Container color={this.props.color} >
 
-        <Floating>
-         
-          <Text2 T2={this.props.T2} className="text-pop-up-tr">{this.props.text2}</Text2>
-        </Floating>
+        
 
         <LeftContainer >
         <Text1 T1={this.props.T1} className="text-pop-up-tr">{this.props.text1}</Text1>
@@ -211,8 +240,14 @@ render() {
         </LeftContainer>
 
         <RightContainer>
-          <Img src={this.props.img1} alt="" className="shoe"/>
+        <ShoeHolder >
+          <Img src={this.props.img1} alt=""  className="shoe"/>
           <Img2 src={this.props.img1} alt="" className="shoe"/>
+          </ShoeHolder>
+          <Floating>
+         
+          <Text2 T2={this.props.T2} className="text-pop-up-tr">{this.props.text2}</Text2>
+        </Floating>
         </RightContainer>
 
       </Container>
