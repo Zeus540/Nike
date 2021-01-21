@@ -5,7 +5,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Footer from './Footer.jsx'
 import af2 from '../images/test.png';
-import Nav from './Nav.jsx'
+
 
 const Container = styled.div`
   background:#2c2d2d;
@@ -244,10 +244,10 @@ render() {
 
 
     return (
-      <Container data-aos='fade-in'>
+      <Container >
         
 
-        <LeftContainer className="fade">
+        <LeftContainer className=" slide">
         <Text1  className="text-pop-up-tr" >"AF1"</Text1>
 
           <TextContainer>

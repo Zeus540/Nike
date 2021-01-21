@@ -161,15 +161,13 @@ body::-webkit-scrollbar {
 
 
   @keyframes zoom { 
-	0% {   width: 20vw;
-		height: 20vw;
-		transform: rotate3d(0, 2, 3, 46deg);
+	0% {   
+	
 		opacity: 0;
 	     }
 
-	100% {   width: 30vw;
-		height: 30vw;
-		transform: rotate3d(0, 0, 0, 0deg);
+	100% {  
+	
 		opacity: 1;
 	    }
   }
@@ -195,4 +193,22 @@ body::-webkit-scrollbar {
 	animation-direction: linear;
 	animation-iteration-count: 1;
   }
-  
+
+
+  @keyframes slide { 
+	0% {   
+		transform: translateX(-24vw);
+		position: relative;
+	     }
+
+	100% {   
+		transform: translateX(0vw); 
+		position: relative;
+	    }
+  }
+
+  .slide {
+	animation: slide 2s;
+	animation-direction: linear;
+	animation-iteration-count: 1;
+  }
