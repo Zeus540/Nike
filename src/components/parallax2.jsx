@@ -4,7 +4,6 @@ import Left from '../images/left.png'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Footer from './Footer.jsx'
-import af1 from '../images/react.jpg'
 import af2 from '../images/test.png';
 
 const Container = styled.div`

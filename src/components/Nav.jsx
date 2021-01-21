@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import styled from 'styled-components';
-import {Switch, Route, NavLink} from "react-router-dom";
+import { NavLink} from "react-router-dom";
 
 const NavBarContainer =styled.div`
 position: absolute;
