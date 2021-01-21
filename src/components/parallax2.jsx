@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import styled from 'styled-components';
 import Left from '../images/left.png'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Container = styled.div`
   background:#323a3a;
@@ -19,7 +21,8 @@ const LeftContainer = styled.div`
 background: url(${Left});  
 background-size:100% 100%;
 height:100vh;
-
+overflow-y: auto;
+overflow-x: hidden;
   display: flex;
   flex-direction: column;
   float:left;
@@ -49,22 +52,20 @@ const RightContainer = styled.div`
     min-width:200vw;
   }
   @media  (min-width: 426px) and (max-width: 768px) {
-    min-width: 80vw;
+    min-width: 110vw;
   }
-
+  @media  (min-width: 769px) and (max-width: 1240px) {
+    min-width: 70vw;
+  }
 `
 
 const Img = styled.img`
 width: 30vw;
 height: 30vw;
 border: none;
-position: absolute;
+position: relative;
 z-index: 2;
-left: 8vw;
-top: 50%;
-left: 34%;
-transform: translate(-74%, -50%);
-
+left: 100px;
 @media  (min-width: 1px) and (max-width: 425px) {
   width: 100vw;
   height: 100vw;
@@ -80,9 +81,7 @@ width: 30vw;
 height: 30vw;
 border: none;
 position: absolute;
-top: 50%;
-left:50%;
-transform: translate(-45%, -50%);
+left: 280px;
 @media  (min-width: 1px) and (max-width: 425px) {
   width: 100vw;
   height: 100vw;
@@ -91,11 +90,14 @@ transform: translate(-45%, -50%);
   width: 50vw;
   height: 50vw;
 }
+@media  (min-width: 769px) and (max-width: 1240px) {
+  left: 200px;
+}
 `  
 
 const TextContainer =styled.div`
 width: 70%;
-overflow-y: auto;
+
 
 @media  (min-width: 1px) and (max-width: 425px) {
   width: 77vw;
@@ -208,25 +210,30 @@ white-space: nowrap;
 
 const ShoeHolder = styled.div`
 position: relative;
-top:12vw
-    left: 27%;
+display:flex;
+top:50%
+    left: 50%;
     transform: translate(-50%, -50%);
 @media  (min-width: 1px) and (max-width: 425px) {
-  top: 35vw;
+  
 }
 @media  (min-width: 426px) and (max-width: 768px) {
-  top: 40vw;
+ 
 }
 @media  (min-width: 769px) and (max-width:1024px) {
-  top: 30vw;
+ 
 }
 @media  (min-width: 1025px) and (max-width: 1440px) {
-  top: 17vw;
+ 
 }
 `
     
 class Parallax2 extends Component {
-
+  componentDidMount(){
+    AOS.init({
+      duration : 1500
+    })
+  }
 render() {
 
 
@@ -236,19 +243,19 @@ render() {
         
 
         <LeftContainer >
-        <Text1 T1={this.props.T1} className="text-pop-up-tr">{this.props.text1}</Text1>
+        <Text1 T1={this.props.T1} className="text-pop-up-tr" >{this.props.text1}</Text1>
 
           <TextContainer>
          
-          <Text Tcolor={this.props.Tcolor} >{this.props.paragraph1}</Text>
+          <Text Tcolor={this.props.Tcolor} data-aos='fade-in'>{this.props.paragraph1}</Text>
           </TextContainer>
 
         </LeftContainer>
 
-        <RightContainer>
-        <ShoeHolder >
-          <Img src={this.props.img1} alt=""  className="shoe"/>
-          <Img2 src={this.props.img1} alt="" className="shoe"/>
+        <RightContainer  data-aos='fade-in'>
+        <ShoeHolder className="shoe" >
+          <Img src={this.props.img1} alt="" />
+          <Img2 src={this.props.img1} alt="" />
           </ShoeHolder>
           <Floating>
          
