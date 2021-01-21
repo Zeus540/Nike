@@ -3,18 +3,24 @@ import styled from 'styled-components';
 import Left from '../images/left.png'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Footer from './Footer.jsx'
+import af1 from '../images/react.jpg'
+import af2 from '../images/test.png';
 
 const Container = styled.div`
-  background:#323a3a;
-
+  background:#2c2d2d;
+  overflow:hidden;
   position:relative;
   display: flex;
-
+  @media  (min-width: 1px) and (max-width: 425px) {
+    overflow:unset;
+    }
   @media  (min-width: 426px) and (max-width: 768px) {
-
+  overflow:unset;
   }
   @media  (min-width: 769px) and (max-width: 2560px) {
     min-width:100vw;
+    overflox:unset;
 `
 
 const LeftContainer = styled.div`
@@ -30,7 +36,7 @@ overflow-x: hidden;
   width: 35vw;
  
   @media  (min-width: 1px) and (max-width: 425px) {
-    min-width: 114vw;
+    min-width: 106vw;
   }
   @media  (min-width: 426px) and (max-width: 768px) {
     min-width: 55vw;
@@ -110,7 +116,7 @@ width: 70%;
 `
 
 const Text = styled.p`
-  color:${props=> props.Tcolor};
+  color:white;
   margin:0vw 2vw 2vw 2vw;
   text-align:justify;
  
@@ -149,7 +155,7 @@ z-index:10;
 `
 
 const Text1 = styled.h1`
-color:${props=> props.T1};
+color:#23ffb6;
 font-size:6vw;
 margin-top: 6vw;
 
@@ -185,7 +191,7 @@ position:relative;
 const Text2 = styled.h1`
 margin:0px;
 position:absolute;
-color:${props=> props.T2};
+color:#23ffb6;
 font-size:7vw;
 right: -8vw;
 bottom: -12px;
@@ -238,32 +244,33 @@ render() {
 
 
     return (
-      <Container color={this.props.color} >
+      <Container data-aos='fade-in'>
 
         
 
-        <LeftContainer >
-        <Text1 T1={this.props.T1} className="text-pop-up-tr" >{this.props.text1}</Text1>
+        <LeftContainer data-aos='slide-right'>
+        <Text1  className="text-pop-up-tr" >"AF1"</Text1>
 
           <TextContainer>
          
-          <Text Tcolor={this.props.Tcolor} data-aos='fade-in'>{this.props.paragraph1}</Text>
+          <Text data-aos='fade-in'>The AF1 React D/MS/X optimizes comfort with a full length Nike React midsole equipped with a heel Ramp Air unit. The upper features a large bold Swoosh and mesh construction on the side panels. The traditional AIR logo appears on the heel, along with a newly added Nike React branded stripe. Nike React’s pattern replaces the traditional stars at the heel and toe of the outsole.</Text>
           </TextContainer>
 
         </LeftContainer>
 
         <RightContainer  data-aos='fade-in'>
         <ShoeHolder className="shoe" >
-          <Img src={this.props.img1} alt="" />
-          <Img2 src={this.props.img1} alt="" />
+          <Img src={af2} alt="" />
+          <Img2 src={af2} alt="" />
           </ShoeHolder>
           <Floating>
          
-          <Text2 T2={this.props.T2} className="text-pop-up-tr">{this.props.text2}</Text2>
+          <Text2 className="text-pop-up-tr">"REACT"</Text2>
         </Floating>
         </RightContainer>
-
+        <Footer />
       </Container>
+      
   );
   }
 }

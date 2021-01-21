@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import footer from '../images/footer.png'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Container = styled.div`
 background: url(${footer});  
@@ -69,10 +71,15 @@ right:0vw;
 
 
 class Footer extends Component {
+    componentDidMount(){
+        AOS.init({
+          duration : 1500
+        })
+      }
     render() { 
         return ( 
            
-            <Container>
+            <Container data-aos='slide-left'>
                 <Legal>
                     <Copyright>All Right Reserved Copyright &copy; 2020</Copyright>
                 </Legal>

@@ -55,6 +55,7 @@ table {
 }
 body{
 	overflow-y: hidden;
+	
 }
 body::-webkit-scrollbar {
     width: .75rem;
@@ -147,4 +148,13 @@ body::-webkit-scrollbar {
 	animation: bounce 0.8s;
 	animation-direction: alternate;
 	animation-iteration-count: infinite;
+  }
+
+  a{
+	color:white;
+	text-decoration: none;
+}
+  a:active{
+	  color:#23ffb6;
+	  text-decoration: none;
   }
