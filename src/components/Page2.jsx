@@ -27,7 +27,7 @@ const LeftContainer = styled.div`
 background: url(${Left});  
 background-size:100% 100%;
 height:100vh;
-
+overflow-y: auto;
 overflow-x: hidden;
   display: flex;
   flex-direction: column;
@@ -103,8 +103,8 @@ left: 280px;
 
 const TextContainer =styled.div`
 width: 70%;
-
 overflow-y: auto;
+
 @media  (min-width: 1px) and (max-width: 425px) {
   width: 77vw;
   position: relative;
@@ -233,7 +233,7 @@ top:50%
  
 }
 `
-    
+
 const Ul =styled.ul`
 padding-right: 10vw;
 position: absolute;
@@ -245,6 +245,7 @@ const Li =styled.li`
 padding: 4vw 4vw;
 padding-bottom:0vw;
 `
+    
 class Page1 extends Component {
   componentDidMount(){
     AOS.init({
@@ -256,12 +257,11 @@ render() {
 
     return (
       <Container >
-        
-
-        <LeftContainer className=" slide">
-          <Ul>
+   
+        <LeftContainer>
+        <Ul>
             <Li>
-        <NavLink to="/" exact>
+        <NavLink to="/Page1" exact>
           BACK
           </NavLink>
           </Li>
@@ -271,8 +271,7 @@ render() {
           </NavLink>
           </Li>
           </Ul>
-        <Text1  className="text-pop-up-tr" >"AF1"</Text1>
-        
+        <Text1  className="text-pop-up-tr" >"NIKE"</Text1>
           <TextContainer>
          
           <Text data-aos='fade-in'>The AF1 React D/MS/X optimizes comfort with a full length Nike React midsole equipped with a heel Ramp Air unit. The upper features a large bold Swoosh and mesh construction on the side panels. The traditional AIR logo appears on the heel, along with a newly added Nike React branded stripe. Nike React’s pattern replaces the traditional stars at the heel and toe of the outsole.</Text>
@@ -281,17 +280,21 @@ render() {
         </LeftContainer>
 
         <RightContainer  data-aos='fade-in'>
-    
+  
         <ShoeHolder  className=" shoe">
           <Img src={af2} alt="" className=" zoom"/>
           <Img2 src={af2} alt="" className=" zoom"/>
           </ShoeHolder>
           <Floating>
          
-          <Text2 className="text-pop-up-tr">"REACT"</Text2>
+          <Text2 className="text-pop-up-tr">"FEAR OF GOD"</Text2>
         </Floating>
         </RightContainer>
+       
+        
+  
         <Footer />
+      
       </Container>
       
   );
