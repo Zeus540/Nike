@@ -79,7 +79,7 @@ class Footer extends Component {
     render() { 
         return ( 
            
-            <Container data-aos='slide-left'>
+            <Container className="fade">
                 <Legal>
                     <Copyright>All Right Reserved Copyright &copy; 2020</Copyright>
                 </Legal>

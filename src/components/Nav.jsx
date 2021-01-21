@@ -25,11 +25,11 @@ render() {
    <NavBarContainer>
      <Ul>
       <Li> <NavLink to="/" exact>
-         Home
+         BACK
        </NavLink>
        </Li>
        <Li> <NavLink to="/about" exact>
-         About
+         NEXT
        </NavLink>
        </Li>
      </Ul>

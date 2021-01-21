@@ -158,3 +158,41 @@ body::-webkit-scrollbar {
 	  color:#23ffb6;
 	  text-decoration: none;
   }
+
+
+  @keyframes zoom { 
+	0% {   width: 20vw;
+		height: 20vw;
+		transform: rotate3d(0, 2, 3, 46deg);
+		opacity: 0;
+	     }
+
+	100% {   width: 30vw;
+		height: 30vw;
+		transform: rotate3d(0, 0, 0, 0deg);
+		opacity: 1;
+	    }
+  }
+
+  .zoom {
+	animation: zoom 0.8s;
+	animation-direction: alternate;
+	animation-iteration-count: 1;
+  }
+
+  @keyframes fade { 
+	0% {   
+		opacity: 0;
+	     }
+
+	100% {   
+		opacity: 1;
+	    }
+  }
+
+  .fade {
+	animation: fade 2s;
+	animation-direction: linear;
+	animation-iteration-count: 1;
+  }
+  

@@ -1,9 +1,8 @@
 import React  from 'react';
 import './App.css';
-import Nav from './components/Nav.jsx'
 import {Switch, Route} from "react-router-dom";
-import Parallax2 from './components/parallax2';
-import Parallax3 from './components/parallax3';
+import Page1Intro from './components/Page1Intro';
+import Page1 from './components/Page1.jsx';
 
 
 function App() {
@@ -11,17 +10,11 @@ function App() {
   
   return (
     <div className="App" >
-        
-        <Nav/>
-      
         <Switch>
-     <Route path="/about" component={Parallax3}/>
-     <Route path="/" component={Parallax2}/>
+        <Route path="/" exact component={Page1Intro}/>
+        <Route path="/Page1" exact component={Page1}/>
      </Switch>
     
-     
-   
-
     </div>
   );
 }
