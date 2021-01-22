@@ -1,14 +1,15 @@
 import React, {Component} from 'react';
 import styled from 'styled-components';
-import Left from '../images/left.png'
+import back from '../images/back.png'
+import forward from '../images/right.png'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import Footer from './Footer.jsx'
-import af2 from '../images/test.png';
+
+import Purple from '../images/purple.png';
 import { NavLink} from "react-router-dom";
 
 const Container = styled.div`
-  background:#2c2d2d;
+background: linear-gradient(45deg,#67717b,#cac8bb);
   overflow:hidden;
   position:relative;
   display: flex;
@@ -24,19 +25,17 @@ const Container = styled.div`
 `
 
 const LeftContainer = styled.div`
-background: url(${Left});  
-background-size:100% 100%;
 height:100vh;
-overflow-y: auto;
+
 overflow-x: hidden;
   display: flex;
   flex-direction: column;
   float:left;
   font-family:arial
-  width: 35vw;
+  width: 30vw;
  
   @media  (min-width: 1px) and (max-width: 425px) {
-    min-width: 106vw;
+    min-width: 125vw;
   }
   @media  (min-width: 426px) and (max-width: 768px) {
     min-width: 55vw;
@@ -66,8 +65,8 @@ const RightContainer = styled.div`
 `
 
 const Img = styled.img`
-width: 30vw;
-height: 30vw;
+width: 25vw;
+height: 25vw;
 border: none;
 position: relative;
 z-index: 2;
@@ -77,41 +76,34 @@ left: 100px;
   height: 100vw;
 }
 @media  (min-width: 426px) and (max-width: 768px) {
-  width: 50vw;
-  height: 50vw;
+  width: 45vw;
+  height: 45vw;
+  left: 125px;
 }
 `   
 
-const Img2 = styled.img`
-width: 30vw;
-height: 30vw;
-border: none;
-position: absolute;
-left: 280px;
-@media  (min-width: 1px) and (max-width: 425px) {
-  width: 100vw;
-  height: 100vw;
-}
-@media  (min-width: 426px) and (max-width: 768px) {
-  width: 50vw;
-  height: 50vw;
-}
-@media  (min-width: 769px) and (max-width: 1240px) {
-  left: 200px;
-}
-`  
-
 const TextContainer =styled.div`
-width: 70%;
+width: 100%;
+font-size: 1.1vw;
 overflow-y: auto;
-
 @media  (min-width: 1px) and (max-width: 425px) {
-  width: 77vw;
+  width: 128vw;
   position: relative;
   top: 0vw;
   left: 0vw;
- 
-  
+  font-size: 6vw;
+}
+
+@media  (min-width: 426px) and (max-width: 768px) {
+  width: 100%;
+  position: relative;
+  top: 0vw;
+  font-size: 2.5vw;
+}
+@media  (min-width: 769px) and (max-width: 1240px) {
+  top: 25vw;
+  width: 100%;
+  left: 200px;
 }
 `
 
@@ -119,17 +111,20 @@ const Text = styled.p`
   color:white;
   margin:0vw 2vw 2vw 2vw;
   text-align:justify;
- 
+  line-height:2vw;
   @media  (min-width: 1px) and (max-width: 425px) {
     padding: 0vw 1vw 5vw 8vw;
-    font-size: 4.5vw;
+    line-height:8vw;
     position: relative;
     width: unset;
     text-align:left;
   }
   @media  (min-width: 426px) and (max-width: 768px) {
     padding:0vw 4vw 4vw 4vw;
- 
+    line-height:4vw;
+  }
+  @media  (min-width: 769px) and (max-width: 1240px) {
+    line-height:3vw;
   }
 `
 
@@ -155,7 +150,7 @@ z-index:10;
 `
 
 const Text1 = styled.h1`
-color:#23ffb6;
+color:#ffffff;
 font-size:6vw;
 margin-top: 6vw;
 
@@ -166,7 +161,7 @@ position:relative;
   font-size: 25vw;
   margin: 15vw;
   margin-bottom: 0;
-  margin-top: 30vw;
+  margin-top: 25vw;
   margin-left: 0vw;
 }
 
@@ -191,7 +186,7 @@ position:relative;
 const Text2 = styled.h1`
 margin:0px;
 position:absolute;
-color:#23ffb6;
+color:#ffffff;
 font-size:7vw;
 right: -8vw;
 bottom: -12px;
@@ -215,7 +210,7 @@ white-space: nowrap;
 `
 
 const ShoeHolder = styled.div`
-position: relative;
+position: absolute;
 display:flex;
 top:50%
     left: 50%;
@@ -233,19 +228,36 @@ top:50%
  
 }
 `
-
+    
 const Ul =styled.ul`
 padding-right: 10vw;
-position: absolute;
+position: relative;
 z-index: 50;
 display: flex;
+margin: 0vw 2vw 2vw 2vw;
 }
 `
 const Li =styled.li`
-padding: 4vw 4vw;
+padding: 2vw 1vw;
 padding-bottom:0vw;
+font-family:arial
+
+@media  (min-width: 1px) and (max-width: 425px) {
+  padding: 7vw 1vw 5vw 9vw;
+padding-bottom:0vw;
+}
+@media  (min-width: 426px) and (max-width: 768px) {
+  padding: 3vw 3vw;
+  padding-bottom:0vw;
+}
+@media  (min-width: 769px) and (max-width:1024px) {
+  padding: 3vw 3vw;
+  padding-bottom:0vw;
+}
+@media  (min-width: 1025px) and (max-width: 1440px) {
+ 
+}
 `
-    
 class Page1 extends Component {
   componentDidMount(){
     AOS.init({
@@ -257,44 +269,41 @@ render() {
 
     return (
       <Container >
-   
-        <LeftContainer>
-        <Ul>
+        
+
+        <LeftContainer className="Page2Left">
+          <Ul>
             <Li>
         <NavLink to="/Page1" exact>
-          BACK
+        <img src={back} alt=""/>
           </NavLink>
           </Li>
           <Li>
         <NavLink to="/Page2" exact>
-          NEXT
+        <img src={forward} alt=""/>
           </NavLink>
           </Li>
           </Ul>
         <Text1  className="text-pop-up-tr" >"NIKE"</Text1>
+        
           <TextContainer>
          
-          <Text data-aos='fade-in'>The AF1 React D/MS/X optimizes comfort with a full length Nike React midsole equipped with a heel Ramp Air unit. The upper features a large bold Swoosh and mesh construction on the side panels. The traditional AIR logo appears on the heel, along with a newly added Nike React branded stripe. Nike React’s pattern replaces the traditional stars at the heel and toe of the outsole.</Text>
+          <Text >The AF1 React D/MS/X optimizes comfort with a full length Nike React midsole equipped with a heel Ramp Air unit. The upper features a large bold Swoosh and mesh construction on the side panels. The traditional AIR logo appears on the heel, along with a newly added Nike React branded stripe. Nike React’s pattern replaces the traditional stars at the heel and toe of the outsole.</Text>
           </TextContainer>
 
         </LeftContainer>
 
         <RightContainer  data-aos='fade-in'>
-  
+    
         <ShoeHolder  className=" shoe">
-          <Img src={af2} alt="" className=" zoom"/>
-          <Img2 src={af2} alt="" className=" zoom"/>
+          <Img src={Purple} alt="" className=" fade "/>
           </ShoeHolder>
           <Floating>
          
-          <Text2 className="text-pop-up-tr">"FEAR OF GOD"</Text2>
+          <Text2 className="text-pop-up-tr" >"FEAR OF GOD"</Text2>
         </Floating>
         </RightContainer>
-       
-        
   
-        <Footer />
-      
       </Container>
       
   );

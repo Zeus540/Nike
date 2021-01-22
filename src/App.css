@@ -57,33 +57,18 @@ body{
 	overflow-y: hidden;
 	
 }
-body::-webkit-scrollbar {
-    width: .75rem;
+::-webkit-scrollbar {
+    width: 1vw;
 }
 *::-webkit-scrollbar-track {
-    background-color: #323a3a;
+    background-color: #0d0d14;
 }
 *::-webkit-scrollbar-thumb {
-    background-color: #347761;
+    background-color: white;
 
 }
 
-@media (max-width:768px){
-	body::-webkit-scrollbar {
-		width: .75rem;
-		display: none;
-	}
-	*::-webkit-scrollbar-track {
-		background-color: #828884;
-		display: none;
-	}
-	*::-webkit-scrollbar-thumb {
-		background-color: #718096;
-		display: none;
-	
-	}
-	
-}
+
 
 
 
@@ -132,7 +117,7 @@ body::-webkit-scrollbar {
 			  transform: translateY(-50px) translateX(50px);
 	  -webkit-transform-origin: 50% 50%;
 			  transform-origin: 50% 50%;
-	  text-shadow: 0 1px 0 #347761, 0 2px 0 #347761, 0 3px 0 #347761, 0 4px 0 #347761, 0 5px 0 #347761, 0 6px 0 #347761, 0 7px 0 #347761, 0 8px 0 #347761, 0 9px 0 #347761, 0 50px 30px rgba(0, 0, 0, 0.3);
+	  text-shadow: 0 1px 0#bbb3a7, 0 2px 0#bbb3a7, 0 3px 0#bbb3a7, 0 4px 0#bbb3a7, 0 5px 0#bbb3a7, 0 6px 0#bbb3a7, 0 7px 0#bbb3a7, 0 8px 0#bbb3a7, 0 9px 0#bbb3a7, 0 50px 30px rgba(0, 0, 0, 0.3);
 	}
   }
   
@@ -140,7 +125,7 @@ body::-webkit-scrollbar {
   @keyframes bounce { 
 	0% { top: 50%;
 	     }
-	100% { top: 47%;
+	100% { top: 49%;
 	    }
   }
 
@@ -154,29 +139,8 @@ body::-webkit-scrollbar {
 	color:white;
 	text-decoration: none;
 }
-  a:active{
-	  color:#23ffb6;
-	  text-decoration: none;
-  }
 
 
-  @keyframes zoom { 
-	0% {   
-	
-		opacity: 0;
-	     }
-
-	100% {  
-	
-		opacity: 1;
-	    }
-  }
-
-  .zoom {
-	animation: zoom 0.8s;
-	animation-direction: alternate;
-	animation-iteration-count: 1;
-  }
 
   @keyframes fade { 
 	0% {   
@@ -189,7 +153,7 @@ body::-webkit-scrollbar {
   }
 
   .fade {
-	animation: fade 2s;
+	animation: fade 0.1s;
 	animation-direction: linear;
 	animation-iteration-count: 1;
   }
@@ -197,18 +161,19 @@ body::-webkit-scrollbar {
 
   @keyframes slide { 
 	0% {   
-		transform: translateX(-24vw);
+	
 		position: relative;
 	     }
 
 	100% {   
-		transform: translateX(0vw); 
+	
 		position: relative;
 	    }
   }
 
   .slide {
-	animation: slide 2s;
+	animation: slide 1s;
 	animation-direction: linear;
 	animation-iteration-count: 1;
   }
+
