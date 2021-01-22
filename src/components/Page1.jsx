@@ -306,7 +306,7 @@ render() {
           </NavLink>
           </Li>
           </Ul>
-        <Text1  className="text-pop-up-tr" >"NIKE AF1"</Text1>
+        <Text1  className="text-pop-up-tr" >"NIKE"</Text1>
         
           <TextContainer>
          
@@ -322,7 +322,7 @@ render() {
           </ShoeHolder>
           <Floating>
          
-          <Text2 className="text-pop-up-tr">"REACT D/MS/X"</Text2>
+          <Text2 className="text-pop-up-tr">"AF1 REACT"</Text2>
         </Floating>
         </RightContainer>
 

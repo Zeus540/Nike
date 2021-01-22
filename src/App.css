@@ -177,45 +177,6 @@ body{
 	animation-iteration-count: 1;
   }
 
-  @keyframes Home { 
-	0% {   
-		opacity:0.5 ;
-	
-		 }
-		 25% {   
-			background-size: 100% 100%;
-			background-image: url(./images/1.jpg);
-	
-		
-
-			}
-		 50% {   
-			background-size: 100% 100%;
-			background-image: url(./images/2.jpg);
-	
-	
-			}
-
-			75% {   
-				background-size: 100% 100%;
-				background-image: url(./images/3.jpg);
-				
-	
-				
-				}
-		 100% {  
-			opacity:0.5 ;
-			background: antiquewhite;
-			opacity:1 ;
-			}
-
-  }
-
-  .Home {
-	animation: Home 5s;
-	animation-direction: ease;
-	animation-iteration-count: 1;
-  }
-
+ 
 
   

@@ -4,12 +4,12 @@ import back from '../images/back.png'
 import forward from '../images/right.png'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Mag from '../images/mag.png';
 
-import Water from '../images/water.png';
 import { NavLink} from "react-router-dom";
 
 const Container = styled.div`
-background: linear-gradient(45deg,#36bdbf,#e4c491);
+background: linear-gradient(45deg,#4ff1e4,#343231);
   overflow:hidden;
   position:relative;
   display: flex;
@@ -23,6 +23,8 @@ background: linear-gradient(45deg,#36bdbf,#e4c491);
     min-width:100vw;
     overflox:unset;
 `
+
+
 
 const LeftContainer = styled.div`
 height:100vh;
@@ -38,7 +40,7 @@ overflow-x: hidden;
     min-width: 125vw;
   }
   @media  (min-width: 426px) and (max-width: 768px) {
-    min-width: 55vw;
+    min-width: 60vw;
   }
  
   @media  (min-width: 769px) and (max-width: 1240px) {
@@ -68,8 +70,8 @@ const RightContainer = styled.div`
 `
 
 const Img = styled.img`
-width: 25vw;
-height: 20vw;
+width: 30vw;
+height: 25vw;
 border: none;
 position: relative;
 z-index: 2;
@@ -89,45 +91,55 @@ const TextContainer =styled.div`
 width: 100%;
 font-size: 1.1vw;
 overflow-y: auto;
+margin:8vw 0vw 0vw 0vw;
 @media  (min-width: 1px) and (max-width: 425px) {
   width: 128vw;
-  position: relative;
-  top: 0vw;
+ 
+  top: 5vw;
   left: 0vw;
-  font-size: 6vw;
+  font-size: 5vw;
+  margin:45vw 0vw 0vw 0vw;
 }
 
 @media  (min-width: 426px) and (max-width: 768px) {
   width: 100%;
   position: relative;
   top: 0vw;
-  font-size: 2.5vw;
+  font-size: 2vw;
+  margin:15vw 0vw 0vw 0vw;
 }
 @media  (min-width: 769px) and (max-width: 1240px) {
   top: 25vw;
   width: 100%;
+  margin:15vw 0vw 0vw 0vw;
+}
+@media  (min-width: 1240px) and (max-width: 1440px) {
+  top: 0vw;
+  width: 100%;
   left: 200px;
+  margin:15vw 0vw 0vw 0vw;
 }
 `
 
 const Text = styled.p`
   color:white;
-  margin:0vw 2vw 2vw 2vw;
+  padding: 0vw 1vw 0vw 3vw;
   text-align:justify;
   line-height:2vw;
   @media  (min-width: 1px) and (max-width: 425px) {
-    padding: 0vw 1vw 5vw 8vw;
+    padding: 0vw 1vw 5vw 11vw;
     line-height:8vw;
     position: relative;
     width: unset;
     text-align:left;
   }
   @media  (min-width: 426px) and (max-width: 768px) {
-    padding:0vw 4vw 4vw 4vw;
+    padding: 0vw 4vw 4vw 5vw;
     line-height:4vw;
   }
   @media  (min-width: 769px) and (max-width: 1240px) {
     line-height:3vw;
+    padding: 0vw 1vw 5vw 5vw;
   }
 `
 
@@ -150,6 +162,32 @@ z-index:10;
   left: 40vw;
 }
 
+`
+const Floating2 = styled.div`
+
+position:absolute;
+top:5vw
+@media  (min-width: 1px) and (max-width: 425px) {
+  top:70px;
+}
+@media  (min-width: 426px) and (max-width: 768px) {
+  top: 64px;
+}
+@media  (min-width: 769px) and (max-width: 1240px) {
+  top: -75px;
+  width: 100%;
+  margin:15vw 0vw 0vw 0vw;
+}
+@media  (min-width: 1241px) and (max-width: 1440px) {
+  top: -110px;
+  width: 100%;
+  margin:15vw 0vw 0vw 0vw;
+}
+@media  (min-width: 1441px) and (max-width: 1920px) {
+  top: -9vw;
+  width: 100%;
+  margin:15vw 0vw 0vw 0vw;
+}
 `
 
 const Text1 = styled.h1`
@@ -279,12 +317,14 @@ render() {
 
     return (
       <Container >
-        
+          <Floating2>
+        <Text1  className="text-pop-up-tr" >"NIKE NIKE NIKE NIKE"</Text1>
+        </Floating2>
 
         <LeftContainer className="Page2Left">
           <Ul>
             <Li>
-        <NavLink to="/Page2" exact>
+        <NavLink to="/Page3" exact>
         <img src={back} alt=""/>
           </NavLink>
           </Li>
@@ -294,7 +334,6 @@ render() {
           </NavLink>
           </Li>
           </Ul>
-        <Text1  className="text-pop-up-tr" >"NIKE 97"</Text1>
         
           <TextContainer>
          
@@ -312,11 +351,11 @@ The limited edition shoes were made by Brooklyn-based company MSCHF which redesi
         <RightContainer  data-aos='fade-in'>
     
         <ShoeHolder  className=" shoe">
-          <Img src={Water} alt="" className=" fade "/>
+          <Img src={Mag} alt="" className=" fade "/>
           </ShoeHolder>
           <Floating>
          
-          <Text2 className="text-pop-up-tr" >"WALK ON WATER"</Text2>
+          <Text2 className="text-pop-up-tr" >"AIR MAG"</Text2>
         </Floating>
         </RightContainer>
   
