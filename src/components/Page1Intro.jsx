@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import styled from 'styled-components';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-
+import Footer from './Footer.jsx'
 import test from '../images/1.jpg'
 
 import { NavLink} from "react-router-dom";
@@ -128,7 +128,7 @@ render() {
         
         </RightContainer>
         </NavLink>
-     
+        <Footer />
       </Container>
       
   );

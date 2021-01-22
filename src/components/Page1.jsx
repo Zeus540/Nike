@@ -23,7 +23,7 @@ background: linear-gradient(45deg,#495b5e,#7b0113);
   min-width:unset;
   }
   @media  (min-width: 769px) and (max-width: 1024px) {
-  
+    min-width: unset;
     overflow:unset;
   }
   @media  (min-width: 1025px) and (max-width: 1440px) {
@@ -72,7 +72,7 @@ const RightContainer = styled.div`
   }
   @media  (min-width: 769px) and (max-width: 1240px) {
     min-width: 60vw;
-    margin-right: 15vw;
+    margin-right: 10vw;
   }
 `
 
@@ -306,7 +306,7 @@ render() {
           </NavLink>
           </Li>
           </Ul>
-        <Text1  className="text-pop-up-tr" >"AF1"</Text1>
+        <Text1  className="text-pop-up-tr" >"NIKE AF1"</Text1>
         
           <TextContainer>
          

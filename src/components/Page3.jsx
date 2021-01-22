@@ -5,11 +5,11 @@ import forward from '../images/right.png'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-import Purple from '../images/purple.png';
+import Water from '../images/water.png';
 import { NavLink} from "react-router-dom";
 
 const Container = styled.div`
-background: linear-gradient(45deg,#67717b,#cac8bb);
+background: linear-gradient(45deg,#36bdbf,#e4c491);
   overflow:hidden;
   position:relative;
   display: flex;
@@ -294,11 +294,17 @@ render() {
           </NavLink>
           </Li>
           </Ul>
-        <Text1  className="text-pop-up-tr" >"NIKE"</Text1>
+        <Text1  className="text-pop-up-tr" >"NIKE 97"</Text1>
         
           <TextContainer>
          
-          <Text >The AF1 React D/MS/X optimizes comfort with a full length Nike React midsole equipped with a heel Ramp Air unit. The upper features a large bold Swoosh and mesh construction on the side panels. The traditional AIR logo appears on the heel, along with a newly added Nike React branded stripe. Nike React’s pattern replaces the traditional stars at the heel and toe of the outsole.</Text>
+          <Text >Newly-released Nike ‘Jesus Shoes’ – filled with actual holy water in the soles – sold out in mere minutes after they hit the shelves on Tuesday morning.
+The $3,000 sneakers are filled with holy water from the River Jordan in Israel and have a crucifix tied to the laces.
+
+
+Each pair was reportedly blessed by a priest and has a red insole in reference to the red Papal shoes that were traditionally worn by Vatican leaders.
+
+The limited edition shoes were made by Brooklyn-based company MSCHF which redesigned Nike’s Air Max 97 model, turning it into “Jesus Shoes,” and offering buyers to literally walk on water.</Text>
           </TextContainer>
 
         </LeftContainer>
@@ -306,11 +312,11 @@ render() {
         <RightContainer  data-aos='fade-in'>
     
         <ShoeHolder  className=" shoe">
-          <Img src={Purple} alt="" className=" fade "/>
+          <Img src={Water} alt="" className=" fade "/>
           </ShoeHolder>
           <Floating>
          
-          <Text2 className="text-pop-up-tr" >"FEAR OF GOD"</Text2>
+          <Text2 className="text-pop-up-tr" >"WALK ON WATER"</Text2>
         </Floating>
         </RightContainer>
   
