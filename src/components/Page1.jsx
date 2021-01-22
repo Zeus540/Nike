@@ -13,15 +13,23 @@ background: linear-gradient(45deg,#495b5e,#7b0113);
   overflow:hidden;
   position:relative;
   display: flex;
+  min-width:100vw;
   @media  (min-width: 1px) and (max-width: 425px) {
     overflow:unset;
+    min-width:unset;
     }
   @media  (min-width: 426px) and (max-width: 768px) {
   overflow:unset;
+  min-width:unset;
   }
-  @media  (min-width: 769px) and (max-width: 2560px) {
+  @media  (min-width: 769px) and (max-width: 1024px) {
+  
+    overflow:unset;
+  }
+  @media  (min-width: 1025px) and (max-width: 1440px) {
     min-width:100vw;
-    overflox:unset;
+    overflow:unset;
+  }
 `
 
 const LeftContainer = styled.div`
@@ -53,53 +61,41 @@ const RightContainer = styled.div`
   height: 100vh;
   float:right;
   position:relative;
+  
   @media  (min-width: 1px) and (max-width: 425px) {
     min-width:200vw;
+    margin-right: 10vw;
   }
   @media  (min-width: 426px) and (max-width: 768px) {
     min-width: 110vw;
+    margin-right: 10vw;
   }
   @media  (min-width: 769px) and (max-width: 1240px) {
     min-width: 60vw;
+    margin-right: 15vw;
   }
 `
 
+
 const Img = styled.img`
-width: 30vw;
-height: 30vw;
+width: 25vw;
+height: 20vw;
 border: none;
 position: relative;
 z-index: 2;
 left: 100px;
 @media  (min-width: 1px) and (max-width: 425px) {
-  width: 100vw;
-  height: 100vw;
+  width: 80vw;
+  height: 75vw;
 }
 @media  (min-width: 426px) and (max-width: 768px) {
   width: 45vw;
   height: 45vw;
   left: 125px;
 }
+
 `   
 
-const Img2 = styled.img`
-width: 30vw;
-height: 30vw;
-border: none;
-position: absolute;
-left: 280px;
-@media  (min-width: 1px) and (max-width: 425px) {
-  width: 100vw;
-  height: 100vw;
-}
-@media  (min-width: 426px) and (max-width: 768px) {
-  width: 45vw;
-  height: 45vw;
-}
-@media  (min-width: 769px) and (max-width: 1240px) {
-  left: 200px;
-}
-`  
 
 const TextContainer =styled.div`
 width: 100%;
@@ -169,10 +165,10 @@ z-index:10;
 `
 
 const Text1 = styled.h1`
-color:white;
+color:#ffffff;
 font-size:6vw;
-margin-top: 6vw;
-
+margin-top: 3vw;
+letter-spacing:6px;
 margin-left: 0vw;
 white-space: nowrap;
 position:relative;
@@ -197,11 +193,17 @@ position:relative;
 @media  (min-width: 769px) and (max-width: 1024px) {
   font-size:10vw;
   bottom: -3vw
-  margin-top: 7vw;
-  margin-bottom: 4vw;
+  margin-top: 5vw;
+  margin-bottom: 3vw; 
+}
+@media  (min-width: 1025px) and (max-width: 1440px) {
+  font-size:10vw;
+  bottom: -3vw
+  margin-top: 2vw;
+  margin-bottom: 3vw;
+
 }
 `
-
 const Text2 = styled.h1`
 margin:0px;
 position:absolute;
@@ -211,7 +213,7 @@ right: -8vw;
 bottom: -12px;
 margin: 15vw;
 margin-bottom: 0;
-
+letter-spacing:6px;
 white-space: nowrap;
 @media  (min-width: 1px) and (max-width: 425px) {
   font-size: 22vw;
@@ -228,12 +230,13 @@ white-space: nowrap;
 }
 `
 
+
 const ShoeHolder = styled.div`
-position: relative;
+position: absolute;
 display:flex;
 top:50%
     left: 50%;
-    transform: translate(-50%, -45%);
+    transform: translate(-50%, -50%);
 @media  (min-width: 1px) and (max-width: 425px) {
   
 }
@@ -316,7 +319,6 @@ render() {
     
         <ShoeHolder  className=" shoe">
           <Img src={af2} alt="" className=" zoom"/>
-          <Img2 src={af2} alt="" className=" zoom"/>
           </ShoeHolder>
           <Floating>
          

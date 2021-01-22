@@ -66,7 +66,7 @@ const RightContainer = styled.div`
 
 const Img = styled.img`
 width: 25vw;
-height: 25vw;
+height: 20vw;
 border: none;
 position: relative;
 z-index: 2;
@@ -152,8 +152,8 @@ z-index:10;
 const Text1 = styled.h1`
 color:#ffffff;
 font-size:6vw;
-margin-top: 6vw;
-
+margin-top: 3vw;
+letter-spacing:6px;
 margin-left: 0vw;
 white-space: nowrap;
 position:relative;
@@ -178,8 +178,15 @@ position:relative;
 @media  (min-width: 769px) and (max-width: 1024px) {
   font-size:10vw;
   bottom: -3vw
-  margin-top: 7vw;
-  margin-bottom: 4vw;
+  margin-top: 5vw;
+  margin-bottom: 3vw; 
+}
+@media  (min-width: 1025px) and (max-width: 1440px) {
+  font-size:10vw;
+  bottom: -3vw
+  margin-top: 2vw;
+  margin-bottom: 3vw;
+
 }
 `
 
@@ -192,7 +199,7 @@ right: -8vw;
 bottom: -12px;
 margin: 15vw;
 margin-bottom: 0;
-
+letter-spacing:6px;
 white-space: nowrap;
 @media  (min-width: 1px) and (max-width: 425px) {
   font-size: 22vw;

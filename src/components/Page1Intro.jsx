@@ -2,13 +2,14 @@ import React, {Component} from 'react';
 import styled from 'styled-components';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import Footer from './Footer.jsx'
 
+import test from '../images/1.jpg'
 
 import { NavLink} from "react-router-dom";
 
 const Container = styled.div`
-background: linear-gradient(45deg,#e6c9c9,#ffe4bd);
+background:url(${test}); 
+background-size: 100% 100%;
   overflow:hidden;
   position:relative;
   display: flex;
@@ -70,7 +71,7 @@ position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-70%, -50%);
-    background: antiquewhite;
+    background: #1f344a;
 
   @media  (min-width: 1px) and (max-width: 425px) {
 
@@ -85,6 +86,7 @@ position: absolute;
 
 const Heading = styled.h1`
 font-size:10vw;
+letter-spacing:6px;
   @media  (min-width: 1px) and (max-width: 425px) {
     font-size: 30vw;
   }
@@ -118,14 +120,15 @@ render() {
         <NavLink to="/Page1" exact>
         <RightContainer  data-aos='fade-in'>
      
-        <HeadingHolder>
+        <HeadingHolder >
           <Heading className="text-pop-up-tr">JUST <br/> DO <br/> IT</Heading>
+          
         </HeadingHolder>
          
         
         </RightContainer>
         </NavLink>
-        <Footer />
+     
       </Container>
       
   );
