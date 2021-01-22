@@ -72,8 +72,8 @@ position: relative;
 z-index: 2;
 left: 100px;
 @media  (min-width: 1px) and (max-width: 425px) {
-  width: 100vw;
-  height: 100vw;
+  width: 80vw;
+  height: 75vw;
 }
 @media  (min-width: 426px) and (max-width: 768px) {
   width: 45vw;
