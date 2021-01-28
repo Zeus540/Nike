@@ -88,7 +88,7 @@ const Heading = styled.h1`
 font-size:10vw;
 letter-spacing:6px;
   @media  (min-width: 1px) and (max-width: 425px) {
-    font-size: 30vw;
+    font-size: 25vw;
   }
   @media  (min-width: 426px) and (max-width: 768px) {
     font-size: 13vw;

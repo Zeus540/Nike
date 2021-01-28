@@ -318,7 +318,7 @@ render() {
     return (
       <Container >
           <Floating2>
-        <Text1  className="text-pop-up-tr" >"NIKE NIKE NIKE NIKE"</Text1>
+        <Text1  className="text-pop-up-tr" >"AIR MAG"</Text1>
         </Floating2>
 
         <LeftContainer className="Page2Left">
@@ -355,7 +355,7 @@ The limited edition shoes were made by Brooklyn-based company MSCHF which redesi
           </ShoeHolder>
           <Floating>
          
-          <Text2 className="text-pop-up-tr" >"AIR MAG"</Text2>
+          <Text2 className="text-pop-up-tr" >"NIKE"</Text2>
         </Floating>
         </RightContainer>
   

@@ -44,7 +44,7 @@ padding: 1vw 0.5vw;
 font-size: 1vw;
 flex-direction: column;
 @media  (min-width: 1px) and (max-width: 425px) {
-     font-size: 3.5vw;
+     font-size: 3vw;
      padding: 2vw 1vw;
 }
 @media  (min-width: 426px) and (max-width: 768px) {

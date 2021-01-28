@@ -10,7 +10,7 @@ import { NavLink} from "react-router-dom";
 
 const Container = styled.div`
 background: linear-gradient(45deg,#495b5e,#7b0113);
-  overflow:hidden;
+
   position:relative;
   display: flex;
   min-width:100vw;
@@ -19,12 +19,12 @@ background: linear-gradient(45deg,#495b5e,#7b0113);
     min-width:unset;
     }
   @media  (min-width: 426px) and (max-width: 768px) {
-  overflow:unset;
+
   min-width:unset;
   }
   @media  (min-width: 769px) and (max-width: 1024px) {
     min-width: unset;
-    overflow:unset;
+    overflow:hidden;
   }
   @media  (min-width: 1025px) and (max-width: 1440px) {
     min-width:100vw;
@@ -101,48 +101,56 @@ const TextContainer =styled.div`
 width: 100%;
 font-size: 1.1vw;
 overflow-y: auto;
+margin:8vw 0vw 0vw 0vw;
 @media  (min-width: 1px) and (max-width: 425px) {
   width: 128vw;
-  position: relative;
-  top: 0vw;
+ 
+  top: 5vw;
   left: 0vw;
-  font-size: 6vw;
+  font-size: 5vw;
+  margin:45vw 0vw 0vw 0vw;
 }
 
 @media  (min-width: 426px) and (max-width: 768px) {
   width: 100%;
   position: relative;
   top: 0vw;
-  font-size: 2.5vw;
+  font-size: 2vw;
+  margin:18vw 0vw 0vw 0vw;
 }
 @media  (min-width: 769px) and (max-width: 1240px) {
   top: 25vw;
   width: 100%;
+  margin:15vw 0vw 0vw 0vw;
+}
+@media  (min-width: 1240px) and (max-width: 1440px) {
+  top: 0vw;
+  width: 100%;
   left: 200px;
+  margin:15vw 0vw 0vw 0vw;
 }
 `
-
 const Text = styled.p`
   color:white;
-  margin:0vw 2vw 2vw 2vw;
+  padding: 0vw 1vw 0vw 3vw;
   text-align:justify;
   line-height:2vw;
   @media  (min-width: 1px) and (max-width: 425px) {
-    padding: 0vw 1vw 5vw 8vw;
+    padding: 0vw 1vw 5vw 11vw;
     line-height:8vw;
     position: relative;
     width: unset;
     text-align:left;
   }
   @media  (min-width: 426px) and (max-width: 768px) {
-    padding:0vw 4vw 4vw 4vw;
+    padding: 0vw 4vw 4vw 5vw;
     line-height:4vw;
   }
   @media  (min-width: 769px) and (max-width: 1240px) {
     line-height:3vw;
+    padding: 0vw 1vw 5vw 5vw;
   }
 `
-
 const Floating = styled.div`
 color:white;
 top: 4.5vw;
@@ -162,6 +170,32 @@ z-index:10;
   left: 40vw;
 }
 
+`
+const Floating2 = styled.div`
+
+position:absolute;
+top:5vw
+@media  (min-width: 1px) and (max-width: 425px) {
+  top:70px;
+}
+@media  (min-width: 426px) and (max-width: 768px) {
+  top: 64px;
+}
+@media  (min-width: 769px) and (max-width: 1240px) {
+  top: -75px;
+  width: 100%;
+  margin:15vw 0vw 0vw 0vw;
+}
+@media  (min-width: 1241px) and (max-width: 1440px) {
+  top: -110px;
+  width: 100%;
+  margin:15vw 0vw 0vw 0vw;
+}
+@media  (min-width: 1441px) and (max-width: 1920px) {
+  top: -9vw;
+  width: 100%;
+  margin:15vw 0vw 0vw 0vw;
+}
 `
 
 const Text1 = styled.h1`
@@ -293,7 +327,7 @@ render() {
       <Container >
         
 
-        <LeftContainer className=" slide">
+        <LeftContainer>
           <Ul>
             <Li>
         <NavLink to="/" exact>
@@ -306,7 +340,9 @@ render() {
           </NavLink>
           </Li>
           </Ul>
-        <Text1  className="text-pop-up-tr" >"NIKE"</Text1>
+          <Floating2>
+        <Text1 className="text-pop-up-tr" >"AF1 REACT"</Text1>
+        </Floating2>
         
           <TextContainer>
          
@@ -315,14 +351,14 @@ render() {
 
         </LeftContainer>
 
-        <RightContainer  >
+        <RightContainer   data-aos='fade-in'>
     
         <ShoeHolder  className=" shoe">
-          <Img src={af2} alt="" className=" zoom"/>
+          <Img src={af2} alt="" className=" fade "/>
           </ShoeHolder>
           <Floating>
          
-          <Text2 className="text-pop-up-tr">"AF1 REACT"</Text2>
+          <Text2 className="text-pop-up-tr">"NIKE"</Text2>
         </Floating>
         </RightContainer>
 
