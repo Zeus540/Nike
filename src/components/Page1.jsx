@@ -9,7 +9,7 @@ import af2 from '../images/test.png';
 import { NavLink} from "react-router-dom";
 
 const Container = styled.div`
-background: #c2b8bc;
+
   position:relative;
   display: flex;
   min-width:100vw;
@@ -40,54 +40,61 @@ overflow-x: hidden;
   flex-direction: column;
   float:left;
   font-family:arial
-  width: 25vw;
+  width: 50vw;
+  z-index: 2;
+    overflow: unset;
  
   @media  (min-width: 1px) and (max-width: 425px) {
     min-width: 100vw;
   }
   @media  (min-width: 426px) and (max-width: 768px) {
- min-width: 40vw;
+ min-width: 50vw;
   }
  
   @media  (min-width: 769px) and (max-width: 1240px) {
-    min-width: 40vw;
+    min-width: 50vw;
   }
   
 `
 
 
 const RightContainer = styled.div`
-  min-width: 60vw;
+  min-width: 50vw;
   height: 100vh;
   float:right;
   position:relative;
-  
+  background: #0e0e0e;
   @media  (min-width: 1px) and (max-width: 425px) {
-    min-width:140vw;
+    min-width:100vw;
    
   }
   @media  (min-width: 426px) and (max-width: 768px) {
-    min-width: 60vw;
+    min-width: 50vw;
   
   }
   @media  (min-width: 769px) and (max-width: 1240px) {
-    min-width: 60vw;
+    min-width: 50vw;
    
   }
 `
 
 
 const Img = styled.img`
-width: 25vw;
-height: 20vw;
+width: 32vw;
+height: 22vw;
 border: none;
 position: relative;
 z-index: 2;
 
 @media  (min-width: 1px) and (max-width: 425px) {
-  width: 80vw;
-  height: 75vw;
+  width: 60vw;
+  height: 60vw;
 }
+@media  (min-width: 480px) and (max-height: 320px) {
+  width: 30vw!important;
+  height: 30vw!important;
+}
+
 @media  (min-width: 426px) and (max-width: 768px) {
   width: 45vw;
   height: 45vw;
@@ -97,67 +104,80 @@ z-index: 2;
 
 
 const TextContainer =styled.div`
-width: 100%;
+width: 70%;
 font-size: 1.1vw;
 overflow-y: auto;
-margin:8vw 0vw 0vw 0vw;
+margin-top: 170px;
+margin-left: 50px;
+
 @media  (min-width: 1px) and (max-width: 425px) {
-  top: 5vw;
-  left: 0vw;
+  margin: 46vw 0px 0vw 50px;
+  padding-bottom: 40px;
   font-size: 5vw;
-  margin:45vw 0vw 0vw 0vw;
+}
+
+@media  (min-width: 480px) and (max-height: 320px) {
+  margin-top: 88px!important;
+  margin-left: 30px!important;
 }
 
 @media  (min-width: 426px) and (max-width: 768px) {
-  position: relative;
-  top: 0vw;
+  margin-top: 140px;
+  margin-left: 50px;
   font-size: 2vw;
-  margin:18vw 0vw 0vw 0vw;
+  padding-bottom: 40px;
 }
 @media  (min-width: 769px) and (max-width: 1240px) {
-  top: 25vw;
-  margin:15vw 0vw 0vw 0vw;
+  margin-top: 170px;
+  margin-left: 50px;
+  padding-bottom: 40px;
 }
 @media  (min-width: 1240px) and (max-width: 1440px) {
-  top: 0vw;
-  left: 200px;
-  margin:15vw 0vw 0vw 0vw;
+  margin-top: 210px;
+  margin-left: 50px;
+  padding-bottom: 40px;
 }
 `
+
 const Text = styled.p`
   color:white;
-  padding: 0vw 3vw 0vw 3vw;
+
   text-align:justify;
   line-height:2vw;
   @media  (min-width: 1px) and (max-width: 425px) {
-    padding: 0vw 11vw 5vw 11vw;
+  
     line-height:8vw;
     position: relative;
     width: unset;
     text-align:left;
   }
   @media  (min-width: 426px) and (max-width: 768px) {
-    padding: 0vw 5vw 4vw 5vw;
+ 
     line-height:4vw;
   }
   @media  (min-width: 769px) and (max-width: 1240px) {
     line-height:3vw;
-    padding: 0vw 5vw 5vw 5vw;
+ 
   }
 `
 const Floating = styled.div`
 color:white;
-top: 4.5vw;
-left: 20vw;
+bottom: 0;
+right: 0;
 white-space:nowrap;
 font-family:arial;
 font-weight:bold;
 z-index:10;
+
+position:absolute;
 @media (max-width: 425px){
   font-size:20vw;
   letter-spacing: 1vw;
   top: 21vw;
   left: 94vw;
+}
+@media  (min-width: 480px) and (max-height: 320px) {
+  margin-right: 30px!important;
 }
 @media  (min-width: 426px) and (max-width: 768px) {
   top:10vw;
@@ -168,67 +188,65 @@ z-index:10;
 const Floating2 = styled.div`
 
 position:absolute;
-top:5vw
-@media  (min-width: 1px) and (max-width: 425px) {
-  top:70px;
+@media  (min-width: 1px) and (max-width: 320px) {
+  margin-top: 100px;
+  margin-left: 50px;
+}
+@media  (min-width: 321px) and (max-width: 425px) {
+  margin-top: 110px;
+  margin-left: 50px;
+}
+@media  (min-width: 480px) and (max-height: 320px) {
+  margin-top: 70px!important;
+  margin-left: 30px!important;
 }
 @media  (min-width: 426px) and (max-width: 768px) {
-  top: 64px;
+  margin-top: 120px;
+  margin-left: 50px;
+
 }
 @media  (min-width: 769px) and (max-width: 1240px) {
-  top: -75px;
-  width: 100%;
-  margin:15vw 0vw 0vw 0vw;
+  margin-top: 120px;
+  margin-left: 50px;
 }
 @media  (min-width: 1241px) and (max-width: 1440px) {
-  top: -110px;
-  width: 100%;
-  margin:15vw 0vw 0vw 0vw;
+  margin-top: 120px;
+  margin-left: 50px;
 }
 @media  (min-width: 1441px) and (max-width: 1920px) {
-  top: -9vw;
-  width: 100%;
-  margin:15vw 0vw 0vw 0vw;
+  margin-top: 120px;
+  margin-left: 50px;
+
+
 }
 `
 
 const Text1 = styled.h1`
 color:#ffffff;
 font-size:6vw;
-margin-top: 3vw;
 letter-spacing:6px;
 margin-left: 0vw;
 white-space: nowrap;
-position:relative;
-z-index:200;
 @media  (min-width: 1px) and (max-width: 425px) {
   font-size: 25vw;
-  margin: 15vw;
   margin-bottom: 0;
-  margin-top: 25vw;
   margin-left: 0vw;
 }
 
 @media  (min-width: 426px) and (max-width: 480px) {
   font-size:10vw;
-  bottom: -10vw;
   margin-bottom: 6vw;
 }
 @media  (min-width: 481px) and (max-width: 768px) {
   font-size:10vw;
-  bottom: -7vw;
   margin-bottom: 6vw;
 }
 @media  (min-width: 769px) and (max-width: 1024px) {
   font-size:10vw;
-  bottom: -3vw
-  margin-top: 5vw;
   margin-bottom: 3vw; 
 }
 @media  (min-width: 1025px) and (max-width: 1440px) {
   font-size:10vw;
-  bottom: -3vw
-  margin-top: 2vw;
   margin-bottom: 3vw;
 
 }
@@ -238,24 +256,24 @@ margin:0px;
 position:absolute;
 color:white;
 font-size:7vw;
-right: -8vw;
-bottom: -12px;
-margin: 15vw;
+right: 0vw;
+bottom: 0px;
+
 margin-bottom: 0;
 letter-spacing:6px;
 white-space: nowrap;
 @media  (min-width: 1px) and (max-width: 425px) {
   font-size: 22vw;
-  margin: 15vw;
+
   margin-bottom: 0;
-  bottom: -30px;
-  right: 15vw;
+  bottom: 0px;
+  right: 0vw;
  
 }
 @media  (min-width: 426px) and (max-width: 768px) {
   font-size: 10vw;
-  bottom: -30px;
-  right: -3vw;
+  bottom: 0px;
+  right: 0vw;
 }
 `
 
@@ -265,9 +283,13 @@ position: absolute;
 display:flex;
 top:50%
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(33%,-38%);
 @media  (min-width: 1px) and (max-width: 425px) {
-  
+  transform: translate(66%,-19%);
+}
+@media  (min-width: 480px) and (max-height: 320px) {
+  transform: translate(50%,-18%)!important;
+
 }
 @media  (min-width: 426px) and (max-width: 768px) {
  
@@ -285,28 +307,52 @@ padding-right: 10vw;
 position: relative;
 z-index: 50;
 display: flex;
-margin: 0vw 2vw 2vw 2vw;
+margin-top: 40px;
+
+@media  (min-width: 1px) and (max-width: 425px) {
+  margin: 30px 0px 0vw 50px;
+  padding-bottom:0vw;
+  }
+@media  (min-width: 480px) and (max-height: 320px) {
+  margin-top: 20px!important;
+  margin-left: 30px!important;
 }
 `
 const Li =styled.li`
-padding: 2vw 1vw;
-padding-bottom:0vw;
+
+margin-right: 1vw;
 font-family:arial
 
 @media  (min-width: 1px) and (max-width: 425px) {
-  padding: 7vw 1vw 5vw 9vw;
+
 padding-bottom:0vw;
 }
 @media  (min-width: 426px) and (max-width: 768px) {
-  padding: 3vw 3vw;
+
   padding-bottom:0vw;
 }
 @media  (min-width: 769px) and (max-width:1024px) {
-  padding: 3vw 3vw;
+
   padding-bottom:0vw;
 }
 @media  (min-width: 1025px) and (max-width: 1440px) {
  
+}
+`
+
+const Nav =styled.img`
+
+@media  (min-width: 480px) and (max-height: 320px) {
+  width: 27px!important;
+  height: 27px!important;
+}
+@media  (min-width: 1px) and (max-width: 320px) {
+  width: 30px;
+  height: 30px;
+}
+@media  (min-width: 321px) and (max-width: 425px) {
+  width: 30px;
+  height: 30px;
 }
 `
 class Page1 extends Component {
@@ -322,21 +368,21 @@ render() {
       <Container >
         
 
-        <LeftContainer>
+        <LeftContainer data-aos='slide-down'>
           <Ul>
             <Li>
         <NavLink to="/" exact>
-         <img src={back} alt=""/>
+         <Nav src={back} alt=""/>
           </NavLink>
           </Li>
           <Li>
         <NavLink to="/Page2" exact>
-        <img src={forward} alt=""/>
+        <Nav src={forward} alt=""/>
           </NavLink>
           </Li>
           </Ul>
-          <Floating2>
-        <Text1 className="text-pop-up-tr" >"REACT D/MS/X"</Text1>
+          <Floating2 >
+        <Text1  data-aos='slide-right'>REACT D/MS/X</Text1>
         </Floating2>
         
           <TextContainer>
@@ -344,16 +390,17 @@ render() {
           <Text >The AF1 React D/MS/X optimizes comfort with a full length Nike React midsole equipped with a heel Ramp Air unit. The upper features a large bold Swoosh and mesh construction on the side panels. The traditional AIR logo appears on the heel, along with a newly added Nike React branded stripe. Nike React’s pattern replaces the traditional stars at the heel and toe of the outsole.</Text>
           </TextContainer>
 
+          <ShoeHolder  className=" shoe ">
+          <Img src={af2} alt="" data-aos='slide-left'/>
+          </ShoeHolder>
         </LeftContainer>
 
-        <RightContainer   data-aos='fade-in'>
+        <RightContainer   data-aos='slide-up'>
     
-        <ShoeHolder  className=" shoe">
-          <Img src={af2} alt="" className=" fade "/>
-          </ShoeHolder>
+      
           <Floating>
          
-          <Text2 className="text-pop-up-tr">"NIKE AF1"</Text2>
+          <Text2  >NIKE AF1</Text2>
         </Floating>
         </RightContainer>
 
