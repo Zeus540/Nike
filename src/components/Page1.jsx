@@ -9,7 +9,7 @@ import af2 from '../images/test.png';
 import { NavLink} from "react-router-dom";
 
 const Container = styled.div`
-
+background: #171717;
   position:relative;
   display: flex;
   min-width:100vw;
@@ -63,7 +63,7 @@ const RightContainer = styled.div`
   height: 100vh;
   float:right;
   position:relative;
-  background: #0e0e0e;
+  background: #191919;
   @media  (min-width: 1px) and (max-width: 425px) {
     min-width:100vw;
    
@@ -80,24 +80,24 @@ const RightContainer = styled.div`
 
 
 const Img = styled.img`
-width: 32vw;
-height: 22vw;
+width: 100%;
+height: 100%;
 border: none;
 position: relative;
 z-index: 2;
 
 @media  (min-width: 1px) and (max-width: 425px) {
-  width: 60vw;
-  height: 60vw;
+  width: 100%;
+  height: 100%;
 }
 @media  (min-width: 480px) and (max-height: 320px) {
-  width: 30vw!important;
-  height: 30vw!important;
+  width: 100%;
+  height: 100%;
 }
 
 @media  (min-width: 426px) and (max-width: 768px) {
-  width: 45vw;
-  height: 45vw;
+  width: 100%;
+  height: 100%;
 }
 
 `   
@@ -107,34 +107,27 @@ const TextContainer =styled.div`
 width: 70%;
 font-size: 1.1vw;
 overflow-y: auto;
-margin-top: 170px;
-margin-left: 50px;
-
+margin-left: 30px;
 @media  (min-width: 1px) and (max-width: 425px) {
-  margin: 46vw 0px 0vw 50px;
+  margin: 30px 0px 0vw 30px;
   padding-bottom: 40px;
   font-size: 5vw;
 }
 
-@media  (min-width: 480px) and (max-height: 320px) {
-  margin-top: 88px!important;
-  margin-left: 30px!important;
-}
+
 
 @media  (min-width: 426px) and (max-width: 768px) {
-  margin-top: 140px;
-  margin-left: 50px;
+  margin: 10px 0px 0vw 30px;
   font-size: 2vw;
   padding-bottom: 40px;
 }
 @media  (min-width: 769px) and (max-width: 1240px) {
-  margin-top: 170px;
-  margin-left: 50px;
+  margin: 10px 0px 0vw 30px;
   padding-bottom: 40px;
 }
 @media  (min-width: 1240px) and (max-width: 1440px) {
-  margin-top: 210px;
-  margin-left: 50px;
+
+  margin-left: 30px;
   padding-bottom: 40px;
 }
 `
@@ -168,7 +161,7 @@ white-space:nowrap;
 font-family:arial;
 font-weight:bold;
 z-index:10;
-margin-right: 40px;
+margin-right: 30px;
 position:absolute;
 @media (max-width: 425px){
   font-size:20vw;
@@ -186,38 +179,36 @@ position:absolute;
 
 `
 const Floating2 = styled.div`
-
-position:absolute;
+margin-bottom: 2vw; 
+margin-top: 0.5vw;
+position:relative;
+margin-bottom: 2vw;
 @media  (min-width: 1px) and (max-width: 320px) {
-  margin-top: 100px;
-  margin-left: 50px;
+  margin-top: 40px;
+  margin-left: 30px;
 }
 @media  (min-width: 321px) and (max-width: 425px) {
-  margin-top: 110px;
-  margin-left: 50px;
+  margin-top: 50px;
+  margin-left: 30px;
 }
-@media  (min-width: 480px) and (max-height: 320px) {
-  margin-top: 70px!important;
-  margin-left: 30px!important;
-}
+
 @media  (min-width: 426px) and (max-width: 768px) {
-  margin-top: 120px;
-  margin-left: 50px;
+  margin-top: 30px;
+  margin-left: 30px;
 
 }
 @media  (min-width: 769px) and (max-width: 1240px) {
-  margin-top: 120px;
-  margin-left: 50px;
+  margin-top: 35px;
+  margin-left: 30px;
 }
 @media  (min-width: 1241px) and (max-width: 1440px) {
-  margin-top: 120px;
-  margin-left: 50px;
+  margin-top: 60px;
+  margin-left: 30px;
+  margin-bottom:50px;
 }
 @media  (min-width: 1441px) and (max-width: 1920px) {
-  margin-top: 120px;
-  margin-left: 50px;
-
-
+  margin-top: 50px;
+  margin-left: 30px;
 }
 `
 
@@ -227,6 +218,7 @@ font-size:6vw;
 letter-spacing:6px;
 margin-left: 0vw;
 white-space: nowrap;
+
 @media  (min-width: 1px) and (max-width: 425px) {
   font-size: 25vw;
   margin-bottom: 0;
@@ -235,19 +227,18 @@ white-space: nowrap;
 
 @media  (min-width: 426px) and (max-width: 480px) {
   font-size:10vw;
-  margin-bottom: 6vw;
+
 }
 @media  (min-width: 481px) and (max-width: 768px) {
   font-size:10vw;
-  margin-bottom: 6vw;
+
 }
 @media  (min-width: 769px) and (max-width: 1024px) {
   font-size:10vw;
-  margin-bottom: 3vw; 
+ 
 }
 @media  (min-width: 1025px) and (max-width: 1440px) {
   font-size:10vw;
-  margin-bottom: 3vw;
 
 }
 `
@@ -283,14 +274,11 @@ position: absolute;
 display:flex;
 top:50%
     left: 50%;
-    transform: translate(33%,-38%);
+    transform: translate(60%,-38%);
 @media  (min-width: 1px) and (max-width: 425px) {
   transform: translate(66%,-19%);
 }
-@media  (min-width: 480px) and (max-height: 320px) {
-  transform: translate(50%,-18%)!important;
 
-}
 @media  (min-width: 426px) and (max-width: 768px) {
  
 }
@@ -307,20 +295,15 @@ padding-right: 10vw;
 position: relative;
 z-index: 50;
 display: flex;
-margin-top: 40px;
-margin-left: 50px;
-@media  (min-width: 1px) and (max-width: 425px) {
-  margin: 30px 0px 0vw 50px;
-  padding-bottom:0vw;
-  }
-@media  (min-width: 480px) and (max-height: 320px) {
-  margin-top: 20px!important;
-  margin-left: 30px!important;
-}
+margin-top: 20px;
+margin-left: 30px;
+margin-bottom: 20px;
+
+
 `
 const Li =styled.li`
 
-margin-right: 1vw;
+margin-right: 10px;
 font-family:arial
 
 @media  (min-width: 1px) and (max-width: 425px) {
@@ -369,6 +352,20 @@ render() {
         
 
         <LeftContainer data-aos='slide-down'>
+        
+          <Floating2 >
+        <Text1  data-aos='slide-right'>REACT D/MS/X</Text1>
+        </Floating2>
+        
+          <TextContainer>
+         
+          <Text >The AF1 React D/MS/X optimizes comfort with a full length Nike React midsole equipped with a heel Ramp Air unit. The upper features a large bold Swoosh and mesh construction on the side panels. The traditional AIR logo appears on the heel, along with a newly added Nike React branded stripe. Nike React’s pattern replaces the traditional stars at the heel and toe of the outsole.</Text>
+          </TextContainer>
+
+          <ShoeHolder  className=" shoe ">
+          <Img src={af2} alt="" />
+          </ShoeHolder>
+          
           <Ul>
             <Li>
         <NavLink to="/" exact>
@@ -381,21 +378,9 @@ render() {
           </NavLink>
           </Li>
           </Ul>
-          <Floating2 >
-        <Text1  data-aos='slide-right'>REACT D/MS/X</Text1>
-        </Floating2>
-        
-          <TextContainer>
-         
-          <Text >The AF1 React D/MS/X optimizes comfort with a full length Nike React midsole equipped with a heel Ramp Air unit. The upper features a large bold Swoosh and mesh construction on the side panels. The traditional AIR logo appears on the heel, along with a newly added Nike React branded stripe. Nike React’s pattern replaces the traditional stars at the heel and toe of the outsole.</Text>
-          </TextContainer>
-
-          <ShoeHolder  className=" shoe ">
-          <Img src={af2} alt="" data-aos='slide-left'/>
-          </ShoeHolder>
         </LeftContainer>
 
-        <RightContainer   data-aos='slide-up'>
+        <RightContainer   data-aos='slide-left'>
     
       
           <Floating>
