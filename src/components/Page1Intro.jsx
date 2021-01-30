@@ -11,7 +11,7 @@ background: #171717;
   overflow:hidden;
   position:relative;
   display: flex;
-  height:100vh
+  min-height:100vh
   @media  (min-width: 1px) and (max-width: 425px) {
  
     }
@@ -30,7 +30,7 @@ transform: translate(-50%, -50%);
 background: white;
 padding: 40px 28px 32px 56px;
   @media  (min-width: 1px) and (max-width: 425px) {
-
+    padding:23px 1px 23px 28px;
   }
   @media  (min-width: 426px) and (max-width: 768px) {
     
@@ -44,7 +44,7 @@ padding: 40px 28px 32px 56px;
 const Heading = styled.h1`
 font-size:12vw;
 letter-spacing: 20px;
-line-height: 205px;
+
 color: #171717;
   @media  (min-width: 1px) and (max-width: 425px) {
     font-size: 25vw;
@@ -57,8 +57,7 @@ color: #171717;
   }
 `
 const Span = styled.span`
-display: inline-block;
-    padding: 0px 26px;
+padding: 0px 11px;
   @media  (min-width: 1px) and (max-width: 425px) {
 
   }
@@ -83,14 +82,14 @@ render() {
       <Container >
         
         <NavLink to="/Page1" exact>
-  
+
      
         <HeadingHolder >
         <Heading >N<Span>I</Span> <br/>KE</Heading>
       
           
         </HeadingHolder>
-        
+  
         </NavLink>
         <Footer />
       </Container>
