@@ -34,7 +34,7 @@ background: #171717;
 
 const LeftContainer = styled.div`
 height:100vh;
-background: #900718;
+background: #a5a5a5;
 overflow-x: hidden;
   display: flex;
   flex-direction: column;
@@ -63,7 +63,7 @@ const RightContainer = styled.div`
   height: 100vh;
   float:right;
   position:relative;
-  background: #191919;
+  background: #904141;
   @media  (min-width: 1px) and (max-width: 425px) {
     min-width:100vw;
    
@@ -135,7 +135,7 @@ margin-left: 30px;
 const Text = styled.p`
   color:white;
 
-  text-align:justify;
+  text-align:left;
   line-height:2vw;
   @media  (min-width: 1px) and (max-width: 425px) {
   
@@ -202,9 +202,9 @@ margin-bottom: 2vw;
   margin-left: 30px;
 }
 @media  (min-width: 1241px) and (max-width: 1440px) {
-  margin-top: 60px;
+  margin-top: 50px;
   margin-left: 30px;
-  margin-bottom:50px;
+  margin-bottom: 34px;
 }
 @media  (min-width: 1441px) and (max-width: 1920px) {
   margin-top: 50px;
@@ -338,6 +338,7 @@ const Nav =styled.img`
   height: 30px;
 }
 `
+
 class Page1 extends Component {
   componentDidMount(){
     AOS.init({
@@ -351,10 +352,10 @@ render() {
       <Container >
         
 
-        <LeftContainer data-aos='slide-down'>
+        <LeftContainer data-aos='slide-right'>
         
-          <Floating2 >
-        <Text1  data-aos='slide-right'>REACT D/MS/X</Text1>
+          <Floating2  data-aos='slide-down'>
+        <Text1 >REACT D/MS/X</Text1>
         </Floating2>
         
           <TextContainer>
@@ -380,7 +381,7 @@ render() {
           </Ul>
         </LeftContainer>
 
-        <RightContainer   data-aos='slide-left'>
+        <RightContainer   data-aos='slide-up'>
     
       
           <Floating>

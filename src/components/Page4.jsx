@@ -9,153 +9,168 @@ import Mag from '../images/mag.png';
 import { NavLink} from "react-router-dom";
 
 const Container = styled.div`
-background: linear-gradient(45deg,#4ff1e4,#343231);
-  overflow:hidden;
+background: #171717;
   position:relative;
   display: flex;
+  min-width:100vw;
+  overflow:hidden;
   @media  (min-width: 1px) and (max-width: 425px) {
     overflow:unset;
+    min-width:unset;
     }
   @media  (min-width: 426px) and (max-width: 768px) {
-  overflow:unset;
+    overflow:unset;
+  min-width:unset;
   }
-  @media  (min-width: 769px) and (max-width: 2560px) {
+  @media  (min-width: 769px) and (max-width: 1024px) {
+    min-width: unset;
+    overflow:hidden;
+  }
+  @media  (min-width: 1025px) and (max-width: 1440px) {
     min-width:100vw;
-    overflox:unset;
+    overflow:hidden;
+  }
 `
-
-
 
 const LeftContainer = styled.div`
 height:100vh;
-
+background: #797876;
 overflow-x: hidden;
   display: flex;
   flex-direction: column;
   float:left;
   font-family:arial
-  width: 30vw;
+  width: 50vw;
+  z-index: 2;
+    overflow: unset;
  
   @media  (min-width: 1px) and (max-width: 425px) {
-    min-width: 125vw;
+    min-width: 100vw;
   }
   @media  (min-width: 426px) and (max-width: 768px) {
-    min-width: 60vw;
+ min-width: 50vw;
   }
  
   @media  (min-width: 769px) and (max-width: 1240px) {
-    min-width: 40vw;
+    min-width: 50vw;
   }
   
 `
 
+
 const RightContainer = styled.div`
-  min-width: 60vw;
+  min-width: 50vw;
   height: 100vh;
   float:right;
   position:relative;
-  
+  background: #99e8ec;
   @media  (min-width: 1px) and (max-width: 425px) {
-    min-width:200vw;
-    margin-right: 10vw;
+    min-width:100vw;
+   
   }
   @media  (min-width: 426px) and (max-width: 768px) {
-    min-width: 110vw;
-    margin-right: 10vw;
+    min-width: 50vw;
+  
   }
   @media  (min-width: 769px) and (max-width: 1240px) {
-    min-width: 60vw;
-    margin-right: 10vw;
+    min-width: 50vw;
+   
   }
 `
 
+
 const Img = styled.img`
-width: 30vw;
-height: 25vw;
+width: 100%;
+height: 100%;
 border: none;
 position: relative;
 z-index: 2;
-left: 100px;
+
 @media  (min-width: 1px) and (max-width: 425px) {
-  width: 80vw;
-  height: 75vw;
+  width: 100%;
+  height: 100%;
 }
+@media  (min-width: 480px) and (max-height: 320px) {
+  width: 100%;
+  height: 100%;
+}
+
 @media  (min-width: 426px) and (max-width: 768px) {
-  width: 45vw;
-  height: 45vw;
-  left: 125px;
+  width: 100%;
+  height: 100%;
 }
+
 `   
 
+
 const TextContainer =styled.div`
-width: 100%;
+width: 70%;
 font-size: 1.1vw;
 overflow-y: auto;
-margin:8vw 0vw 0vw 0vw;
+margin-left: 30px;
 @media  (min-width: 1px) and (max-width: 425px) {
-  width: 128vw;
- 
-  top: 5vw;
-  left: 0vw;
+  margin: 30px 0px 0vw 30px;
+  padding-bottom: 40px;
   font-size: 5vw;
-  margin:45vw 0vw 0vw 0vw;
 }
 
+
+
 @media  (min-width: 426px) and (max-width: 768px) {
-  width: 100%;
-  position: relative;
-  top: 0vw;
+  margin: 10px 0px 0vw 30px;
   font-size: 2vw;
-  margin:15vw 0vw 0vw 0vw;
+  padding-bottom: 40px;
 }
 @media  (min-width: 769px) and (max-width: 1240px) {
-  top: 25vw;
-  width: 100%;
-  margin:15vw 0vw 0vw 0vw;
+  margin: 10px 0px 0vw 30px;
+  padding-bottom: 40px;
 }
 @media  (min-width: 1240px) and (max-width: 1440px) {
-  top: 0vw;
-  width: 100%;
-  left: 200px;
-  margin:15vw 0vw 0vw 0vw;
+
+  margin-left: 30px;
+  padding-bottom: 40px;
 }
 `
 
 const Text = styled.p`
   color:white;
-  padding: 0vw 1vw 0vw 3vw;
-  text-align:justify;
+
+  text-align:left;
   line-height:2vw;
   @media  (min-width: 1px) and (max-width: 425px) {
-    padding: 0vw 1vw 5vw 11vw;
+  
     line-height:8vw;
     position: relative;
     width: unset;
     text-align:left;
   }
   @media  (min-width: 426px) and (max-width: 768px) {
-    padding: 0vw 4vw 4vw 5vw;
+ 
     line-height:4vw;
   }
   @media  (min-width: 769px) and (max-width: 1240px) {
     line-height:3vw;
-    padding: 0vw 1vw 5vw 5vw;
+ 
   }
 `
-
 const Floating = styled.div`
 color:white;
-top: 4.5vw;
-left: 20vw;
+bottom: 30px;
+right: 0;
 white-space:nowrap;
 font-family:arial;
 font-weight:bold;
 z-index:10;
+margin-right: 30px;
+position:absolute;
 @media (max-width: 425px){
   font-size:20vw;
   letter-spacing: 1vw;
   top: 21vw;
   left: 94vw;
+}
+@media  (min-width: 480px) and (max-height: 320px) {
+  margin-right: 30px!important;
 }
 @media  (min-width: 426px) and (max-width: 768px) {
   top:10vw;
@@ -164,108 +179,106 @@ z-index:10;
 
 `
 const Floating2 = styled.div`
-
-position:absolute;
-top:5vw
-@media  (min-width: 1px) and (max-width: 425px) {
-  top:70px;
+margin-bottom: 2vw; 
+margin-top: 0.5vw;
+position:relative;
+margin-bottom: 2vw;
+@media  (min-width: 1px) and (max-width: 320px) {
+  margin-top: 40px;
+  margin-left: 30px;
 }
+@media  (min-width: 321px) and (max-width: 425px) {
+  margin-top: 50px;
+  margin-left: 30px;
+}
+
 @media  (min-width: 426px) and (max-width: 768px) {
-  top: 64px;
+  margin-top: 30px;
+  margin-left: 30px;
+
 }
 @media  (min-width: 769px) and (max-width: 1240px) {
-  top: -75px;
-  width: 100%;
-  margin:15vw 0vw 0vw 0vw;
+  margin-top: 35px;
+  margin-left: 30px;
 }
 @media  (min-width: 1241px) and (max-width: 1440px) {
-  top: -110px;
-  width: 100%;
-  margin:15vw 0vw 0vw 0vw;
+  margin-top: 50px;
+  margin-left: 30px;
+  margin-bottom: 34px;
 }
 @media  (min-width: 1441px) and (max-width: 1920px) {
-  top: -9vw;
-  width: 100%;
-  margin:15vw 0vw 0vw 0vw;
+  margin-top: 50px;
+  margin-left: 30px;
 }
 `
 
 const Text1 = styled.h1`
 color:#ffffff;
 font-size:6vw;
-margin-top: 3vw;
 letter-spacing:6px;
 margin-left: 0vw;
 white-space: nowrap;
-position:relative;
+
 @media  (min-width: 1px) and (max-width: 425px) {
   font-size: 25vw;
-  margin: 15vw;
   margin-bottom: 0;
-  margin-top: 25vw;
   margin-left: 0vw;
 }
 
 @media  (min-width: 426px) and (max-width: 480px) {
   font-size:10vw;
-  bottom: -10vw;
-  margin-bottom: 6vw;
+
 }
 @media  (min-width: 481px) and (max-width: 768px) {
   font-size:10vw;
-  bottom: -7vw;
-  margin-bottom: 6vw;
+
 }
 @media  (min-width: 769px) and (max-width: 1024px) {
   font-size:10vw;
-  bottom: -3vw
-  margin-top: 5vw;
-  margin-bottom: 3vw; 
+ 
 }
 @media  (min-width: 1025px) and (max-width: 1440px) {
   font-size:10vw;
-  bottom: -3vw
-  margin-top: 2vw;
-  margin-bottom: 3vw;
 
 }
 `
-
 const Text2 = styled.h1`
 margin:0px;
 position:absolute;
-color:#ffffff;
+color:white;
 font-size:7vw;
-right: -8vw;
-bottom: -12px;
-margin: 15vw;
+right: 0vw;
+bottom: 0px;
+
 margin-bottom: 0;
 letter-spacing:6px;
 white-space: nowrap;
 @media  (min-width: 1px) and (max-width: 425px) {
   font-size: 22vw;
-  margin: 15vw;
+
   margin-bottom: 0;
-  bottom: -30px;
-  right: 15vw;
+  bottom: 0px;
+  right: 0vw;
  
 }
 @media  (min-width: 426px) and (max-width: 768px) {
   font-size: 10vw;
-  bottom: -30px;
-  right: -3vw;
+  bottom: 0px;
+  right: 0vw;
 }
 `
+
 
 const ShoeHolder = styled.div`
 position: absolute;
 display:flex;
 top:50%
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(60%,-38%);
 @media  (min-width: 1px) and (max-width: 425px) {
-  
+  transform: translate(66%,-19%);
 }
+
 @media  (min-width: 426px) and (max-width: 768px) {
  
 }
@@ -282,28 +295,47 @@ padding-right: 10vw;
 position: relative;
 z-index: 50;
 display: flex;
-margin: 0vw 2vw 2vw 2vw;
-}
+margin-top: 20px;
+margin-left: 30px;
+margin-bottom: 20px;
+
+
 `
 const Li =styled.li`
-padding: 2vw 1vw;
-padding-bottom:0vw;
+
+margin-right: 10px;
 font-family:arial
 
 @media  (min-width: 1px) and (max-width: 425px) {
-  padding: 7vw 1vw 5vw 9vw;
+
 padding-bottom:0vw;
 }
 @media  (min-width: 426px) and (max-width: 768px) {
-  padding: 3vw 3vw;
+
   padding-bottom:0vw;
 }
 @media  (min-width: 769px) and (max-width:1024px) {
-  padding: 3vw 3vw;
+
   padding-bottom:0vw;
 }
 @media  (min-width: 1025px) and (max-width: 1440px) {
  
+}
+`
+
+const Nav =styled.img`
+
+@media  (min-width: 480px) and (max-height: 320px) {
+  width: 27px!important;
+  height: 27px!important;
+}
+@media  (min-width: 1px) and (max-width: 320px) {
+  width: 30px;
+  height: 30px;
+}
+@media  (min-width: 321px) and (max-width: 425px) {
+  width: 30px;
+  height: 30px;
 }
 `
 class Page1 extends Component {
@@ -317,24 +349,14 @@ render() {
 
     return (
       <Container >
-          <Floating2>
-        <Text1  className="text-pop-up-tr" >"AIR MAG"</Text1>
-        </Floating2>
+         
 
-        <LeftContainer className="Page2Left">
-          <Ul>
-            <Li>
-        <NavLink to="/Page3" exact>
-        <img src={back} alt=""/>
-          </NavLink>
-          </Li>
-          <Li>
-        <NavLink to="/Page4" exact>
-        <img src={forward} alt=""/>
-          </NavLink>
-          </Li>
-          </Ul>
-        
+        <LeftContainer  data-aos='slide-right'>
+
+        <Floating2 data-aos='slide-down'>
+        <Text1  >"AIR MAG"</Text1>
+        </Floating2>
+       
           <TextContainer>
          
           <Text >Newly-released Nike ‘Jesus Shoes’ – filled with actual holy water in the soles – sold out in mere minutes after they hit the shelves on Tuesday morning.
@@ -346,16 +368,31 @@ Each pair was reportedly blessed by a priest and has a red insole in reference t
 The limited edition shoes were made by Brooklyn-based company MSCHF which redesigned Nike’s Air Max 97 model, turning it into “Jesus Shoes,” and offering buyers to literally walk on water.</Text>
           </TextContainer>
 
-        </LeftContainer>
-
-        <RightContainer  data-aos='fade-in'>
-    
-        <ShoeHolder  className=" shoe">
+          <ShoeHolder  className=" shoe">
           <Img src={Mag} alt="" className=" fade "/>
           </ShoeHolder>
-          <Floating>
+
+          <Ul>
+            <Li>
+        <NavLink to="/Page3" exact>
+        <Nav src={back} alt=""/>
+          </NavLink>
+          </Li>
+          <Li>
+        <NavLink to="/Page4" exact>
+        <Nav src={forward} alt=""/>
+          </NavLink>
+          </Li>
+          </Ul>
+
+        </LeftContainer>
+
+        <RightContainer  data-aos='slide-up'>
+    
+        
+          <Floating data-aos='slide-up'>
          
-          <Text2 className="text-pop-up-tr" >"NIKE"</Text2>
+          <Text2 >"NIKE"</Text2>
         </Floating>
         </RightContainer>
   
