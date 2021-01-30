@@ -162,13 +162,13 @@ const Text = styled.p`
 `
 const Floating = styled.div`
 color:white;
-bottom: 0;
+bottom: 30px;
 right: 0;
 white-space:nowrap;
 font-family:arial;
 font-weight:bold;
 z-index:10;
-
+margin-right: 40px;
 position:absolute;
 @media (max-width: 425px){
   font-size:20vw;
@@ -308,7 +308,7 @@ position: relative;
 z-index: 50;
 display: flex;
 margin-top: 40px;
-
+margin-left: 50px;
 @media  (min-width: 1px) and (max-width: 425px) {
   margin: 30px 0px 0vw 50px;
   padding-bottom:0vw;
