@@ -9,17 +9,17 @@ import af2 from '../images/test.png';
 import { NavLink} from "react-router-dom";
 
 const Container = styled.div`
-background: linear-gradient(45deg,#495b5e,#7b0113);
-
+background: #c2b8bc;
   position:relative;
   display: flex;
   min-width:100vw;
+  overflow:hidden;
   @media  (min-width: 1px) and (max-width: 425px) {
     overflow:unset;
     min-width:unset;
     }
   @media  (min-width: 426px) and (max-width: 768px) {
-
+    overflow:unset;
   min-width:unset;
   }
   @media  (min-width: 769px) and (max-width: 1024px) {
@@ -28,25 +28,25 @@ background: linear-gradient(45deg,#495b5e,#7b0113);
   }
   @media  (min-width: 1025px) and (max-width: 1440px) {
     min-width:100vw;
-    overflow:unset;
+    overflow:hidden;
   }
 `
 
 const LeftContainer = styled.div`
 height:100vh;
-
+background: #900718;
 overflow-x: hidden;
   display: flex;
   flex-direction: column;
   float:left;
   font-family:arial
-  width: 30vw;
+  width: 25vw;
  
   @media  (min-width: 1px) and (max-width: 425px) {
-    min-width: 125vw;
+    min-width: 100vw;
   }
   @media  (min-width: 426px) and (max-width: 768px) {
-    min-width: 55vw;
+ min-width: 40vw;
   }
  
   @media  (min-width: 769px) and (max-width: 1240px) {
@@ -63,16 +63,16 @@ const RightContainer = styled.div`
   position:relative;
   
   @media  (min-width: 1px) and (max-width: 425px) {
-    min-width:200vw;
-    margin-right: 10vw;
+    min-width:140vw;
+   
   }
   @media  (min-width: 426px) and (max-width: 768px) {
-    min-width: 110vw;
-    margin-right: 10vw;
+    min-width: 60vw;
+  
   }
   @media  (min-width: 769px) and (max-width: 1240px) {
     min-width: 60vw;
-    margin-right: 10vw;
+   
   }
 `
 
@@ -83,7 +83,7 @@ height: 20vw;
 border: none;
 position: relative;
 z-index: 2;
-left: 100px;
+
 @media  (min-width: 1px) and (max-width: 425px) {
   width: 80vw;
   height: 75vw;
@@ -91,7 +91,6 @@ left: 100px;
 @media  (min-width: 426px) and (max-width: 768px) {
   width: 45vw;
   height: 45vw;
-  left: 125px;
 }
 
 `   
@@ -103,8 +102,6 @@ font-size: 1.1vw;
 overflow-y: auto;
 margin:8vw 0vw 0vw 0vw;
 @media  (min-width: 1px) and (max-width: 425px) {
-  width: 128vw;
- 
   top: 5vw;
   left: 0vw;
   font-size: 5vw;
@@ -112,7 +109,6 @@ margin:8vw 0vw 0vw 0vw;
 }
 
 @media  (min-width: 426px) and (max-width: 768px) {
-  width: 100%;
   position: relative;
   top: 0vw;
   font-size: 2vw;
@@ -120,35 +116,33 @@ margin:8vw 0vw 0vw 0vw;
 }
 @media  (min-width: 769px) and (max-width: 1240px) {
   top: 25vw;
-  width: 100%;
   margin:15vw 0vw 0vw 0vw;
 }
 @media  (min-width: 1240px) and (max-width: 1440px) {
   top: 0vw;
-  width: 100%;
   left: 200px;
   margin:15vw 0vw 0vw 0vw;
 }
 `
 const Text = styled.p`
   color:white;
-  padding: 0vw 1vw 0vw 3vw;
+  padding: 0vw 3vw 0vw 3vw;
   text-align:justify;
   line-height:2vw;
   @media  (min-width: 1px) and (max-width: 425px) {
-    padding: 0vw 1vw 5vw 11vw;
+    padding: 0vw 11vw 5vw 11vw;
     line-height:8vw;
     position: relative;
     width: unset;
     text-align:left;
   }
   @media  (min-width: 426px) and (max-width: 768px) {
-    padding: 0vw 4vw 4vw 5vw;
+    padding: 0vw 5vw 4vw 5vw;
     line-height:4vw;
   }
   @media  (min-width: 769px) and (max-width: 1240px) {
     line-height:3vw;
-    padding: 0vw 1vw 5vw 5vw;
+    padding: 0vw 5vw 5vw 5vw;
   }
 `
 const Floating = styled.div`
@@ -206,6 +200,7 @@ letter-spacing:6px;
 margin-left: 0vw;
 white-space: nowrap;
 position:relative;
+z-index:200;
 @media  (min-width: 1px) and (max-width: 425px) {
   font-size: 25vw;
   margin: 15vw;
@@ -341,7 +336,7 @@ render() {
           </Li>
           </Ul>
           <Floating2>
-        <Text1 className="text-pop-up-tr" >"AF1 REACT"</Text1>
+        <Text1 className="text-pop-up-tr" >"REACT D/MS/X"</Text1>
         </Floating2>
         
           <TextContainer>
@@ -358,7 +353,7 @@ render() {
           </ShoeHolder>
           <Floating>
          
-          <Text2 className="text-pop-up-tr">"NIKE"</Text2>
+          <Text2 className="text-pop-up-tr">"NIKE AF1"</Text2>
         </Floating>
         </RightContainer>
 

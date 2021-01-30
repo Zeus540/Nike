@@ -8,8 +8,7 @@ import test from '../images/1.jpg'
 import { NavLink} from "react-router-dom";
 
 const Container = styled.div`
-background:url(${test}); 
-background-size: 100% 100%;
+background: #171717;
   overflow:hidden;
   position:relative;
   display: flex;
@@ -70,8 +69,8 @@ const HeadingHolder = styled.div`
 position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-70%, -50%);
-    background: #1f344a;
+    transform: translate(-50%, -50%);
+ 
 
   @media  (min-width: 1px) and (max-width: 425px) {
 
@@ -121,7 +120,7 @@ render() {
         <RightContainer  data-aos='fade-in'>
      
         <HeadingHolder >
-          <Heading className="text-pop-up-tr">JUST <br/> DO <br/> IT</Heading>
+          <Heading >JUST <br/> DO <br/> IT</Heading>
           
         </HeadingHolder>
          
