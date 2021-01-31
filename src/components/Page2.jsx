@@ -9,7 +9,7 @@ import Purple from '../images/purple.png';
 import { NavLink} from "react-router-dom";
 
 const Container = styled.div`
-background: #171717;
+background: black;
   position:relative;
   display: flex;
   min-width:100vw;
@@ -109,6 +109,8 @@ width: 70%;
 font-size: 1.1vw;
 overflow-y: auto;
 margin-left: 30px;
+position:relative;
+z-index:20;
 @media  (min-width: 1px) and (max-width: 425px) {
   margin: 30px 0px 0vw 30px;
   padding-bottom: 40px;
@@ -277,7 +279,7 @@ top:50%
     left: 50%;
     transform: translate(60%,-38%);
 @media  (min-width: 1px) and (max-width: 425px) {
-  transform: translate(66%,-19%);
+  transform: translate(35%,-40%);
 }
 
 @media  (min-width: 426px) and (max-width: 768px) {
@@ -298,7 +300,7 @@ z-index: 50;
 display: flex;
 margin-top: 20px;
 margin-left: 30px;
-margin-bottom: 20px;
+margin-bottom: 20px!important;
 
 
 `
@@ -360,7 +362,7 @@ render() {
         
           <TextContainer>
          
-          <Text >The AF1 React D/MS/X optimizes comfort with a full length Nike React midsole equipped with a heel Ramp Air unit. The upper features a large bold Swoosh and mesh construction on the side panels. The traditional AIR logo appears on the heel, along with a newly added Nike React branded stripe. Nike React’s pattern replaces the traditional stars at the heel and toe of the outsole.</Text>
+          <Text >Nike’s first collaborative project with Fear of God founder and creative director Jerry Lorenzo is highlighted by an court-ready basketball shoe, the Nike Air Fear of God 1. During the last few weeks, glimpses of the design — which incorporates a double-height Zoom Air heel unit — came through a preview of Lorenzo’s latest Fear of God offering and then appeared on the feet of NBA stars. The rollout is tactical, all part of Lorenzo’s desire to focus on the emotional element of sport.</Text>
           </TextContainer>
 
           <ShoeHolder  className=" shoe">

@@ -9,7 +9,7 @@ import Water from '../images/water.png';
 import { NavLink} from "react-router-dom";
 
 const Container = styled.div`
-background: #171717;
+background: black;
   position:relative;
   display: flex;
   min-width:100vw;
@@ -80,16 +80,18 @@ const RightContainer = styled.div`
 `
 
 
+
 const Img = styled.img`
 width: 100%;
 height: 100%;
 border: none;
 position: relative;
 z-index: 2;
-
+width: 20vw;
+height: 20vw;
 @media  (min-width: 1px) and (max-width: 425px) {
-  width: 100%;
-  height: 100%;
+  width: 70vw;
+  height: 63vw;
 }
 @media  (min-width: 480px) and (max-height: 320px) {
   width: 100%;
@@ -97,11 +99,19 @@ z-index: 2;
 }
 
 @media  (min-width: 426px) and (max-width: 768px) {
-  width: 100%;
-  height: 100%;
+  width: 30vw;
+  height: 30vw;
 }
-
+@media  (min-width: 769px) and (max-width: 1024px) {
+  width: 35vw;
+  height: 35vw;
+}
+@media  (min-width: 1025px) and (max-width: 1440px) {
+  width: 30vw;
+  height: 30vw;
+}
 `   
+
 
 
 const TextContainer =styled.div`
@@ -109,6 +119,8 @@ width: 70%;
 font-size: 1.1vw;
 overflow-y: auto;
 margin-left: 30px;
+position:relative;
+z-index:20;
 @media  (min-width: 1px) and (max-width: 425px) {
   margin: 30px 0px 0vw 30px;
   padding-bottom: 40px;
@@ -130,6 +142,9 @@ margin-left: 30px;
 
   margin-left: 30px;
   padding-bottom: 40px;
+}
+@media  (min-width: 1441px) and (max-width: 1920px) {
+  margin-left: 50px;
 }
 `
 
@@ -177,7 +192,9 @@ position:absolute;
   top:10vw;
   left: 40vw;
 }
-
+@media  (min-width: 1441px) and (max-width: 1920px) {
+  margin-right: 50px;
+}
 `
 const Floating2 = styled.div`
 margin-bottom: 2vw; 
@@ -209,7 +226,7 @@ margin-bottom: 2vw;
 }
 @media  (min-width: 1441px) and (max-width: 1920px) {
   margin-top: 50px;
-  margin-left: 30px;
+  margin-left: 50px;
 }
 `
 
@@ -277,17 +294,17 @@ top:50%
     left: 50%;
     transform: translate(60%,-38%);
 @media  (min-width: 1px) and (max-width: 425px) {
-  transform: translate(66%,-19%);
+  transform: translate(35%,-40%);
 }
 
 @media  (min-width: 426px) and (max-width: 768px) {
- 
+  transform: translate(40%,-47%);
 }
 @media  (min-width: 769px) and (max-width:1024px) {
- 
+  transform: translate(20%,-38%);
 }
 @media  (min-width: 1025px) and (max-width: 1440px) {
- 
+  transform: translate(40%,-38%);
 }
 `
     
@@ -298,8 +315,11 @@ z-index: 50;
 display: flex;
 margin-top: 20px;
 margin-left: 30px;
-margin-bottom: 20px;
+margin-bottom: 20px!important;
+@media  (min-width: 1441px) and (max-width: 1920px) {
 
+  margin-left: 50px;
+}
 
 `
 const Li =styled.li`
@@ -339,6 +359,7 @@ const Nav =styled.img`
   height: 30px;
 }
 `
+
 class Page1 extends Component {
   componentDidMount(){
     AOS.init({

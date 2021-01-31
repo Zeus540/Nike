@@ -9,7 +9,7 @@ import af2 from '../images/test.png';
 import { NavLink} from "react-router-dom";
 
 const Container = styled.div`
-background: #171717;
+background: black;
   position:relative;
   display: flex;
   min-width:100vw;
@@ -114,6 +114,8 @@ width: 70%;
 font-size: 1.1vw;
 overflow-y: auto;
 margin-left: 30px;
+position:relative;
+z-index:20;
 @media  (min-width: 1px) and (max-width: 425px) {
   margin: 30px 0px 0vw 30px;
   padding-bottom: 40px;
@@ -287,7 +289,7 @@ top:50%
     left: 50%;
     transform: translate(60%,-38%);
 @media  (min-width: 1px) and (max-width: 425px) {
-  transform: translate(35%,-26%);
+  transform: translate(35%,-40%);
 }
 
 @media  (min-width: 426px) and (max-width: 768px) {
@@ -308,7 +310,7 @@ z-index: 50;
 display: flex;
 margin-top: 20px;
 margin-left: 30px;
-margin-bottom: 20px;
+margin-bottom: 20px!important;
 @media  (min-width: 1441px) and (max-width: 1920px) {
 
   margin-left: 50px;
@@ -366,7 +368,7 @@ render() {
       <Container >
         
 
-        <LeftContainer data-aos='slide-right'>
+        <LeftContainer data-aos='slide-down'  data-aos-duration="750" >
         
           <Floating2  data-aos='slide-down'>
         <Text1 >REACT D/MS/X</Text1>
@@ -378,7 +380,7 @@ render() {
           </TextContainer>
 
           <ShoeHolder  className=" shoe ">
-          <Img src={af2} alt="" data-aos='slide-up'/>
+          <Img src={af2} alt="" data-aos='zoom-in' data-aos-duration="1550" />
           </ShoeHolder>
           
           <Ul>
@@ -395,7 +397,7 @@ render() {
           </Ul>
         </LeftContainer>
 
-        <RightContainer   data-aos='slide-up'>
+        <RightContainer   data-aos='slide-left'  data-aos-duration="750" >
     
       
           <Floating>

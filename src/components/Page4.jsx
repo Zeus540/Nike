@@ -9,7 +9,7 @@ import Mag from '../images/mag.png';
 import { NavLink} from "react-router-dom";
 
 const Container = styled.div`
-background: #171717;
+background: black;
   position:relative;
   display: flex;
   min-width:100vw;
@@ -34,7 +34,7 @@ background: #171717;
 
 const LeftContainer = styled.div`
 height:100vh;
-background: #99e8ec;
+background: #5c8a9a;
 overflow-x: hidden;
   display: flex;
   flex-direction: column;
@@ -88,7 +88,7 @@ position: relative;
 z-index: 2;
 
 @media  (min-width: 1px) and (max-width: 425px) {
-  width: 100%;
+  width: 70vw;
   height: 100%;
 }
 @media  (min-width: 480px) and (max-height: 320px) {
@@ -97,10 +97,16 @@ z-index: 2;
 }
 
 @media  (min-width: 426px) and (max-width: 768px) {
-  width: 100%;
+  width: 35vw;
   height: 100%;
 }
+@media  (min-width: 769px) and (max-width: 1024px) {
+  width: 35vw;
+}
+@media  (min-width: 1025px) and (max-width: 1440px) {
+  width: 30vw;
 
+}
 `   
 
 
@@ -109,6 +115,8 @@ width: 70%;
 font-size: 1.1vw;
 overflow-y: auto;
 margin-left: 30px;
+position:relative;
+z-index:20;
 @media  (min-width: 1px) and (max-width: 425px) {
   margin: 30px 0px 0vw 30px;
   padding-bottom: 40px;
@@ -130,6 +138,9 @@ margin-left: 30px;
 
   margin-left: 30px;
   padding-bottom: 40px;
+}
+@media  (min-width: 1441px) and (max-width: 1920px) {
+  margin-left: 50px;
 }
 `
 
@@ -177,7 +188,9 @@ position:absolute;
   top:10vw;
   left: 40vw;
 }
-
+@media  (min-width: 1441px) and (max-width: 1920px) {
+  margin-right: 50px;
+}
 `
 const Floating2 = styled.div`
 margin-bottom: 2vw; 
@@ -209,7 +222,7 @@ margin-bottom: 2vw;
 }
 @media  (min-width: 1441px) and (max-width: 1920px) {
   margin-top: 50px;
-  margin-left: 30px;
+  margin-left: 50px;
 }
 `
 
@@ -277,17 +290,17 @@ top:50%
     left: 50%;
     transform: translate(60%,-38%);
 @media  (min-width: 1px) and (max-width: 425px) {
-  transform: translate(66%,-19%);
+  transform: translate(35%,-40%);
 }
 
 @media  (min-width: 426px) and (max-width: 768px) {
- 
+  transform: translate(40%,-47%);
 }
 @media  (min-width: 769px) and (max-width:1024px) {
- 
+  transform: translate(20%,-38%);
 }
 @media  (min-width: 1025px) and (max-width: 1440px) {
- 
+  transform: translate(40%,-38%);
 }
 `
     
@@ -298,8 +311,11 @@ z-index: 50;
 display: flex;
 margin-top: 20px;
 margin-left: 30px;
-margin-bottom: 20px;
+margin-bottom: 20px!important;
+@media  (min-width: 1441px) and (max-width: 1920px) {
 
+  margin-left: 50px;
+}
 
 `
 const Li =styled.li`
@@ -339,6 +355,7 @@ const Nav =styled.img`
   height: 30px;
 }
 `
+
 class Page1 extends Component {
   componentDidMount(){
     AOS.init({
@@ -360,13 +377,9 @@ render() {
        
           <TextContainer>
          
-          <Text >Newly-released Nike ‘Jesus Shoes’ – filled with actual holy water in the soles – sold out in mere minutes after they hit the shelves on Tuesday morning.
-The $3,000 sneakers are filled with holy water from the River Jordan in Israel and have a crucifix tied to the laces.
+          <Text >The Nike MAG is a limited-edition shoe created by Nike Inc.[1] It is a replica of a shoe featured in the film Back to the Future Part II. The Nike Mag was originally released for sale in 2011 and again in 2016. Both launches were in limited quantities. The 2011 release was limited to 1,510 pairs, while the 2016 release was limited to 89 pairs.
 
-
-Each pair was reportedly blessed by a priest and has a red insole in reference to the red Papal shoes that were traditionally worn by Vatican leaders.
-
-The limited edition shoes were made by Brooklyn-based company MSCHF which redesigned Nike’s Air Max 97 model, turning it into “Jesus Shoes,” and offering buyers to literally walk on water.</Text>
+Nike has stated Mag is not meant for heavy activity and should not be worn for recreational purposes. They were produced mostly for display.</Text>
           </TextContainer>
 
           <ShoeHolder  className=" shoe">
