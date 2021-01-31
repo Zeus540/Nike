@@ -62,20 +62,6 @@ body{
 
 
 
-  @keyframes slide { 
-	0% {   
-	transform: translateX(-100%);
-	     }
 
-	100% {   
-		transform: translateX(100%);
-	    }
-  }
-
-  .slide {
-	animation: slide 1s;
-	animation-direction: linear;
-	animation-iteration-count: 1;
-  }
 
  

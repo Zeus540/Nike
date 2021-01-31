@@ -4,8 +4,8 @@ import back from '../images/back.png'
 import forward from '../images/right.png'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import One from '../images/1.jpg';
-import Two from '../images/2.jpg';
+
+import Two from '../images/2.png';
 import Three from '../images/3.png';
 import af2 from '../images/test.png';
 
@@ -37,7 +37,7 @@ background: black;
 
 const LeftContainer = styled.div`
 height:100vh;
-background: #904141;
+background: #55b19c;
 overflow-x: hidden;
   display: flex;
   flex-direction: column;
@@ -104,18 +104,22 @@ const RightContainerPage = styled.div`
 
   }
   &:nth-child(2){
-    height:100vh;
-
+    height:auto;
+    margin-bottom: 50px;
   
   }
  
   img{
-    width: 85%;
-height: 50%;
-mix-blend-mode: luminosity;
+
+    &:nth-child(1){
+      width: 80%;
+    float:right;
+    margin-bottom:50px
+    margin-top:20px
+    }
 &:nth-child(2){
-  width: 70%;
- 
+  width: 65%;
+  float:right;
 
 }
   }
@@ -147,6 +151,10 @@ z-index: 2;
   width: 35vw!important;
 }
 @media  (min-width: 1025px) and (max-width: 1440px) {
+  width: 30vw!important;
+
+}
+@media  (min-width: 1441px) and (max-width: 1920px) {
   width: 30vw!important;
 
 }
@@ -331,7 +339,7 @@ position: absolute;
 display:flex;
 top:50%
     left: 50%;
-    transform: translate(-30%,-38%);
+    transform: translate(-40%,-45%);
 @media  (min-width: 1px) and (max-width: 425px) {
 
   transform: translate(-45%,-47%);
@@ -347,6 +355,7 @@ top:50%
 @media  (min-width: 1025px) and (max-width: 1440px) {
   transform: translate(-45%,-47%);
 }
+
 `
     
 const Ul =styled.ul`
@@ -401,6 +410,18 @@ const Nav =styled.img`
 }
 `
 
+const Shop =styled.button`
+background: #55b19c;
+padding: 15px 40px;
+float: left;
+margin-bottom: 50px;
+margin-left: 40px;
+font-weight: bold;
+border: none;
+color: white;
+
+`
+
 class Page1 extends Component {
   componentDidMount(){
     AOS.init({
@@ -453,11 +474,11 @@ render() {
        </Floating>
         </RightContainerPage>
 
-        <RightContainerPage className="slide">
+        <RightContainerPage >
         <img src={Two} alt="" srcset=""  />
         <img src={Three} alt="" srcset=""  />
         </RightContainerPage>
-
+        <Shop>SHOP NOW</Shop>
      
 
         </RightContainer>
