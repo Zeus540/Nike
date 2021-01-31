@@ -168,38 +168,39 @@ z-index: 2;
 
 
 const TextContainer =styled.div`
-width: 70%;
 font-size: 1.1vw;
 overflow-y: auto;
 margin-left: 30px;
 position:relative;
+width:70%;
 z-index:20;
 @media  (min-width: 1px) and (max-width: 425px) {
-  margin: 30px 0px 0vw 30px;
-
+  margin: 30px 40px 0vw 40px;
+  width:unset;
   font-size: 5vw;
 }
 
 
 
 @media  (min-width: 426px) and (max-width: 768px) {
-  margin: 10px 0px 0vw 30px;
+  margin: 30px 40px 0vw 40px;
   font-size: 2vw;
-
+  width:unset;
 }
 @media  (min-width: 769px) and (max-width: 1240px) {
-  margin: 10px 0px 0vw 30px;
-
+  margin: 30px 40px 0vw 40px;
+ 
 }
 @media  (min-width: 1240px) and (max-width: 1440px) {
-
-  margin-left: 30px;
+ 
+  margin-left: 40px;
 
 }
 @media  (min-width: 1441px) and (max-width: 1920px) {
   margin-left: 50px;
-}
+
 `
+
 
 const Text = styled.p`
   color:white;
@@ -230,23 +231,22 @@ white-space:nowrap;
 font-family:arial;
 font-weight:bold;
 z-index:10;
-margin-right: 10px;
+margin-right: 35px;
 position:absolute;
 @media (max-width: 425px){
   font-size:20vw;
   letter-spacing: 1vw;
-  top: 21vw;
-  left: 94vw;
+  margin-right: 35px;
 }
 @media  (min-width: 480px) and (max-height: 320px) {
-  margin-right: 10px!important;
+  margin-right: 35px!important;
 }
 @media  (min-width: 426px) and (max-width: 768px) {
   top:10vw;
   left: 40vw;
 }
 @media  (min-width: 1441px) and (max-width: 1920px) {
-  margin-right: 50px;
+  margin-right: 35px;
 }
 `
 const Floating2 = styled.div`
@@ -256,25 +256,25 @@ position:relative;
 margin-bottom: 2vw;
 @media  (min-width: 1px) and (max-width: 320px) {
   margin-top: 40px;
-  margin-left: 30px;
+  margin-left: 40px;
 }
 @media  (min-width: 321px) and (max-width: 425px) {
   margin-top: 50px;
-  margin-left: 30px;
+  margin-left: 40px;
 }
 
 @media  (min-width: 426px) and (max-width: 768px) {
   margin-top: 30px;
-  margin-left: 30px;
+  margin-left: 40px;
 
 }
 @media  (min-width: 769px) and (max-width: 1240px) {
   margin-top: 35px;
-  margin-left: 30px;
+  margin-left: 40px;
 }
 @media  (min-width: 1241px) and (max-width: 1440px) {
   margin-top: 50px;
-  margin-left: 30px;
+  margin-left: 40px;
   margin-bottom: 34px;
 }
 @media  (min-width: 1441px) and (max-width: 1920px) {
@@ -370,12 +370,12 @@ position: relative;
 z-index: 50;
 display: flex;
 margin-top: 20px;
-margin-left: 30px;
+margin-left: 35px;
 margin-bottom: 20px!important;
 @media  (min-width: 1px) and (max-width: 425px) {
 
   margin-top: 40px;
-  margin-left: 30px;
+  margin-left: 35px;
   margin-bottom: 50px!important;
   }
 @media  (min-width: 1441px) and (max-width: 1920px) {
@@ -484,10 +484,10 @@ render() {
           </Ul>
         </LeftContainer>
 
-        <RightContainer  className="Right" data-aos='slide-up'  data-aos-duration="750" >
+        <RightContainer   data-aos='slide-up'  data-aos-duration="750" >
     
         <RightContainerPage>
-        <ShoeHolder  className=" shoe ">
+        <ShoeHolder  >
           <Img src={Purple} alt="" />
           </ShoeHolder>
         <Floating>
