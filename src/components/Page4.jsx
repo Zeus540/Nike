@@ -161,7 +161,7 @@ white-space:nowrap;
 font-family:arial;
 font-weight:bold;
 z-index:10;
-margin-right: 30px;
+margin-right: 10px;
 position:absolute;
 @media (max-width: 425px){
   font-size:20vw;
@@ -170,7 +170,7 @@ position:absolute;
   left: 94vw;
 }
 @media  (min-width: 480px) and (max-height: 320px) {
-  margin-right: 30px!important;
+  margin-right: 10px!important;
 }
 @media  (min-width: 426px) and (max-width: 768px) {
   top:10vw;
@@ -354,7 +354,7 @@ render() {
         <LeftContainer  data-aos='slide-right'>
 
         <Floating2 data-aos='slide-down'>
-        <Text1  >"AIR MAG"</Text1>
+        <Text1  >AIR MAG</Text1>
         </Floating2>
        
           <TextContainer>
@@ -392,7 +392,7 @@ The limited edition shoes were made by Brooklyn-based company MSCHF which redesi
         
           <Floating data-aos='slide-up'>
          
-          <Text2 >"NIKE"</Text2>
+          <Text2 >NIKE</Text2>
         </Floating>
         </RightContainer>
   

@@ -122,7 +122,7 @@ body{
 	    }
   }
 
-  .shoe {
+  .shoes {
 	animation: bounce 0.8s;
 	animation-direction: alternate;
 	animation-iteration-count: infinite;
@@ -171,5 +171,3 @@ body{
   }
 
  
-
-  

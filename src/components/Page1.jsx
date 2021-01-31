@@ -87,7 +87,7 @@ position: relative;
 z-index: 2;
 
 @media  (min-width: 1px) and (max-width: 425px) {
-  width: 100%;
+  width: 70vw;
   height: 100%;
 }
 @media  (min-width: 480px) and (max-height: 320px) {
@@ -96,10 +96,16 @@ z-index: 2;
 }
 
 @media  (min-width: 426px) and (max-width: 768px) {
-  width: 100%;
+  width: 35vw;
   height: 100%;
 }
+@media  (min-width: 769px) and (max-width: 1024px) {
+  width: 35vw;
+}
+@media  (min-width: 1025px) and (max-width: 1440px) {
+  width: 30vw;
 
+}
 `   
 
 
@@ -129,6 +135,9 @@ margin-left: 30px;
 
   margin-left: 30px;
   padding-bottom: 40px;
+}
+@media  (min-width: 1441px) and (max-width: 1920px) {
+  margin-left: 50px;
 }
 `
 
@@ -161,7 +170,7 @@ white-space:nowrap;
 font-family:arial;
 font-weight:bold;
 z-index:10;
-margin-right: 30px;
+margin-right: 10px;
 position:absolute;
 @media (max-width: 425px){
   font-size:20vw;
@@ -170,13 +179,15 @@ position:absolute;
   left: 94vw;
 }
 @media  (min-width: 480px) and (max-height: 320px) {
-  margin-right: 30px!important;
+  margin-right: 10px!important;
 }
 @media  (min-width: 426px) and (max-width: 768px) {
   top:10vw;
   left: 40vw;
 }
-
+@media  (min-width: 1441px) and (max-width: 1920px) {
+  margin-right: 50px;
+}
 `
 const Floating2 = styled.div`
 margin-bottom: 2vw; 
@@ -208,7 +219,7 @@ margin-bottom: 2vw;
 }
 @media  (min-width: 1441px) and (max-width: 1920px) {
   margin-top: 50px;
-  margin-left: 30px;
+  margin-left: 50px;
 }
 `
 
@@ -276,17 +287,17 @@ top:50%
     left: 50%;
     transform: translate(60%,-38%);
 @media  (min-width: 1px) and (max-width: 425px) {
-  transform: translate(66%,-19%);
+  transform: translate(35%,-26%);
 }
 
 @media  (min-width: 426px) and (max-width: 768px) {
- 
+  transform: translate(40%,-47%);
 }
 @media  (min-width: 769px) and (max-width:1024px) {
- 
+  transform: translate(20%,-38%);
 }
 @media  (min-width: 1025px) and (max-width: 1440px) {
- 
+  transform: translate(40%,-38%);
 }
 `
     
@@ -298,7 +309,10 @@ display: flex;
 margin-top: 20px;
 margin-left: 30px;
 margin-bottom: 20px;
+@media  (min-width: 1441px) and (max-width: 1920px) {
 
+  margin-left: 50px;
+}
 
 `
 const Li =styled.li`
@@ -364,7 +378,7 @@ render() {
           </TextContainer>
 
           <ShoeHolder  className=" shoe ">
-          <Img src={af2} alt="" />
+          <Img src={af2} alt="" data-aos='slide-up'/>
           </ShoeHolder>
           
           <Ul>
