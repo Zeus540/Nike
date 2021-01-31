@@ -6,6 +6,9 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 import Water from '../images/water.png';
+import One from '../images/1.jpg';
+import Two from '../images/2.jpg';
+import Three from '../images/3.png';
 import { NavLink} from "react-router-dom";
 
 const Container = styled.div`
@@ -40,7 +43,7 @@ overflow-x: hidden;
   flex-direction: column;
   float:left;
   font-family:arial
-  width: 50vw;
+  min-width: 50vw;
   z-index: 2;
     overflow: unset;
  
@@ -63,8 +66,8 @@ const RightContainer = styled.div`
   height: 100vh;
   float:right;
   position:relative;
-
   background: #b7c6c8;
+  overflow-y: scroll;
   @media  (min-width: 1px) and (max-width: 425px) {
     min-width:100vw;
    
@@ -79,6 +82,55 @@ const RightContainer = styled.div`
   }
 `
 
+const RightContainerPage = styled.div`
+  min-width: 50vw;
+  float:right;
+  position:relative;
+  height:100vh;
+ 
+  @media  (min-width: 1px) and (max-width: 425px) {
+    min-width:100vw;
+   
+  }
+  @media  (min-width: 426px) and (max-width: 768px) {
+    min-width: 50vw;
+  
+  }
+  @media  (min-width: 769px) and (max-width: 1240px) {
+    min-width: 50vw;
+   
+  }
+  &:nth-child(1){
+
+  }
+  &:nth-child(2){
+    height:auto;
+    margin-bottom: 50px;
+  
+  }
+ 
+  img{
+
+    &:nth-child(1){
+      width: 65%;
+    float:right;
+    margin-bottom:50px
+    margin-top:20px
+    }
+&:nth-child(2){
+  width: 65%;
+  float:left;
+  margin-bottom:50px
+}
+
+&:nth-child(3){
+  width: 65%;
+  float:right;
+
+}
+  }
+ 
+`
 
 
 const Img = styled.img`
@@ -87,31 +139,32 @@ height: 100%;
 border: none;
 position: relative;
 z-index: 2;
-width: 20vw;
-height: 20vw;
+
 @media  (min-width: 1px) and (max-width: 425px) {
-  width: 70vw;
-  height: 63vw;
+  width: 70vw!important;
+  height: 100%;
 }
 @media  (min-width: 480px) and (max-height: 320px) {
-  width: 100%;
+  width: 100%!important;
   height: 100%;
 }
 
 @media  (min-width: 426px) and (max-width: 768px) {
-  width: 30vw;
-  height: 30vw;
+  width: 35vw!important;
+  height: 100%;
 }
 @media  (min-width: 769px) and (max-width: 1024px) {
-  width: 35vw;
-  height: 35vw;
+  width: 35vw!important;
 }
 @media  (min-width: 1025px) and (max-width: 1440px) {
-  width: 30vw;
-  height: 30vw;
+  width: 30vw!important;
+
+}
+@media  (min-width: 1441px) and (max-width: 1920px) {
+  width: 25vw!important;
+
 }
 `   
-
 
 
 const TextContainer =styled.div`
@@ -123,7 +176,7 @@ position:relative;
 z-index:20;
 @media  (min-width: 1px) and (max-width: 425px) {
   margin: 30px 0px 0vw 30px;
-  padding-bottom: 40px;
+
   font-size: 5vw;
 }
 
@@ -132,16 +185,16 @@ z-index:20;
 @media  (min-width: 426px) and (max-width: 768px) {
   margin: 10px 0px 0vw 30px;
   font-size: 2vw;
-  padding-bottom: 40px;
+
 }
 @media  (min-width: 769px) and (max-width: 1240px) {
   margin: 10px 0px 0vw 30px;
-  padding-bottom: 40px;
+
 }
 @media  (min-width: 1240px) and (max-width: 1440px) {
 
   margin-left: 30px;
-  padding-bottom: 40px;
+
 }
 @media  (min-width: 1441px) and (max-width: 1920px) {
   margin-left: 50px;
@@ -292,20 +345,23 @@ position: absolute;
 display:flex;
 top:50%
     left: 50%;
-    transform: translate(60%,-38%);
+    transform: translate(-40%,-45%);
 @media  (min-width: 1px) and (max-width: 425px) {
-  transform: translate(35%,-40%);
+
+  transform: translate(-45%,-47%);
+
 }
 
 @media  (min-width: 426px) and (max-width: 768px) {
-  transform: translate(40%,-47%);
+  transform: translate(-45%,-47%);
 }
 @media  (min-width: 769px) and (max-width:1024px) {
-  transform: translate(20%,-38%);
+  transform: translate(-45%,-47%);
 }
 @media  (min-width: 1025px) and (max-width: 1440px) {
-  transform: translate(40%,-38%);
+  transform: translate(-45%,-47%);
 }
+
 `
     
 const Ul =styled.ul`
@@ -316,6 +372,12 @@ display: flex;
 margin-top: 20px;
 margin-left: 30px;
 margin-bottom: 20px!important;
+@media  (min-width: 1px) and (max-width: 425px) {
+
+  margin-top: 40px;
+  margin-left: 30px;
+  margin-bottom: 50px!important;
+  }
 @media  (min-width: 1441px) and (max-width: 1920px) {
 
   margin-left: 50px;
@@ -360,6 +422,28 @@ const Nav =styled.img`
 }
 `
 
+const Shop =styled.button`
+background: #e2b584;
+padding: 15px 40px;
+float: right;
+margin-right: 40px;
+font-weight: bold;
+border: none;
+color: white;
+`
+
+const Button =styled.div`
+margin-bottom: 40px!important;
+font-weight: bold;
+border: none;
+color: white;
+float: right;
+a{
+  color: #1f1f1f;
+  text-decoration: none;
+  margin-bottom: 50px;
+}
+`
 class Page1 extends Component {
   componentDidMount(){
     AOS.init({
@@ -373,32 +457,23 @@ render() {
       <Container >
         
 
-        <LeftContainer data-aos='slide-right'>
+        <LeftContainer data-aos='slide-right'  data-aos-duration="750" >
         
-          <Floating2 data-aos='slide-down'>
-        <Text1   >WALK ON WATER</Text1>
+          <Floating2  data-aos='slide-down'>
+        <Text1 >WALK ON WATER</Text1>
         </Floating2>
         
           <TextContainer>
          
-          <Text >Newly-released Nike ‘Jesus Shoes’ – filled with actual holy water in the soles – sold out in mere minutes after they hit the shelves on Tuesday morning.
-The $3,000 sneakers are filled with holy water from the River Jordan in Israel and have a crucifix tied to the laces.
-
-
-Each pair was reportedly blessed by a priest and has a red insole in reference to the red Papal shoes that were traditionally worn by Vatican leaders.
-
-The limited edition shoes were made by Brooklyn-based company MSCHF which redesigned Nike’s Air Max 97 model, turning it into “Jesus Shoes,” and offering buyers to literally walk on water.</Text>
+          <Text >Newly-released Nike ‘Jesus Shoes’ – filled with actual holy water in the soles – sold out in mere minutes after they hit the shelves on Tuesday morning. The $3,000 sneakers are filled with holy water from the River Jordan in Israel and have a crucifix tied to the laces. Each pair was reportedly blessed by a priest and has a red insole in reference to the red Papal shoes that were traditionally worn by Vatican leaders. The limited edition shoes were made by Brooklyn-based company MSCHF which redesigned Nike’s Air Max 97 model, turning it into “Jesus Shoes,” and offering buyers to literally walk on water.</Text>
           </TextContainer>
 
-
-          <ShoeHolder  className=" shoe">
-          <Img src={Water} alt="" className=" fade "/>
-          </ShoeHolder>
-
+         
+          
           <Ul>
             <Li>
         <NavLink to="/Page2" exact>
-        <Nav src={back} alt=""/>
+         <Nav src={back} alt=""/>
           </NavLink>
           </Li>
           <Li>
@@ -409,14 +484,31 @@ The limited edition shoes were made by Brooklyn-based company MSCHF which redesi
           </Ul>
         </LeftContainer>
 
-        <RightContainer data-aos='slide-up' >
+        <RightContainer  className="Right" data-aos='slide-up'  data-aos-duration="750" >
     
-          <Floating data-aos='slide-up'>
+        <RightContainerPage>
+        <ShoeHolder  className=" shoe ">
+          <Img src={Water} alt="" />
+          </ShoeHolder>
+        <Floating>
          
-          <Text2  >NIKE 97</Text2>
-        </Floating>
+         <Text2  >NIKE 97</Text2>
+       </Floating>
+        </RightContainerPage>
+
+        <RightContainerPage >
+          
+        <img src={Two} alt="" srcset=""  />
+        <img src={One} alt="" srcset=""  />
+        <img src={Three} alt="" srcset=""  />
+    
+        </RightContainerPage>
+        <Button>
+          <a href="https://www.sheshalifestyle.com/index.php/footwear/nike/nike-air-force-1-react-27207.html" target="_blank" rel="noopener noreferrer"><Shop>SHOP NOW</Shop></a>
+          </Button>
+
         </RightContainer>
-  
+
       </Container>
       
   );

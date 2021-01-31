@@ -6,6 +6,9 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 import Purple from '../images/purple.png';
+import One from '../images/1.jpg';
+import Two from '../images/2.jpg';
+import Three from '../images/3.png';
 import { NavLink} from "react-router-dom";
 
 const Container = styled.div`
@@ -40,7 +43,7 @@ overflow-x: hidden;
   flex-direction: column;
   float:left;
   font-family:arial
-  width: 50vw;
+  min-width: 50vw;
   z-index: 2;
     overflow: unset;
  
@@ -63,8 +66,8 @@ const RightContainer = styled.div`
   height: 100vh;
   float:right;
   position:relative;
-  
   background: #d6d4c8;
+  overflow-y: scroll;
   @media  (min-width: 1px) and (max-width: 425px) {
     min-width:100vw;
    
@@ -79,6 +82,56 @@ const RightContainer = styled.div`
   }
 `
 
+const RightContainerPage = styled.div`
+  min-width: 50vw;
+  float:right;
+  position:relative;
+  height:100vh;
+ 
+  @media  (min-width: 1px) and (max-width: 425px) {
+    min-width:100vw;
+   
+  }
+  @media  (min-width: 426px) and (max-width: 768px) {
+    min-width: 50vw;
+  
+  }
+  @media  (min-width: 769px) and (max-width: 1240px) {
+    min-width: 50vw;
+   
+  }
+  &:nth-child(1){
+
+  }
+  &:nth-child(2){
+    height:auto;
+    margin-bottom: 50px;
+  
+  }
+ 
+  img{
+
+    &:nth-child(1){
+      width: 65%;
+    float:right;
+    margin-bottom:50px
+    margin-top:20px
+    }
+&:nth-child(2){
+  width: 65%;
+  float:left;
+  margin-bottom:50px
+}
+
+&:nth-child(3){
+  width: 65%;
+  float:right;
+
+}
+  }
+ 
+`
+
 
 const Img = styled.img`
 width: 100%;
@@ -88,19 +141,29 @@ position: relative;
 z-index: 2;
 
 @media  (min-width: 1px) and (max-width: 425px) {
-  width: 100%;
+  width: 70vw!important;
   height: 100%;
 }
 @media  (min-width: 480px) and (max-height: 320px) {
-  width: 100%;
+  width: 100%!important;
   height: 100%;
 }
 
 @media  (min-width: 426px) and (max-width: 768px) {
-  width: 100%;
+  width: 35vw!important;
   height: 100%;
 }
+@media  (min-width: 769px) and (max-width: 1024px) {
+  width: 35vw!important;
+}
+@media  (min-width: 1025px) and (max-width: 1440px) {
+  width: 30vw!important;
 
+}
+@media  (min-width: 1441px) and (max-width: 1920px) {
+  width: 25vw!important;
+
+}
 `   
 
 
@@ -113,7 +176,7 @@ position:relative;
 z-index:20;
 @media  (min-width: 1px) and (max-width: 425px) {
   margin: 30px 0px 0vw 30px;
-  padding-bottom: 40px;
+
   font-size: 5vw;
 }
 
@@ -122,16 +185,19 @@ z-index:20;
 @media  (min-width: 426px) and (max-width: 768px) {
   margin: 10px 0px 0vw 30px;
   font-size: 2vw;
-  padding-bottom: 40px;
+
 }
 @media  (min-width: 769px) and (max-width: 1240px) {
   margin: 10px 0px 0vw 30px;
-  padding-bottom: 40px;
+
 }
 @media  (min-width: 1240px) and (max-width: 1440px) {
 
   margin-left: 30px;
-  padding-bottom: 40px;
+
+}
+@media  (min-width: 1441px) and (max-width: 1920px) {
+  margin-left: 50px;
 }
 `
 
@@ -179,7 +245,9 @@ position:absolute;
   top:10vw;
   left: 40vw;
 }
-
+@media  (min-width: 1441px) and (max-width: 1920px) {
+  margin-right: 50px;
+}
 `
 const Floating2 = styled.div`
 margin-bottom: 2vw; 
@@ -211,7 +279,7 @@ margin-bottom: 2vw;
 }
 @media  (min-width: 1441px) and (max-width: 1920px) {
   margin-top: 50px;
-  margin-left: 30px;
+  margin-left: 50px;
 }
 `
 
@@ -277,20 +345,23 @@ position: absolute;
 display:flex;
 top:50%
     left: 50%;
-    transform: translate(60%,-38%);
+    transform: translate(-40%,-45%);
 @media  (min-width: 1px) and (max-width: 425px) {
-  transform: translate(35%,-40%);
+
+  transform: translate(-45%,-47%);
+
 }
 
 @media  (min-width: 426px) and (max-width: 768px) {
- 
+  transform: translate(-45%,-47%);
 }
 @media  (min-width: 769px) and (max-width:1024px) {
- 
+  transform: translate(-45%,-47%);
 }
 @media  (min-width: 1025px) and (max-width: 1440px) {
- 
+  transform: translate(-45%,-47%);
 }
+
 `
     
 const Ul =styled.ul`
@@ -301,7 +372,16 @@ display: flex;
 margin-top: 20px;
 margin-left: 30px;
 margin-bottom: 20px!important;
+@media  (min-width: 1px) and (max-width: 425px) {
 
+  margin-top: 40px;
+  margin-left: 30px;
+  margin-bottom: 50px!important;
+  }
+@media  (min-width: 1441px) and (max-width: 1920px) {
+
+  margin-left: 50px;
+}
 
 `
 const Li =styled.li`
@@ -341,6 +421,29 @@ const Nav =styled.img`
   height: 30px;
 }
 `
+
+const Shop =styled.button`
+background: #465262;
+padding: 15px 40px;
+float: right;
+margin-right: 30px;
+font-weight: bold;
+border: none;
+color: white;
+`
+
+const Button =styled.div`
+margin-bottom: 40px!important;
+font-weight: bold;
+border: none;
+color: white;
+float: right;
+a{
+  color: #1f1f1f;
+  text-decoration: none;
+  margin-bottom: 50px;
+}
+`
 class Page1 extends Component {
   componentDidMount(){
     AOS.init({
@@ -354,10 +457,10 @@ render() {
       <Container >
         
 
-        <LeftContainer  data-aos='slide-right'>
-         
+        <LeftContainer data-aos='slide-right'  data-aos-duration="750" >
+        
           <Floating2  data-aos='slide-down'>
-        <Text1   >FEAR OF GOD</Text1>
+        <Text1 >FEAR OF GOD</Text1>
         </Floating2>
         
           <TextContainer>
@@ -365,14 +468,12 @@ render() {
           <Text >Nike’s first collaborative project with Fear of God founder and creative director Jerry Lorenzo is highlighted by an court-ready basketball shoe, the Nike Air Fear of God 1. During the last few weeks, glimpses of the design — which incorporates a double-height Zoom Air heel unit — came through a preview of Lorenzo’s latest Fear of God offering and then appeared on the feet of NBA stars. The rollout is tactical, all part of Lorenzo’s desire to focus on the emotional element of sport.</Text>
           </TextContainer>
 
-          <ShoeHolder  className=" shoe">
-          <Img src={Purple} alt="" className=" fade "/>
-          </ShoeHolder>
-
+         
+          
           <Ul>
             <Li>
         <NavLink to="/Page1" exact>
-        <Nav src={back} alt=""/>
+         <Nav src={back} alt=""/>
           </NavLink>
           </Li>
           <Li>
@@ -381,19 +482,35 @@ render() {
           </NavLink>
           </Li>
           </Ul>
-
         </LeftContainer>
 
-        <RightContainer  data-aos='slide-up'>
+        <RightContainer  className="Right" data-aos='slide-up'  data-aos-duration="750" >
     
-      
-          <Floating  data-aos='slide-up'>
+        <RightContainerPage>
+        <ShoeHolder  className=" shoe ">
+          <Img src={Purple} alt="" />
+          </ShoeHolder>
+        <Floating>
          
-          <Text2  >NIKE</Text2>
-        </Floating>
+         <Text2  >NIKE</Text2>
+       </Floating>
+        </RightContainerPage>
+
+        <RightContainerPage >
+          
+        <img src={Two} alt="" srcset=""  />
+        <img src={One} alt="" srcset=""  />
+        <img src={Three} alt="" srcset=""  />
+    
+        </RightContainerPage>
+        <Button>
+          <a href="https://www.sheshalifestyle.com/index.php/footwear/nike/nike-air-force-1-react-27207.html" target="_blank" rel="noopener noreferrer"><Shop>SHOP NOW</Shop></a>
+          </Button>
+
         </RightContainer>
-  
+
       </Container>
+      
       
   );
   }

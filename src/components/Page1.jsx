@@ -4,8 +4,8 @@ import back from '../images/back.png'
 import forward from '../images/right.png'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import One from '../images/1.png';
-import Two from '../images/2.png';
+import One from '../images/1.jpg';
+import Two from '../images/2.jpg';
 import Three from '../images/3.png';
 import af2 from '../images/test.png';
 
@@ -161,7 +161,7 @@ z-index: 2;
 
 }
 @media  (min-width: 1441px) and (max-width: 1920px) {
-  width: 30vw!important;
+  width: 25vw!important;
 
 }
 `   
@@ -176,7 +176,7 @@ position:relative;
 z-index:20;
 @media  (min-width: 1px) and (max-width: 425px) {
   margin: 30px 0px 0vw 30px;
-  padding-bottom: 40px;
+
   font-size: 5vw;
 }
 
@@ -185,16 +185,16 @@ z-index:20;
 @media  (min-width: 426px) and (max-width: 768px) {
   margin: 10px 0px 0vw 30px;
   font-size: 2vw;
-  padding-bottom: 40px;
+
 }
 @media  (min-width: 769px) and (max-width: 1240px) {
   margin: 10px 0px 0vw 30px;
-  padding-bottom: 40px;
+
 }
 @media  (min-width: 1240px) and (max-width: 1440px) {
 
   margin-left: 30px;
-  padding-bottom: 40px;
+
 }
 @media  (min-width: 1441px) and (max-width: 1920px) {
   margin-left: 50px;
@@ -372,6 +372,12 @@ display: flex;
 margin-top: 20px;
 margin-left: 30px;
 margin-bottom: 20px!important;
+@media  (min-width: 1px) and (max-width: 425px) {
+
+  margin-top: 40px;
+  margin-left: 30px;
+  margin-bottom: 50px!important;
+  }
 @media  (min-width: 1441px) and (max-width: 1920px) {
 
   margin-left: 50px;
@@ -419,19 +425,25 @@ const Nav =styled.img`
 const Shop =styled.button`
 background: #55b19c;
 padding: 15px 40px;
-float: left;
-margin-bottom: 50px;
-margin-left: 40px;
+float: right;
+margin-right: 30px;
 font-weight: bold;
 border: none;
 color: white;
+`
+
+const Button =styled.div`
+margin-bottom: 40px!important;
+font-weight: bold;
+border: none;
+color: white;
+float: right;
 a{
   color: #1f1f1f;
   text-decoration: none;
-
+  margin-bottom: 50px;
 }
 `
-
 class Page1 extends Component {
   componentDidMount(){
     AOS.init({
@@ -485,12 +497,15 @@ render() {
         </RightContainerPage>
 
         <RightContainerPage >
+          
         <img src={Two} alt="" srcset=""  />
-        <img src={Three} alt="" srcset=""  />
         <img src={One} alt="" srcset=""  />
+        <img src={Three} alt="" srcset=""  />
+    
         </RightContainerPage>
-        <Shop>  <a href="https://www.sheshalifestyle.com/index.php/footwear/nike/nike-air-force-1-react-27207.html" target="_blank" rel="noopener noreferrer">SHOP NOW</a></Shop>
-     
+        <Button>
+          <a href="https://www.sheshalifestyle.com/index.php/footwear/nike/nike-air-force-1-react-27207.html" target="_blank" rel="noopener noreferrer"><Shop>SHOP NOW</Shop></a>
+          </Button>
 
         </RightContainer>
 
