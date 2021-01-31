@@ -112,7 +112,7 @@ const RightContainerPage = styled.div`
   img{
 
     &:nth-child(1){
-      width: 80%;
+      width: 65%;
     float:right;
     margin-bottom:50px
     margin-top:20px
