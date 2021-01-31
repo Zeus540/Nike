@@ -4,7 +4,7 @@ import back from '../images/back.png'
 import forward from '../images/right.png'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-
+import One from '../images/1.png';
 import Two from '../images/2.png';
 import Three from '../images/3.png';
 import af2 from '../images/test.png';
@@ -37,7 +37,7 @@ background: black;
 
 const LeftContainer = styled.div`
 height:100vh;
-background: #55b19c;
+background: #159f99;
 overflow-x: hidden;
   display: flex;
   flex-direction: column;
@@ -66,7 +66,7 @@ const RightContainer = styled.div`
   height: 100vh;
   float:right;
   position:relative;
-  background: black;
+  background: #1f1f1f;
   overflow-y: scroll;
   @media  (min-width: 1px) and (max-width: 425px) {
     min-width:100vw;
@@ -118,6 +118,12 @@ const RightContainerPage = styled.div`
     margin-top:20px
     }
 &:nth-child(2){
+  width: 65%;
+  float:left;
+  margin-bottom:50px
+}
+
+&:nth-child(3){
   width: 65%;
   float:right;
 
@@ -419,7 +425,11 @@ margin-left: 40px;
 font-weight: bold;
 border: none;
 color: white;
+a{
+  color: #1f1f1f;
+  text-decoration: none;
 
+}
 `
 
 class Page1 extends Component {
@@ -477,8 +487,9 @@ render() {
         <RightContainerPage >
         <img src={Two} alt="" srcset=""  />
         <img src={Three} alt="" srcset=""  />
+        <img src={One} alt="" srcset=""  />
         </RightContainerPage>
-        <Shop>SHOP NOW</Shop>
+        <Shop>  <a href="https://www.sheshalifestyle.com/index.php/footwear/nike/nike-air-force-1-react-27207.html" target="_blank" rel="noopener noreferrer">SHOP NOW</a></Shop>
      
 
         </RightContainer>
