@@ -34,7 +34,7 @@ background: #171717;
 
 const LeftContainer = styled.div`
 height:100vh;
-background: #a5a5a5;
+background: #904141;
 overflow-x: hidden;
   display: flex;
   flex-direction: column;
@@ -63,7 +63,7 @@ const RightContainer = styled.div`
   height: 100vh;
   float:right;
   position:relative;
-  background: #904141;
+  background: #a5a5a5;
   @media  (min-width: 1px) and (max-width: 425px) {
     min-width:100vw;
    
