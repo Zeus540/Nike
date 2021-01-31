@@ -4,8 +4,11 @@ import back from '../images/back.png'
 import forward from '../images/right.png'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-
+import One from '../images/1.jpg';
+import Two from '../images/2.jpg';
+import Three from '../images/3.png';
 import af2 from '../images/test.png';
+
 import { NavLink} from "react-router-dom";
 
 const Container = styled.div`
@@ -40,7 +43,7 @@ overflow-x: hidden;
   flex-direction: column;
   float:left;
   font-family:arial
-  width: 50vw;
+  min-width: 50vw;
   z-index: 2;
     overflow: unset;
  
@@ -63,7 +66,8 @@ const RightContainer = styled.div`
   height: 100vh;
   float:right;
   position:relative;
-  background: #a5a5a5;
+  background: black;
+  overflow-y: scroll;
   @media  (min-width: 1px) and (max-width: 425px) {
     min-width:100vw;
    
@@ -78,6 +82,46 @@ const RightContainer = styled.div`
   }
 `
 
+const RightContainerPage = styled.div`
+  min-width: 50vw;
+  float:right;
+  position:relative;
+  height:100vh;
+ 
+  @media  (min-width: 1px) and (max-width: 425px) {
+    min-width:100vw;
+   
+  }
+  @media  (min-width: 426px) and (max-width: 768px) {
+    min-width: 50vw;
+  
+  }
+  @media  (min-width: 769px) and (max-width: 1240px) {
+    min-width: 50vw;
+   
+  }
+  &:nth-child(1){
+
+  }
+  &:nth-child(2){
+    height:100vh;
+
+  
+  }
+ 
+  img{
+    width: 85%;
+height: 50%;
+mix-blend-mode: luminosity;
+&:nth-child(2){
+  width: 70%;
+ 
+
+}
+  }
+ 
+`
+
 
 const Img = styled.img`
 width: 100%;
@@ -87,23 +131,23 @@ position: relative;
 z-index: 2;
 
 @media  (min-width: 1px) and (max-width: 425px) {
-  width: 70vw;
+  width: 70vw!important;
   height: 100%;
 }
 @media  (min-width: 480px) and (max-height: 320px) {
-  width: 100%;
+  width: 100%!important;
   height: 100%;
 }
 
 @media  (min-width: 426px) and (max-width: 768px) {
-  width: 35vw;
+  width: 35vw!important;
   height: 100%;
 }
 @media  (min-width: 769px) and (max-width: 1024px) {
-  width: 35vw;
+  width: 35vw!important;
 }
 @media  (min-width: 1025px) and (max-width: 1440px) {
-  width: 30vw;
+  width: 30vw!important;
 
 }
 `   
@@ -287,19 +331,21 @@ position: absolute;
 display:flex;
 top:50%
     left: 50%;
-    transform: translate(60%,-38%);
+    transform: translate(-30%,-38%);
 @media  (min-width: 1px) and (max-width: 425px) {
-  transform: translate(35%,-40%);
+
+  transform: translate(-45%,-47%);
+
 }
 
 @media  (min-width: 426px) and (max-width: 768px) {
-  transform: translate(40%,-47%);
+  transform: translate(-45%,-47%);
 }
 @media  (min-width: 769px) and (max-width:1024px) {
-  transform: translate(20%,-38%);
+  transform: translate(-45%,-47%);
 }
 @media  (min-width: 1025px) and (max-width: 1440px) {
-  transform: translate(40%,-38%);
+  transform: translate(-45%,-47%);
 }
 `
     
@@ -368,7 +414,7 @@ render() {
       <Container >
         
 
-        <LeftContainer data-aos='slide-down'  data-aos-duration="750" >
+        <LeftContainer data-aos='slide-right'  data-aos-duration="750" >
         
           <Floating2  data-aos='slide-down'>
         <Text1 >REACT D/MS/X</Text1>
@@ -379,9 +425,7 @@ render() {
           <Text >The AF1 React D/MS/X optimizes comfort with a full length Nike React midsole equipped with a heel Ramp Air unit. The upper features a large bold Swoosh and mesh construction on the side panels. The traditional AIR logo appears on the heel, along with a newly added Nike React branded stripe. Nike React’s pattern replaces the traditional stars at the heel and toe of the outsole.</Text>
           </TextContainer>
 
-          <ShoeHolder  className=" shoe ">
-          <Img src={af2} alt="" data-aos='zoom-in' data-aos-duration="1550" />
-          </ShoeHolder>
+         
           
           <Ul>
             <Li>
@@ -397,13 +441,25 @@ render() {
           </Ul>
         </LeftContainer>
 
-        <RightContainer   data-aos='slide-left'  data-aos-duration="750" >
+        <RightContainer  className="Right" data-aos='slide-up'  data-aos-duration="750" >
     
-      
-          <Floating>
+        <RightContainerPage>
+        <ShoeHolder  className=" shoe ">
+          <Img src={af2} alt="" />
+          </ShoeHolder>
+        <Floating>
          
-          <Text2  >NIKE AF1</Text2>
-        </Floating>
+         <Text2  >NIKE AF1</Text2>
+       </Floating>
+        </RightContainerPage>
+
+        <RightContainerPage className="slide">
+        <img src={Two} alt="" srcset=""  />
+        <img src={Three} alt="" srcset=""  />
+        </RightContainerPage>
+
+     
+
         </RightContainer>
 
       </Container>
