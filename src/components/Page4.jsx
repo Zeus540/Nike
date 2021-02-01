@@ -117,17 +117,29 @@ img{
     float:right;
     margin-bottom:50px
     margin-top:20px
+    transition:width 0.5s;
+    :hover{
+      width:80%
+    }
     }
 
 &:nth-child(2){
   width: 65%;
   float:left;
   margin-bottom:50px
+  transition:width 0.5s;
+  :hover{
+    width:80%
+  }
 }
 
 &:nth-child(3){
   width: 65%;
   float:right;
+  transition:width 0.5s;
+  :hover{
+    width:80%
+  }
 }
 }
  
@@ -347,6 +359,7 @@ white-space: nowrap;
 const ShoeHolder = styled.div`
 position: absolute;
 display:flex;
+
 top:50%
     left: 50%;
     transform: translate(-40%,-45%);
@@ -494,7 +507,7 @@ render() {
     
         <RightContainerPage>
         <ShoeHolder  >
-          <Img src={Mag} alt="" data-aos='fade-in'/>
+          <Img src={Mag} alt=""  className="Bounce"/>
           </ShoeHolder>
         <Floating>
          

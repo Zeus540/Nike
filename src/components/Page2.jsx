@@ -86,7 +86,7 @@ const RightContainerPage = styled.div`
   min-width: 50vw;
   float:right;
   position:relative;
-
+ 
  
   @media  (min-width: 1px) and (max-width: 425px) {
     min-width:100vw;
@@ -102,9 +102,9 @@ const RightContainerPage = styled.div`
   }
   &:nth-child(1){
     height:100vh;
+    display: flex;
     justify-content: center;
     align-items: center;
-    display:flex;
   }
   &:nth-child(2){
 
@@ -114,22 +114,35 @@ const RightContainerPage = styled.div`
   }
 
 img{
+  
     &:nth-child(1){
       width: 65%;
     float:right;
     margin-bottom:50px
     margin-top:20px
+    transition:width 0.5s;
+    :hover{
+      width:80%
+    }
     }
 
 &:nth-child(2){
   width: 65%;
   float:left;
   margin-bottom:50px
+  transition:width 0.5s;
+  :hover{
+    width:80%
+  }
 }
 
 &:nth-child(3){
   width: 65%;
   float:right;
+  transition:width 0.5s;
+  :hover{
+    width:80%
+  }
 }
 }
  

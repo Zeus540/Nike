@@ -81,7 +81,6 @@ const RightContainer = styled.div`
    
   }
 `
-
 const RightContainerPage = styled.div`
   min-width: 50vw;
   float:right;
@@ -111,22 +110,35 @@ const RightContainerPage = styled.div`
   }
 
 img{
+  
     &:nth-child(1){
       width: 65%;
     float:right;
     margin-bottom:50px
     margin-top:20px
+    transition:width 0.5s;
+    :hover{
+      width:80%
+    }
     }
 
 &:nth-child(2){
   width: 65%;
   float:left;
   margin-bottom:50px
+  transition:width 0.5s;
+  :hover{
+    width:80%
+  }
 }
 
 &:nth-child(3){
   width: 65%;
   float:right;
+  transition:width 0.5s;
+  :hover{
+    width:80%
+  }
 }
 }
  

@@ -65,17 +65,20 @@ height: 100vh;
 
 
  
-.Slide{
-	animation: slide 10s 1 linear;
+.Bounce{
+	animation: bounce 2s infinite linear;
 }
 
-@keyframes slide {
+@keyframes bounce {
 
 	0%{
-transform: translateX(-100%);
+		transform: translateY(-5%);
 	}
 
+	50%{
+		transform: translateY(0%);
+	}
 	100%{
-		transform: translateX(110%);
+		transform: translateY(-5%);
 	}
 }
