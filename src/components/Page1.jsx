@@ -174,6 +174,7 @@ margin-left: 30px;
 position:relative;
 width:70%;
 z-index:20;
+
 @media  (min-width: 1px) and (max-width: 425px) {
   margin: 30px 40px 0vw 40px;
   width:unset;
@@ -183,12 +184,12 @@ z-index:20;
 
 
 @media  (min-width: 426px) and (max-width: 768px) {
-  margin: 30px 40px 0vw 40px;
+  margin: 15px 40px 0vw 40px;
   font-size: 2vw;
   width:unset;
 }
 @media  (min-width: 769px) and (max-width: 1240px) {
-  margin: 30px 40px 0vw 40px;
+  margin: 0px 40px 0vw 40px;
  
 }
 @media  (min-width: 1240px) and (max-width: 1440px) {
@@ -200,7 +201,6 @@ z-index:20;
   margin-left: 50px;
 
 `
-
 
 const Text = styled.p`
   color:white;
@@ -461,13 +461,13 @@ render() {
 
         <LeftContainer data-aos='slide-right'  data-aos-duration="750" >
         
-          <Floating2  data-aos='slide-down'>
-        <Text1 >REACT D/MS/X</Text1>
+          <Floating2  >
+        <Text1 data-aos='fade-in'>REACT D/MS/X</Text1>
         </Floating2>
         
           <TextContainer>
          
-          <Text >The AF1 React D/MS/X optimizes comfort with a full length Nike React midsole equipped with a heel Ramp Air unit. The upper features a large bold Swoosh and mesh construction on the side panels. The traditional AIR logo appears on the heel, along with a newly added Nike React branded stripe. Nike React’s pattern replaces the traditional stars at the heel and toe of the outsole.</Text>
+          <Text data-aos='slide-right'>The AF1 React D/MS/X optimizes comfort with a full length Nike React midsole equipped with a heel Ramp Air unit. The upper features a large bold Swoosh and mesh construction on the side panels. The traditional AIR logo appears on the heel, along with a newly added Nike React branded stripe. Nike React’s pattern replaces the traditional stars at the heel and toe of the outsole.</Text>
           </TextContainer>
 
          
@@ -486,11 +486,11 @@ render() {
           </Ul>
         </LeftContainer>
 
-        <RightContainer  >
+        <RightContainer data-aos='slide-up'  data-aos-duration="750" >
     
         <RightContainerPage>
         <ShoeHolder  >
-          <Img src={af2} alt="" />
+          <Img src={af2} alt="" data-aos='fade-in'/>
           </ShoeHolder>
         <Floating>
          
@@ -508,7 +508,7 @@ render() {
 
         <RightContainerPage >
         <Button>
-          <a href="https://www.sheshalifestyle.com/index.php/footwear/nike/nike-air-force-1-react-27207.html" target="_blank" rel="noopener noreferrer"><Shop>SHOP NOW</Shop></a>
+          <a href="https://www.sheshalifestyle.com/index.php/footwear/nike/nike-air-force-1-react-27207.html" target="_blank" rel="noopener noreferrer"><Shop>BUY NOW</Shop></a>
           </Button>
         </RightContainerPage>
 

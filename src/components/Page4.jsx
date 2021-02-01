@@ -111,6 +111,7 @@ const RightContainerPage = styled.div`
   }
 
 img{
+  
     &:nth-child(1){
       width: 65%;
     float:right;
@@ -174,6 +175,7 @@ margin-left: 30px;
 position:relative;
 width:70%;
 z-index:20;
+
 @media  (min-width: 1px) and (max-width: 425px) {
   margin: 30px 40px 0vw 40px;
   width:unset;
@@ -183,12 +185,12 @@ z-index:20;
 
 
 @media  (min-width: 426px) and (max-width: 768px) {
-  margin: 30px 40px 0vw 40px;
+  margin: 15px 40px 0vw 40px;
   font-size: 2vw;
   width:unset;
 }
 @media  (min-width: 769px) and (max-width: 1240px) {
-  margin: 30px 40px 0vw 40px;
+  margin: 0px 40px 0vw 40px;
  
 }
 @media  (min-width: 1240px) and (max-width: 1440px) {
@@ -231,6 +233,7 @@ font-weight:bold;
 z-index:10;
 margin-right: 35px;
 position:absolute;
+
 @media (max-width: 425px){
   font-size:20vw;
   letter-spacing: 1vw;
@@ -252,13 +255,16 @@ margin-bottom: 2vw;
 margin-top: 0.5vw;
 position:relative;
 margin-bottom: 2vw;
+
 @media  (min-width: 1px) and (max-width: 320px) {
   margin-top: 40px;
   margin-left: 40px;
+  height: 135px;
 }
 @media  (min-width: 321px) and (max-width: 425px) {
   margin-top: 50px;
   margin-left: 40px;
+  height: 102px;
 }
 
 @media  (min-width: 426px) and (max-width: 768px) {
@@ -459,19 +465,19 @@ render() {
 
         <LeftContainer data-aos='slide-right'  data-aos-duration="750" >
         
-          <Floating2  data-aos='slide-down'>
-        <Text1 >AIR MAG</Text1>
+          <Floating2 >
+        <Text1 data-aos='fade-in' >AIR MAG</Text1>
         </Floating2>
         
           <TextContainer>
          
-          <Text >The Nike MAG is a limited-edition shoe created by Nike Inc. It is a replica of a shoe featured in the film Back to the Future Part II. The Nike Mag was originally released for sale in 2011 and again in 2016. Both launches were in limited quantities. The 2011 release was limited to 1,510 pairs, while the 2016 release was limited to 89 pairs. Nike has stated Mag is not meant for heavy activity and should not be worn for recreational purposes. They were produced mostly for display.</Text>
+          <Text  data-aos='slide-right'>The Nike MAG is a limited-edition shoe created by Nike Inc. It is a replica of a shoe featured in the film Back to the Future Part II. The Nike Mag was originally released for sale in 2011 and again in 2016. Both launches were in limited quantities. The 2011 release was limited to 1,510 pairs, while the 2016 release was limited to 89 pairs. Nike has stated Mag is not meant for heavy activity and should not be worn for recreational purposes. They were produced mostly for display.</Text>
           </TextContainer>
 
          
           
-          <Ul>
-            <Li>
+          <Ul >
+            <Li >
         <NavLink to="/Page3" exact>
          <Nav src={back} alt=""/>
           </NavLink>
@@ -484,11 +490,11 @@ render() {
           </Ul>
         </LeftContainer>
 
-        <RightContainer data-aos='slide-up'  data-aos-duration="750" >
+        <RightContainer data-aos='fade-in'  data-aos-duration="750" >
     
         <RightContainerPage>
         <ShoeHolder  >
-          <Img src={Mag} alt="" />
+          <Img src={Mag} alt="" data-aos='fade-in'/>
           </ShoeHolder>
         <Floating>
          
@@ -504,8 +510,8 @@ render() {
     
     
         </RightContainerPage>
-        <Button>
-          <a href="https://stockx.com/nike-air-mag-back-to-the-future-bttf-2016" target="_blank" rel="noopener noreferrer"><Shop>SHOP NOW</Shop></a>
+        <Button >
+          <a href="https://stockx.com/nike-air-mag-back-to-the-future-bttf-2016" target="_blank" rel="noopener noreferrer"><Shop>BUY NOW</Shop></a>
           </Button>
 
         </RightContainer>

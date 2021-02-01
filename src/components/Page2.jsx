@@ -178,6 +178,7 @@ margin-left: 30px;
 position:relative;
 width:70%;
 z-index:20;
+
 @media  (min-width: 1px) and (max-width: 425px) {
   margin: 30px 40px 0vw 40px;
   width:unset;
@@ -187,12 +188,12 @@ z-index:20;
 
 
 @media  (min-width: 426px) and (max-width: 768px) {
-  margin: 30px 40px 0vw 40px;
+  margin: 15px 40px 0vw 40px;
   font-size: 2vw;
   width:unset;
 }
 @media  (min-width: 769px) and (max-width: 1240px) {
-  margin: 30px 40px 0vw 40px;
+  margin: 0px 40px 0vw 40px;
  
 }
 @media  (min-width: 1240px) and (max-width: 1440px) {
@@ -445,13 +446,13 @@ render() {
 
         <LeftContainer data-aos='slide-right'  data-aos-duration="750" >
         
-          <Floating2  data-aos='slide-down'>
-        <Text1 >FEAR OF GOD</Text1>
+          <Floating2  >
+        <Text1 data-aos='fade-in'>FEAR OF GOD</Text1>
         </Floating2>
         
           <TextContainer>
          
-          <Text >Nike’s first collaborative project with Fear of God founder and creative director Jerry Lorenzo is highlighted by an court-ready basketball shoe, the Nike Air Fear of God 1. During the last few weeks, glimpses of the design — which incorporates a double-height Zoom Air heel unit — came through a preview of Lorenzo’s latest Fear of God offering and then appeared on the feet of NBA stars. The rollout is tactical, all part of Lorenzo’s desire to focus on the emotional element of sport.</Text>
+          <Text data-aos='slide-right'>Nike’s first collaborative project with Fear of God founder and creative director Jerry Lorenzo is highlighted by an court-ready basketball shoe, the Nike Air Fear of God 1. During the last few weeks, glimpses of the design — which incorporates a double-height Zoom Air heel unit — came through a preview of Lorenzo’s latest Fear of God offering and then appeared on the feet of NBA stars. The rollout is tactical, all part of Lorenzo’s desire to focus on the emotional element of sport.</Text>
           </TextContainer>
 
          
@@ -474,7 +475,7 @@ render() {
     
         <RightContainerPage>
         <ShoeHolder  >
-          <Img src={Purple} alt="" />
+          <Img src={Purple} alt="" data-aos='fade-in'/>
           </ShoeHolder>
         <Floating>
          
