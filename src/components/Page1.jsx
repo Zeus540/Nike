@@ -86,7 +86,7 @@ const RightContainerPage = styled.div`
   min-width: 50vw;
   float:right;
   position:relative;
-  height:100vh;
+ 
  
   @media  (min-width: 1px) and (max-width: 425px) {
     min-width:100vw;
@@ -101,22 +101,23 @@ const RightContainerPage = styled.div`
    
   }
   &:nth-child(1){
-
+    height:100vh;
   }
   &:nth-child(2){
-    height:auto;
-    margin-bottom: 50px;
-  
-  }
- 
-  img{
 
+  }
+  &:nth-child(3){
+   
+  }
+
+img{
     &:nth-child(1){
       width: 65%;
     float:right;
     margin-bottom:50px
     margin-top:20px
     }
+
 &:nth-child(2){
   width: 65%;
   float:left;
@@ -126,9 +127,8 @@ const RightContainerPage = styled.div`
 &:nth-child(3){
   width: 65%;
   float:right;
-
 }
-  }
+}
  
 `
 
@@ -427,6 +427,7 @@ const Shop =styled.button`
 background: #55b19c;
 padding: 15px 40px;
 float: right;
+margin-top: 40px;
 margin-right: 30px;
 font-weight: bold;
 border: none;
@@ -499,14 +500,17 @@ render() {
 
         <RightContainerPage >
           
-        <img src={Two} alt="" srcset=""  />
-        <img src={One} alt="" srcset=""  />
-        <img src={Three} alt="" srcset=""  />
-    
+        <img src={Two} alt=""  />
+        <img src={One} alt=""  />
+        <img src={Three} alt=""   />
+  
         </RightContainerPage>
+
+        <RightContainerPage >
         <Button>
           <a href="https://www.sheshalifestyle.com/index.php/footwear/nike/nike-air-force-1-react-27207.html" target="_blank" rel="noopener noreferrer"><Shop>SHOP NOW</Shop></a>
           </Button>
+        </RightContainerPage>
 
         </RightContainer>
 

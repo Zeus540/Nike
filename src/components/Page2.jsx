@@ -6,9 +6,9 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 import Purple from '../images/purple.png';
-import One from '../images/1.jpg';
-import Two from '../images/2.jpg';
-import Three from '../images/3.png';
+import One from '../images/fear1.jpg';
+import Two from '../images/fear2.jpg';
+import Three from '../images/fear3.jpg';
 import { NavLink} from "react-router-dom";
 
 const Container = styled.div`
@@ -86,7 +86,7 @@ const RightContainerPage = styled.div`
   min-width: 50vw;
   float:right;
   position:relative;
-  height:100vh;
+ 
  
   @media  (min-width: 1px) and (max-width: 425px) {
     min-width:100vw;
@@ -101,22 +101,23 @@ const RightContainerPage = styled.div`
    
   }
   &:nth-child(1){
-
+    height:100vh;
   }
   &:nth-child(2){
-    height:auto;
-    margin-bottom: 50px;
-  
-  }
- 
-  img{
 
+  }
+  &:nth-child(3){
+   
+  }
+
+img{
     &:nth-child(1){
       width: 65%;
     float:right;
     margin-bottom:50px
     margin-top:20px
     }
+
 &:nth-child(2){
   width: 65%;
   float:left;
@@ -126,11 +127,11 @@ const RightContainerPage = styled.div`
 &:nth-child(3){
   width: 65%;
   float:right;
-
 }
-  }
+}
  
 `
+
 
 
 const Img = styled.img`
@@ -421,11 +422,11 @@ const Nav =styled.img`
   height: 30px;
 }
 `
-
 const Shop =styled.button`
 background: #465262;
 padding: 15px 40px;
 float: right;
+margin-top: 40px;
 margin-right: 30px;
 font-weight: bold;
 border: none;
@@ -497,14 +498,13 @@ render() {
         </RightContainerPage>
 
         <RightContainerPage >
-          
-        <img src={Two} alt="" srcset=""  />
-        <img src={One} alt="" srcset=""  />
         <img src={Three} alt="" srcset=""  />
+        <img src={One} alt="" srcset=""  />
+        <img src={Two} alt="" srcset=""  />
     
         </RightContainerPage>
         <Button>
-          <a href="https://www.sheshalifestyle.com/index.php/footwear/nike/nike-air-force-1-react-27207.html" target="_blank" rel="noopener noreferrer"><Shop>SHOP NOW</Shop></a>
+          <a href="https://stockx.com/search?s=Nike%20Air%20Fear%20Of%20God" target="_blank" rel="noopener noreferrer"><Shop>BUY NOW</Shop></a>
           </Button>
 
         </RightContainer>
