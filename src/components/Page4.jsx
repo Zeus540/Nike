@@ -102,6 +102,10 @@ const RightContainerPage = styled.div`
   }
   &:nth-child(1){
     height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
   }
   &:nth-child(2){
 
@@ -111,7 +115,7 @@ const RightContainerPage = styled.div`
   }
 
 img{
-  
+ 
     &:nth-child(1){
       width: 65%;
     float:right;
@@ -144,6 +148,7 @@ img{
 }
  
 `
+
 
 
 
@@ -358,26 +363,6 @@ white-space: nowrap;
 
 const ShoeHolder = styled.div`
 position: absolute;
-display:flex;
-
-top:50%
-    left: 50%;
-    transform: translate(-40%,-45%);
-@media  (min-width: 1px) and (max-width: 425px) {
-
-  transform: translate(-45%,-47%);
-
-}
-
-@media  (min-width: 426px) and (max-width: 768px) {
-  transform: translate(-45%,-47%);
-}
-@media  (min-width: 769px) and (max-width:1024px) {
-  transform: translate(-45%,-47%);
-}
-@media  (min-width: 1025px) and (max-width: 1440px) {
-  transform: translate(-45%,-47%);
-}
 
 `
     

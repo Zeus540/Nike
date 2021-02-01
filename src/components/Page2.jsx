@@ -105,6 +105,7 @@ const RightContainerPage = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    
   }
   &:nth-child(2){
 
@@ -114,7 +115,7 @@ const RightContainerPage = styled.div`
   }
 
 img{
-  
+ 
     &:nth-child(1){
       width: 65%;
     float:right;
@@ -488,7 +489,7 @@ render() {
     
         <RightContainerPage>
         <ShoeHolder  >
-          <Img src={Purple} alt="" data-aos='fade-in'/>
+          <Img src={Purple}   className="Bounce"/>
           </ShoeHolder>
         <Floating>
          

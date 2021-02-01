@@ -66,19 +66,19 @@ height: 100vh;
 
  
 .Bounce{
-	animation: bounce 2s infinite linear;
+	animation: bounce 2s infinite ease-in-out;
 }
 
 @keyframes bounce {
 
 	0%{
-		transform: translateY(-5%);
+		transform: translateY(-7%);
 	}
 
 	50%{
 		transform: translateY(0%);
 	}
 	100%{
-		transform: translateY(-5%);
+		transform: translateY(-7%);
 	}
 }
