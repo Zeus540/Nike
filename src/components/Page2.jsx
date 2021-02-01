@@ -86,7 +86,7 @@ const RightContainerPage = styled.div`
   min-width: 50vw;
   float:right;
   position:relative;
- 
+
  
   @media  (min-width: 1px) and (max-width: 425px) {
     min-width:100vw;
@@ -102,6 +102,9 @@ const RightContainerPage = styled.div`
   }
   &:nth-child(1){
     height:100vh;
+    justify-content: center;
+    align-items: center;
+    display:flex;
   }
   &:nth-child(2){
 
@@ -343,25 +346,7 @@ white-space: nowrap;
 
 const ShoeHolder = styled.div`
 position: absolute;
-display:flex;
-top:50%
-    left: 50%;
-    transform: translate(-40%,-45%);
-@media  (min-width: 1px) and (max-width: 425px) {
 
-  transform: translate(-45%,-47%);
-
-}
-
-@media  (min-width: 426px) and (max-width: 768px) {
-  transform: translate(-45%,-47%);
-}
-@media  (min-width: 769px) and (max-width:1024px) {
-  transform: translate(-45%,-47%);
-}
-@media  (min-width: 1025px) and (max-width: 1440px) {
-  transform: translate(-45%,-47%);
-}
 
 `
     

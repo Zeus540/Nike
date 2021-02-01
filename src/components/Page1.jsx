@@ -486,7 +486,7 @@ render() {
           </Ul>
         </LeftContainer>
 
-        <RightContainer   data-aos='slide-up'  data-aos-duration="750" >
+        <RightContainer  >
     
         <RightContainerPage>
         <ShoeHolder  >
