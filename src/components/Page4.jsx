@@ -461,7 +461,7 @@ render() {
       <Container >
         
 
-        <LeftContainer data-aos='slide-right'  data-aos-duration="750" >
+        <LeftContainer  >
         
           <Floating2 >
         <Text1 data-aos='fade-in' >AIR MAG</Text1>
@@ -469,7 +469,7 @@ render() {
         
           <TextContainer>
          
-          <Text  data-aos='slide-right'>The Nike MAG is a limited-edition shoe created by Nike Inc. It is a replica of a shoe featured in the film Back to the Future Part II. The Nike Mag was originally released for sale in 2011 and again in 2016. Both launches were in limited quantities. The 2011 release was limited to 1,510 pairs, while the 2016 release was limited to 89 pairs. Nike has stated Mag is not meant for heavy activity and should not be worn for recreational purposes. They were produced mostly for display.</Text>
+          <Text  data-aos='fade-in'>The Nike MAG is a limited-edition shoe created by Nike Inc. It is a replica of a shoe featured in the film Back to the Future Part II. The Nike Mag was originally released for sale in 2011 and again in 2016. Both launches were in limited quantities. The 2011 release was limited to 1,510 pairs, while the 2016 release was limited to 89 pairs. Nike has stated Mag is not meant for heavy activity and should not be worn for recreational purposes. They were produced mostly for display.</Text>
           </TextContainer>
 
          
@@ -488,15 +488,15 @@ render() {
           </Ul>
         </LeftContainer>
 
-        <RightContainer data-aos='fade-in'  data-aos-duration="750" >
+        <RightContainer  >
     
         <RightContainerPage>
-        <ShoeHolder  >
+        <ShoeHolder  data-aos='fade-in'>
           <Img src={Mag} alt=""  className="Bounce"/>
           </ShoeHolder>
         <Floating>
          
-         <Text2  >NIKE</Text2>
+         <Text2  data-aos='fade-in'>NIKE</Text2>
        </Floating>
         </RightContainerPage>
 

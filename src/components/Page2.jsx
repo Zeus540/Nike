@@ -37,7 +37,7 @@ background: black;
 
 const LeftContainer = styled.div`
 height:100vh;
-background: #465262;
+background: #d6d4c8;
 overflow-x: hidden;
   display: flex;
   flex-direction: column;
@@ -157,7 +157,7 @@ height: 100%;
 border: none;
 position: relative;
 z-index: 2;
-
+filter: drop-shadow(9px 7px 5px #465262);
 @media  (min-width: 1px) and (max-width: 425px) {
   width: 70vw!important;
   height: 100%;
@@ -303,12 +303,12 @@ margin-bottom: 2vw;
 `
 
 const Text1 = styled.h1`
-color:#ffffff;
+color:#465262;
 font-size:6vw;
 letter-spacing:6px;
 margin-left: 0vw;
 white-space: nowrap;
-
+filter: drop-shadow(29px 36px 0px #46526240);
 @media  (min-width: 1px) and (max-width: 425px) {
   font-size: 25vw;
   margin-bottom: 0;
@@ -335,7 +335,7 @@ white-space: nowrap;
 const Text2 = styled.h1`
 margin:0px;
 position:absolute;
-color:white;
+color:#465262;
 font-size:7vw;
 right: 0vw;
 bottom: 0px;
@@ -458,7 +458,7 @@ render() {
       <Container >
         
 
-        <LeftContainer data-aos='slide-right'  data-aos-duration="750" >
+        <LeftContainer  >
         
           <Floating2  >
         <Text1 data-aos='fade-in'>FEAR OF GOD</Text1>
@@ -466,7 +466,7 @@ render() {
         
           <TextContainer>
          
-          <Text data-aos='slide-right'>Nike’s first collaborative project with Fear of God founder and creative director Jerry Lorenzo is highlighted by an court-ready basketball shoe, the Nike Air Fear of God 1. During the last few weeks, glimpses of the design — which incorporates a double-height Zoom Air heel unit — came through a preview of Lorenzo’s latest Fear of God offering and then appeared on the feet of NBA stars. The rollout is tactical, all part of Lorenzo’s desire to focus on the emotional element of sport.</Text>
+          <Text data-aos='fade-in'>Nike’s first collaborative project with Fear of God founder and creative director Jerry Lorenzo is highlighted by an court-ready basketball shoe, the Nike Air Fear of God 1. During the last few weeks, glimpses of the design — which incorporates a double-height Zoom Air heel unit — came through a preview of Lorenzo’s latest Fear of God offering and then appeared on the feet of NBA stars. The rollout is tactical, all part of Lorenzo’s desire to focus on the emotional element of sport.</Text>
           </TextContainer>
 
          
@@ -485,15 +485,15 @@ render() {
           </Ul>
         </LeftContainer>
 
-        <RightContainer   data-aos='slide-up'  data-aos-duration="750" >
+        <RightContainer    >
     
         <RightContainerPage>
-        <ShoeHolder  >
+        <ShoeHolder  data-aos='fade-in'>
           <Img src={Purple}   className="Bounce"/>
           </ShoeHolder>
         <Floating>
          
-         <Text2  >NIKE</Text2>
+         <Text2  data-aos='fade-in'>NIKE</Text2>
        </Floating>
         </RightContainerPage>
 

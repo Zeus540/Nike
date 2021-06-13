@@ -456,7 +456,7 @@ render() {
       <Container >
         
 
-        <LeftContainer data-aos='slide-right'  data-aos-duration="750" >
+        <LeftContainer  >
         
           <Floating2  >
         <Text1 data-aos='fade-in'>REACT D/MS/X</Text1>
@@ -464,7 +464,7 @@ render() {
         
           <TextContainer>
          
-          <Text data-aos='slide-right'>The AF1 React D/MS/X optimizes comfort with a full length Nike React midsole equipped with a heel Ramp Air unit. The upper features a large bold Swoosh and mesh construction on the side panels. The traditional AIR logo appears on the heel, along with a newly added Nike React branded stripe. Nike React’s pattern replaces the traditional stars at the heel and toe of the outsole.</Text>
+          <Text data-aos='fade-in'>The AF1 React D/MS/X optimizes comfort with a full length Nike React midsole equipped with a heel Ramp Air unit. The upper features a large bold Swoosh and mesh construction on the side panels. The traditional AIR logo appears on the heel, along with a newly added Nike React branded stripe. Nike React’s pattern replaces the traditional stars at the heel and toe of the outsole.</Text>
           </TextContainer>
 
          
@@ -483,15 +483,15 @@ render() {
           </Ul>
         </LeftContainer>
 
-        <RightContainer data-aos='slide-up'  data-aos-duration="750" >
+        <RightContainer  >
     
         <RightContainerPage>
-        <ShoeHolder  >
+        <ShoeHolder  data-aos='fade-in'>
           <Img src={af2} alt=""  className="Bounce"/>
           </ShoeHolder>
         <Floating>
          
-         <Text2  >NIKE AF1</Text2>
+         <Text2  data-aos='fade-in'>NIKE AF1</Text2>
        </Floating>
         </RightContainerPage>
 

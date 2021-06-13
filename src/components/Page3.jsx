@@ -37,7 +37,7 @@ background: black;
 
 const LeftContainer = styled.div`
 height:100vh;
-background: #e2b584;
+background: #b7c6c8;
 overflow-x: hidden;
   display: flex;
   flex-direction: column;
@@ -303,7 +303,7 @@ margin-bottom: 2vw;
 `
 
 const Text1 = styled.h1`
-color:#ffffff;
+color:#e2b584;
 font-size:6vw;
 letter-spacing:6px;
 margin-left: 0vw;
@@ -335,7 +335,7 @@ white-space: nowrap;
 const Text2 = styled.h1`
 margin:0px;
 position:absolute;
-color:white;
+color:#e2b584;
 font-size:7vw;
 right: 0vw;
 bottom: 0px;
@@ -458,7 +458,7 @@ render() {
       <Container >
         
 
-        <LeftContainer data-aos='slide-right'  data-aos-duration="750" >
+        <LeftContainer  >
         
           <Floating2 >
         <Text1 data-aos='fade-in'>WALK ON WATER</Text1>
@@ -466,7 +466,7 @@ render() {
         
           <TextContainer>
          
-          <Text  data-aos='slide-right'>Newly-released Nike ‘Jesus Shoes’ – filled with actual holy water in the soles – sold out in mere minutes after they hit the shelves on Tuesday morning. The $3,000 sneakers are filled with holy water from the River Jordan in Israel and have a crucifix tied to the laces. Each pair was reportedly blessed by a priest and has a red insole in reference to the red Papal shoes that were traditionally worn by Vatican leaders. The limited edition shoes were made by Brooklyn-based company MSCHF which redesigned Nike’s Air Max 97 model, turning it into “Jesus Shoes,” and offering buyers to literally walk on water.</Text>
+          <Text  data-aos='fade-in'>Newly-released Nike ‘Jesus Shoes’ – filled with actual holy water in the soles – sold out in mere minutes after they hit the shelves on Tuesday morning. The $3,000 sneakers are filled with holy water from the River Jordan in Israel and have a crucifix tied to the laces. Each pair was reportedly blessed by a priest and has a red insole in reference to the red Papal shoes that were traditionally worn by Vatican leaders. The limited edition shoes were made by Brooklyn-based company MSCHF which redesigned Nike’s Air Max 97 model, turning it into “Jesus Shoes,” and offering buyers to literally walk on water.</Text>
           </TextContainer>
 
          
@@ -485,15 +485,15 @@ render() {
           </Ul>
         </LeftContainer>
 
-        <RightContainer   data-aos='slide-up'  data-aos-duration="750" >
+        <RightContainer   >
     
         <RightContainerPage>
-        <ShoeHolder  >
+        <ShoeHolder  data-aos='fade-in'>
           <Img src={Water} alt=""  className="Bounce"/>
           </ShoeHolder>
         <Floating>
          
-         <Text2  >NIKE 97</Text2>
+         <Text2  data-aos='fade-in'>NIKE 97</Text2>
        </Floating>
         </RightContainerPage>
 
